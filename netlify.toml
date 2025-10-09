@@ -1,14 +1,11 @@
 [build]
-  # Static site deployment - no build needed
-  command = "echo 'Static site ready'"
+  # Next.js static export build
+  command = "npm run build"
   publish = "out"
   
 [build.environment]
   NODE_VERSION = "18"
-
-# Disable Next.js plugin for static sites
-[build.processing]
-  skip_processing = false
+  NEXT_TELEMETRY_DISABLED = "1"
 
 # Headers for API endpoints
 [[headers]]

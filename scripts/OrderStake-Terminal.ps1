@@ -162,16 +162,31 @@ function Start-Deploy {
             # Gerçek sayıları dosyalardan al
             if (Test-Path "public\api\pools.json") {
                 try {
-                    $pools = Get-Content "public\api\pools.json" | ConvertFrom-Json
-                    if ($pools -is [array]) { $stats.totalPools = $pools.Count }
-                } catch { }
+                    $poolsContent = Get-Content "public\api\pools.json" -Raw | ConvertFrom-Json
+                    if ($poolsContent) {
+                        $poolKeys = $poolsContent | Get-Member -MemberType NoteProperty | Measure-Object
+                        $stats.totalPools = $poolKeys.Count
+                        Write-Log "Real pools found: $($stats.totalPools)" "INFO"
+                    }
+                } catch {
+                    Write-Log "Error reading pools.json: $($_.Exception.Message)" "WARN"
+                }
             }
             
             if (Test-Path "public\api\staking.json") {
                 try {
-                    $events = Get-Content "public\api\staking.json" | ConvertFrom-Json
-                    if ($events -is [array]) { $stats.totalEvents = $events.Count }
-                } catch { }
+                    $stakingContent = Get-Content "public\api\staking.json" -Raw | ConvertFrom-Json
+                    if ($stakingContent -is [array]) { 
+                        $stats.totalEvents = $stakingContent.Count 
+                        Write-Log "Real events found: $($stats.totalEvents)" "INFO"
+                    } elseif ($stakingContent) {
+                        $eventKeys = $stakingContent | Get-Member -MemberType NoteProperty | Measure-Object
+                        $stats.totalEvents = $eventKeys.Count
+                        Write-Log "Real events found (object): $($stats.totalEvents)" "INFO"
+                    }
+                } catch {
+                    Write-Log "Error reading staking.json: $($_.Exception.Message)" "WARN"
+                }
             }
             
             $statsJson = $stats | ConvertTo-Json -Compress

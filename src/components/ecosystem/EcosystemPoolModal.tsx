@@ -29,6 +29,8 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
     error,
     isConnected,
     address,
+    fetchPoolData,
+    fetchPoolMetadata,
     fetchUserInfo,
     fetchTokenInfo,
     approveStakingToken,
@@ -45,6 +47,19 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
   const [activeTab, setActiveTab] = useState<'stake' | 'unstake' | 'claim'>('stake');
   const [isCopied, setIsCopied] = useState(false);
   const [copiedAddress, setCopiedAddress] = useState<string | null>(null);
+  const [isDataLoaded, setIsDataLoaded] = useState(false);
+  const [loadingTimeout, setLoadingTimeout] = useState(false);
+
+  // Retry function for failed loads
+  const retryLoad = () => {
+    setLoadingTimeout(false);
+    fetchPoolData();
+    fetchPoolMetadata();
+    if (address) {
+      fetchUserInfo();
+      fetchTokenInfo();
+    }
+  };
 
   // Clear inputs when modal closes
   useEffect(() => {
@@ -53,8 +68,28 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
       setUnstakeAmount('');
       setActiveTab('stake');
       setCopiedAddress(null);
+      setIsDataLoaded(false);
+      setLoadingTimeout(false);
     }
   }, [isOpen]);
+
+  // Set data loaded when pool data is available
+  useEffect(() => {
+    if (poolData && poolMetadata) {
+      setIsDataLoaded(true);
+    }
+  }, [poolData, poolMetadata]);
+
+  // Loading timeout - if loading takes too long, show error
+  useEffect(() => {
+    if (isOpen && isLoading) {
+      const timeout = setTimeout(() => {
+        setLoadingTimeout(true);
+      }, 10000); // 10 seconds timeout
+
+      return () => clearTimeout(timeout);
+    }
+  }, [isOpen, isLoading]);
 
   // Refresh user data when modal opens
   useEffect(() => {
@@ -161,9 +196,49 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
 
         {/* Content */}
         <div className="p-6">
-          {!poolData ? (
-            <div className="flex items-center justify-center py-8">
-              <Loader2 className="w-8 h-8 animate-spin text-accent-primary" />
+          {error ? (
+            <div className="flex flex-col items-center justify-center py-8">
+              <div className="text-red-400 mb-4">❌</div>
+              <p className="text-sm text-text-secondary mb-4 text-center">{error}</p>
+              <button
+                onClick={retryLoad}
+                className="px-4 py-2 bg-accent-primary hover:bg-accent-primary/80 text-white rounded-lg transition-colors"
+              >
+                Retry
+              </button>
+            </div>
+          ) : (!poolData || !isDataLoaded) && !loadingTimeout ? (
+            <div className="flex flex-col items-center justify-center py-8">
+              <Loader2 className="w-8 h-8 animate-spin text-accent-primary mb-4" />
+              <p className="text-sm text-text-secondary">Loading pool data...</p>
+            </div>
+          ) : loadingTimeout ? (
+            <div className="flex flex-col items-center justify-center py-8">
+              <div className="text-red-400 mb-4">⚠️</div>
+              <p className="text-sm text-text-secondary mb-4">Loading timeout. Please try again.</p>
+              <button
+                onClick={retryLoad}
+                className="px-4 py-2 bg-accent-primary hover:bg-accent-primary/80 text-white rounded-lg transition-colors"
+              >
+                Retry
+              </button>
+            </div>
+          ) : error ? (
+            <div className="flex flex-col items-center justify-center py-8">
+              <div className="text-red-400 mb-4">❌</div>
+              <p className="text-sm text-text-secondary mb-4">Error: {error}</p>
+              <button
+                onClick={() => {
+                  setIsDataLoaded(false);
+                  if (isConnected && address) {
+                    fetchUserInfo();
+                    fetchTokenInfo();
+                  }
+                }}
+                className="px-4 py-2 bg-accent-primary hover:bg-accent-primary/80 text-white rounded-lg transition-colors"
+              >
+                Retry
+              </button>
             </div>
           ) : (
             <>
@@ -228,7 +303,7 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
                 <div className="bg-surface-secondary rounded-lg p-4">
                   <p className="text-sm text-text-tertiary mb-1">Total Staked</p>
                   <p className="text-xl font-bold text-text-primary">
-                    {Number(poolData.totalStaked).toLocaleString(undefined, { maximumFractionDigits: 2 })}
+                    {poolData ? Number(poolData.totalStaked).toLocaleString(undefined, { maximumFractionDigits: 2 }) : '0'}
                   </p>
                   {poolMetadata?.stakingSymbol && (
                     <p className="text-xs text-text-tertiary">{poolMetadata.stakingSymbol}</p>
@@ -237,7 +312,7 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
                 <div className="bg-surface-secondary rounded-lg p-4">
                   <p className="text-sm text-text-tertiary mb-1">Reward/Block</p>
                   <p className="text-xl font-bold text-accent-primary">
-                    {Number(poolData.rewardPerBlock).toLocaleString(undefined, { maximumFractionDigits: 6 })}
+                    {poolData ? Number(poolData.rewardPerBlock).toLocaleString(undefined, { maximumFractionDigits: 6 }) : '0'}
                   </p>
                   {poolMetadata?.rewardSymbol && (
                     <p className="text-xs text-text-tertiary">{poolMetadata.rewardSymbol}</p>
@@ -542,7 +617,7 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
                         </span>
                       </div>
                       <button
-                        onClick={() => copyToClipboard(poolData.stakingToken, 'staking')}
+                        onClick={() => copyToClipboard(poolData?.stakingToken || '', 'staking')}
                         className="flex items-center gap-1 text-xs text-accent-primary hover:text-accent-secondary transition-colors"
                       >
                         {copiedAddress === 'staking' ? (
@@ -555,7 +630,7 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
                         )}
                       </button>
                     </div>
-                    <p className="text-xs font-mono text-text-primary break-all">{poolData.stakingToken}</p>
+                    <p className="text-xs font-mono text-text-primary break-all">{poolData?.stakingToken || 'N/A'}</p>
                   </div>
                 )}
 
@@ -579,7 +654,7 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
                         </span>
                       </div>
                       <button
-                        onClick={() => copyToClipboard(poolData.rewardToken, 'reward')}
+                        onClick={() => copyToClipboard(poolData?.rewardToken || '', 'reward')}
                         className="flex items-center gap-1 text-xs text-accent-primary hover:text-accent-secondary transition-colors"
                       >
                         {copiedAddress === 'reward' ? (
@@ -592,7 +667,7 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
                         )}
                       </button>
                     </div>
-                    <p className="text-xs font-mono text-text-primary break-all">{poolData.rewardToken}</p>
+                    <p className="text-xs font-mono text-text-primary break-all">{poolData?.rewardToken || 'N/A'}</p>
                   </div>
                 )}
               </div>

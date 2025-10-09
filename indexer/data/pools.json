@@ -581,5 +581,111 @@
     },
     "lastUpdated": "2025-10-09T08:41:40.164Z",
     "updatedAt": 1759999300164
+  },
+  "0x7a93a964Ca8281eF0877d041049DD4528447c229": {
+    "address": "0x7a93a964Ca8281eF0877d041049DD4528447c229",
+    "poolData": {
+      "stakingToken": "0x986A82FE6dBC5BF5135E0cF6F72440eA52B9E7d0",
+      "rewardToken": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+      "totalStaked": "0",
+      "rewardPerBlock": "1581364000000000000",
+      "startBlock": "70019459",
+      "endBlock": "73019459",
+      "lastRewardBlock": "70019459",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "test1",
+      "poolDescription": "test4",
+      "stakingSymbol": "test44",
+      "rewardSymbol": "test55",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F259fc7af-b7ed-e89c-d30b-48618a71d0321759948156257.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F297496e9-881f-3f93-2ff4-7f48cdb69d7c1759249692039.jpeg&w=1920&q=75"
+    },
+    "poolStats": {
+      "blocksRemaining": "0",
+      "isActive": false,
+      "hasStarted": true,
+      "hasEnded": true,
+      "remainingRewards": "0"
+    },
+    "tokenInfo": {
+      "stakingToken": {
+        "address": "0x986A82FE6dBC5BF5135E0cF6F72440eA52B9E7d0",
+        "name": "make avax great again",
+        "symbol": "MAGA",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      },
+      "rewardToken": {
+        "address": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+        "name": "Trader XO",
+        "symbol": "XO",
+        "decimals": 18,
+        "totalSupply": "24700915000000000000000000"
+      }
+    },
+    "creatorProfile": {
+      "address": "0x3fa6df8357DC58935360833827a9762433488C83",
+      "username": null,
+      "displayName": null,
+      "profileImage": null,
+      "arenaHandle": null
+    },
+    "lastUpdated": "2025-10-09T09:16:16.006Z",
+    "updatedAt": 1760001376006
+  },
+  "0x04b629B6448Dcdb9e289d03eA86AD732eb6EB6B8": {
+    "address": "0x04b629B6448Dcdb9e289d03eA86AD732eb6EB6B8",
+    "poolData": {
+      "stakingToken": "0xB8d7710f7d8349A506b75dD184F05777c82dAd0C",
+      "rewardToken": "0xbe11b494B6D7AB83906b67c3Dd727D9D10E446f8",
+      "totalStaked": "0",
+      "rewardPerBlock": "36364333333333333",
+      "startBlock": "70019958",
+      "endBlock": "73019958",
+      "lastRewardBlock": "70019958",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "XOx",
+      "poolDescription": "xx",
+      "stakingSymbol": "GLADIUS",
+      "rewardSymbol": "ORDER",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2Fcf2495b4-ca19-def0-31a8-78ea746af86a1749209670944.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F2747327d-cc5b-5cb0-02f7-662caf7ae2a51758005626844.jpeg&w=1920&q=75"
+    },
+    "poolStats": {
+      "blocksRemaining": "0",
+      "isActive": false,
+      "hasStarted": true,
+      "hasEnded": true,
+      "remainingRewards": "0"
+    },
+    "tokenInfo": {
+      "stakingToken": {
+        "address": "0xB8d7710f7d8349A506b75dD184F05777c82dAd0C",
+        "name": "ArenaToken",
+        "symbol": "ARENA",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      },
+      "rewardToken": {
+        "address": "0xbe11b494B6D7AB83906b67c3Dd727D9D10E446f8",
+        "name": "SLOP",
+        "symbol": "SLOP",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      }
+    },
+    "creatorProfile": {
+      "address": "0x3fa6df8357DC58935360833827a9762433488C83",
+      "username": null,
+      "displayName": null,
+      "profileImage": null,
+      "arenaHandle": null
+    },
+    "lastUpdated": "2025-10-09T09:28:21.508Z",
+    "updatedAt": 1760002101508
   }
 }

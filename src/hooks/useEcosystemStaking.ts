@@ -147,9 +147,17 @@ export const useEcosystemStaking = (poolAddress: string) => {
 
   // Fetch pool data
   const fetchPoolData = useCallback(async () => {
+    const timeoutId = setTimeout(() => {
+      setError('Request timeout. Please try again.');
+      setIsLoading(false);
+    }, 30000); // 30 second timeout
+
     try {
       const provider = getProvider();
-      if (!provider) return;
+      if (!provider) {
+        clearTimeout(timeoutId);
+        return;
+      }
       
       const contract = new Contract(poolAddress, ECOSYSTEM_STAKING_ABI, provider);
       const poolInfo = await contract.getPoolInfo();
@@ -180,7 +188,9 @@ export const useEcosystemStaking = (poolAddress: string) => {
 
       setPoolData(data);
       await calculateStats(data);
+      clearTimeout(timeoutId);
     } catch (err: any) {
+      clearTimeout(timeoutId);
       console.error('Error fetching pool data:', err);
       setError(err.message);
     }
