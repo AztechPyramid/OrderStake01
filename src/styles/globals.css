@@ -1,0 +1,137 @@
+/* Benqi-inspired Dark Theme Scrollbar */
+::-webkit-scrollbar {
+	width: 12px;
+	background: #0B0E1A;
+}
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(135deg, #00D4AA 30%, #4FFFDF 100%);
+	border-radius: 8px;
+	border: 2px solid #0B0E1A;
+	box-shadow: 0 0 8px rgba(0, 212, 170, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(135deg, #4FFFDF 10%, #00D4AA 90%);
+	box-shadow: 0 0 12px rgba(0, 212, 170, 0.5);
+}
+::-webkit-scrollbar-corner {
+	background: #0B0E1A;
+}
+
+/* Custom styles for show details button and avax logo */
+.show-details:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(0, 212, 170, 0.2) !important;
+  border-radius: 8px;
+}
+
+.avax-showdetails {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 8px;
+  vertical-align: middle;
+  transition: transform 0.2s ease-in-out;
+}
+
+.avax-showdetails:hover {
+  transform: scale(1.1);
+}
+
+/* Glass morphism effect */
+.glass-effect {
+  backdrop-filter: blur(16px);
+  background: rgba(26, 31, 54, 0.8);
+  border: 1px solid rgba(42, 51, 86, 0.5);
+}
+
+/* Custom animations */
+@keyframes fire {
+  0% { transform: rotate(-1deg) scale(1); }
+  25% { transform: rotate(1deg) scale(1.05); }
+  50% { transform: rotate(-1deg) scale(1); }
+  75% { transform: rotate(1deg) scale(1.05); }
+  100% { transform: rotate(-1deg) scale(1); }
+}
+
+.animate-fire {
+  animation: fire 2s ease-in-out infinite;
+}
+
+/* Enhanced card hover effects */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 212, 170, 0.1);
+}
+
+/* Gradient text animations */
+.gradient-text-animated {
+  background: linear-gradient(-45deg, #00D4AA, #4FFFDF, #00B890, #00D4AA);
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 4s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Loading shimmer effect */
+.shimmer {
+  background: linear-gradient(90deg, 
+    rgba(30, 34, 53, 0.6) 25%, 
+    rgba(42, 51, 86, 0.8) 50%, 
+    rgba(30, 34, 53, 0.6) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* CoinGecko Widget Height Reduction - 50% smaller */
+gecko-coin-price-chart-widget,
+gecko-coin-price-chart-widget iframe,
+[data-widget="coingecko"],
+.coingecko-widget,
+.gecko-widget {
+  max-height: 200px !important;
+  min-height: 200px !important;
+  height: 200px !important;
+}
+
+gecko-coin-price-chart-widget iframe {
+  transform: scale(0.8);
+  transform-origin: top left;
+  width: 125% !important;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CoinGecko Price Marquee Widget Styling */
+gecko-coin-price-marquee-widget {
+  width: 100% !important;
+  max-width: 100% !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+/* Responsive adjustments for marquee widget */
+@media (max-width: 768px) {
+  gecko-coin-price-marquee-widget {
+    font-size: 14px !important;
+  }
+}

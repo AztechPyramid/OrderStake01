@@ -1,0 +1,31 @@
+{
+  "name": "orderstake-indexer",
+  "version": "1.0.0",
+  "description": "Local event indexer for OrderStake ecosystem contracts on Avalanche C-Chain",
+  "main": "indexer.js",
+  "scripts": {
+    "start": "node indexer.js",
+    "dev": "nodemon indexer.js",
+    "reset": "node scripts/reset-data.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.8.0",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "ethereum",
+    "avalanche",
+    "indexer",
+    "events",
+    "nft",
+    "staking"
+  ],
+  "author": "OrderStake Team",
+  "license": "MIT"
+}

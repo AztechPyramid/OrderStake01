@@ -1,0 +1,10 @@
+# Local Netlify folder
+.netlify
+node_modules
+
+# Next.js
+.next/
+out/
+
+# VS Code
+.vscode/

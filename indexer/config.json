@@ -1,0 +1,38 @@
+{
+  "network": "avalanche",
+  "chainId": 43114,
+  "contracts": {
+    "EcosystemStakingFactory": {
+      "address": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+      "deployBlock": 0,
+      "isActive": true
+    },
+    "OrderNFTLaunch": {
+      "address": "0x0000000000000000000000000000000000000000",
+      "deployBlock": 0,
+      "isActive": false,
+      "note": "Not deployed yet - update after deployment"
+    },
+    "OrderToken": {
+      "address": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "symbol": "ORDER",
+      "decimals": 18
+    }
+  },
+  "rpc": {
+    "primary": "https://api.avax.network/ext/bc/C/rpc",
+    "backup": "https://rpc.ankr.com/avalanche"
+  },
+  "indexer": {
+    "startBlock": 69858946,
+    "maxBlockRange": 2000,
+    "pollingInterval": 15000,
+    "retryAttempts": 3,
+    "retryDelay": 5000
+  },
+  "api": {
+    "port": 3001,
+    "cors": true
+  },
+  "lastUpdated": "2025-10-08T00:00:00.000Z"
+}

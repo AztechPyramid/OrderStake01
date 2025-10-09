@@ -1,0 +1,3199 @@
+[
+  {
+    "eventName": "WhitelistUpdated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 69858946,
+    "txHash": "0xac1c7304aa583f7e927d8e412a4c99ac33852557a14426184fa0a3834fa46d47",
+    "account": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "status": true,
+    "formatted": {
+      "account": "0x3fa6...8C83",
+      "status": "Whitelisted"
+    },
+    "timestamp": "2025-10-08T06:22:05.010Z",
+    "indexedAt": 1759904525010
+  },
+  {
+    "eventName": "WhitelistUpdated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 69859225,
+    "txHash": "0x26fa803db1944fade1ac60adba809b8c216aa8a1df3423a2ce2e8873da8c6f98",
+    "account": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "status": true,
+    "formatted": {
+      "account": "0xec0a...F072",
+      "status": "Whitelisted"
+    },
+    "timestamp": "2025-10-08T06:22:05.014Z",
+    "indexedAt": 1759904525014
+  },
+  {
+    "eventName": "PoolCreated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 69861334,
+    "txHash": "0xc6d8cbbad5e06081599295dacceb9fefe17b4ebe5d6b37478d0573d08e521b36",
+    "poolAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "creator": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "stakingToken": "0xE383dA3f0B0074A258a90614149057A42F074860",
+    "rewardToken": "0xb2722d5f1b8F3E19bf026c62C47C1C7BC1CDB04E",
+    "rewardPerBlock": "7009666666666666",
+    "startBlock": "69862311",
+    "endBlock": "72862311",
+    "poolInfo": {
+      "stakingToken": "0xE383dA3f0B0074A258a90614149057A42F074860",
+      "rewardToken": "0xb2722d5f1b8F3E19bf026c62C47C1C7BC1CDB04E",
+      "totalStaked": "6000000000000000000000",
+      "rewardPerBlock": "7009666666666666",
+      "startBlock": "69862311",
+      "endBlock": "72862311",
+      "lastRewardBlock": "69952437",
+      "creator": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072"
+    },
+    "poolMetadata": {
+      "poolName": "TESTNET STAKE",
+      "poolDescription": "TESTNET STAKE",
+      "stakingSymbol": "AVINI",
+      "rewardSymbol": "MORE",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F0aaa431c-aed9-dd81-6169-5dc0578f385a1748872574773.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2Fc0f23888-14ac-e0a0-03e0-87bb3f7bafcd1748967871150.jpeg&w=1920&q=75"
+    },
+    "stakingTokenInfo": {
+      "address": "0xE383dA3f0B0074A258a90614149057A42F074860",
+      "name": "Averini Cannelloni",
+      "symbol": "AVINI",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "rewardTokenInfo": {
+      "address": "0xb2722d5f1b8F3E19bf026c62C47C1C7BC1CDB04E",
+      "name": "MORE",
+      "symbol": "MORE",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "formatted": {
+      "poolAddress": "0x3e0e...0949",
+      "creator": "0xec0a...F072",
+      "stakingToken": "0xE383...4860",
+      "rewardToken": "0xb272...B04E",
+      "rewardPerBlock": "0.007009666666666666",
+      "startBlock": "69862311",
+      "endBlock": "72862311",
+      "poolName": "TESTNET STAKE",
+      "stakingSymbol": "AVINI",
+      "rewardSymbol": "MORE",
+      "totalStaked": "6000.0"
+    },
+    "timestamp": "2025-10-08T06:31:03.475Z",
+    "indexedAt": 1759905063475
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69862453,
+    "txHash": "0x5e6efde495459a5abb781c3e5080f3ec9c9a53a288a3857f8b5f10d0ad0d6a04",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "5000000000000000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "5000.0",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:21.232Z",
+    "indexedAt": 1759907061233
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69862467,
+    "txHash": "0x99cc736fed6e80ff90b20e15034f00c363be57360750063f2d23b5993880d8ea",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "98135330000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "0.09813533",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:21.459Z",
+    "indexedAt": 1759907061459
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69862467,
+    "txHash": "0x99cc736fed6e80ff90b20e15034f00c363be57360750063f2d23b5993880d8ea",
+    "lastRewardBlock": "69862467",
+    "accRewardPerShare": "19627066",
+    "formatted": {
+      "lastRewardBlock": "69862467",
+      "accRewardPerShare": "0.000000000019627066",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:21.723Z",
+    "indexedAt": 1759907061723
+  },
+  {
+    "eventName": "Unstaked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69862536,
+    "txHash": "0xb88b719353608673b0603cb42bfad619dcdc756bc956b276642af2d7874a2ac6",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "2000000000000000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "2000.0",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:21.337Z",
+    "indexedAt": 1759907061337
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69862536,
+    "txHash": "0xb88b719353608673b0603cb42bfad619dcdc756bc956b276642af2d7874a2ac6",
+    "lastRewardBlock": "69862536",
+    "accRewardPerShare": "116360465",
+    "formatted": {
+      "lastRewardBlock": "69862536",
+      "accRewardPerShare": "0.000000000116360465",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:21.724Z",
+    "indexedAt": 1759907061724
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69862590,
+    "txHash": "0xce331d9f1daa8dd649a61192d3c06566690ac952aab0d3f34e24381d69e541d0",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "3000000000000000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "3000.0",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:21.234Z",
+    "indexedAt": 1759907061234
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69862590,
+    "txHash": "0xce331d9f1daa8dd649a61192d3c06566690ac952aab0d3f34e24381d69e541d0",
+    "lastRewardBlock": "69862590",
+    "accRewardPerShare": "242534464",
+    "formatted": {
+      "lastRewardBlock": "69862590",
+      "accRewardPerShare": "0.000000000242534464",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:21.726Z",
+    "indexedAt": 1759907061726
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69863362,
+    "txHash": "0xf6ccff61ec3f568f8a32da11c88ab3fe4eb2ea9e170c8f2863a0d6cc300697d8",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "3567920324000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "3.567920324",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:22.102Z",
+    "indexedAt": 1759907062102
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69863362,
+    "txHash": "0xf6ccff61ec3f568f8a32da11c88ab3fe4eb2ea9e170c8f2863a0d6cc300697d8",
+    "lastRewardBlock": "69863362",
+    "accRewardPerShare": "1144444908",
+    "formatted": {
+      "lastRewardBlock": "69863362",
+      "accRewardPerShare": "0.000000001144444908",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:22.343Z",
+    "indexedAt": 1759907062343
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69867884,
+    "txHash": "0xc0d859d75c2f9124ffed01d55cce9ff4c768d3224ed7537ac97c5400efaba610",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "15848856333000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "15.848856333",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:23.442Z",
+    "indexedAt": 1759907063442
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69867884,
+    "txHash": "0xc0d859d75c2f9124ffed01d55cce9ff4c768d3224ed7537ac97c5400efaba610",
+    "lastRewardBlock": "69867884",
+    "accRewardPerShare": "6427397019",
+    "formatted": {
+      "lastRewardBlock": "69867884",
+      "accRewardPerShare": "0.000000006427397019",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:23.658Z",
+    "indexedAt": 1759907063658
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69871802,
+    "txHash": "0x68b480dd5aa8cfa116e7026f0ab423f0ae83459838d6241400203472ae6dd98a",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "13731936999000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "13.731936999",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:24.671Z",
+    "indexedAt": 1759907064671
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69871802,
+    "txHash": "0x68b480dd5aa8cfa116e7026f0ab423f0ae83459838d6241400203472ae6dd98a",
+    "lastRewardBlock": "69871802",
+    "accRewardPerShare": "11004709352",
+    "formatted": {
+      "lastRewardBlock": "69871802",
+      "accRewardPerShare": "0.000000011004709352",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:24.959Z",
+    "indexedAt": 1759907064959
+  },
+  {
+    "eventName": "PoolCreated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 69872289,
+    "txHash": "0xe12bb213d7b821efa9718d379b6f8befef8fbd08cb0fc6e0723f7c81d5122ad6",
+    "poolAddress": "0xeEF4A271b2099078929584fb64560d31e196a85f",
+    "creator": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "stakingToken": "0x18aa3b7F5FAC5c6f4CbA24D9ba456711B484d873",
+    "rewardToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+    "rewardPerBlock": "5181307692307692",
+    "startBlock": "69873255",
+    "endBlock": "82873255",
+    "poolInfo": {
+      "stakingToken": "0x18aa3b7F5FAC5c6f4CbA24D9ba456711B484d873",
+      "rewardToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "totalStaked": "0",
+      "rewardPerBlock": "5181307692307692",
+      "startBlock": "69873255",
+      "endBlock": "82873255",
+      "lastRewardBlock": "69873255",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "Gallery Just Try Poolll TEST",
+      "poolDescription": "gallery",
+      "stakingSymbol": "Gallery",
+      "rewardSymbol": "ORDER",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2Ffd4c8558-5de1-8122-e4cc-cf251f928d1b1750371876242.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2Fa99c28dd-fd47-42da-b424-8e59a3f33aa11746667360123.jpeg&w=1920&q=75"
+    },
+    "stakingTokenInfo": {
+      "address": "0x18aa3b7F5FAC5c6f4CbA24D9ba456711B484d873",
+      "name": "The Meme Dealership",
+      "symbol": "GALLERY",
+      "decimals": 18,
+      "totalSupply": "272190373000000000000000000"
+    },
+    "rewardTokenInfo": {
+      "address": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "name": "Pyramid LiquidityOrder",
+      "symbol": "ORDER",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "formatted": {
+      "poolAddress": "0xeEF4...a85f",
+      "creator": "0x3fa6...8C83",
+      "stakingToken": "0x18aa...d873",
+      "rewardToken": "0x1BEd...8180",
+      "rewardPerBlock": "0.005181307692307692",
+      "startBlock": "69873255",
+      "endBlock": "82873255",
+      "poolName": "Gallery Just Try Poolll TEST",
+      "stakingSymbol": "GALLERY",
+      "rewardSymbol": "ORDER",
+      "totalStaked": "0.0"
+    },
+    "timestamp": "2025-10-08T06:31:07.631Z",
+    "indexedAt": 1759905067631
+  },
+  {
+    "eventName": "PoolCreated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 69873094,
+    "txHash": "0xe1b52eabdcc9d58527501cedbf75b2a0aa8bdd7daf002a8afb7cc7b7120a3037",
+    "poolAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "creator": "0x66cA70FE18c2ac9F8D0564667820d3294BAe9DeD",
+    "stakingToken": "0xeA325Ccc2b98DD04d947a9E68C27C8daE6ad0F7E",
+    "rewardToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+    "rewardPerBlock": "2308904666666666666",
+    "startBlock": "69873903",
+    "endBlock": "72873903",
+    "poolInfo": {
+      "stakingToken": "0xeA325Ccc2b98DD04d947a9E68C27C8daE6ad0F7E",
+      "rewardToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "totalStaked": "34600000000000000000000",
+      "rewardPerBlock": "2308904666666666666",
+      "startBlock": "69873903",
+      "endBlock": "72873903",
+      "lastRewardBlock": "69946795",
+      "creator": "0x66cA70FE18c2ac9F8D0564667820d3294BAe9DeD"
+    },
+    "poolMetadata": {
+      "poolName": "sAYNE",
+      "poolDescription": "Stake your $AYNE tokens here, enjoy steak like a true gladiator that you are!",
+      "stakingSymbol": "AYNE",
+      "rewardSymbol": "ORDER",
+      "stakingLogo": "https://dexscreener.com/avalanche/0xfc77f0351a411e954d4fe9db4e85c077b15d6490",
+      "rewardLogo": "https://dexscreener.com/avalanche/0x3c5f68d2f72debba4900c60f32eb8629876401f2"
+    },
+    "stakingTokenInfo": {
+      "address": "0xeA325Ccc2b98DD04d947a9E68C27C8daE6ad0F7E",
+      "name": "AreYouNotEntertained",
+      "symbol": "AYNE",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "rewardTokenInfo": {
+      "address": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "name": "Pyramid LiquidityOrder",
+      "symbol": "ORDER",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "formatted": {
+      "poolAddress": "0xF814...46e6",
+      "creator": "0x66cA...9DeD",
+      "stakingToken": "0xeA32...0F7E",
+      "rewardToken": "0x1BEd...8180",
+      "rewardPerBlock": "2.308904666666666666",
+      "startBlock": "69873903",
+      "endBlock": "72873903",
+      "poolName": "sAYNE",
+      "stakingSymbol": "AYNE",
+      "rewardSymbol": "ORDER",
+      "totalStaked": "34600.0"
+    },
+    "timestamp": "2025-10-08T06:31:08.846Z",
+    "indexedAt": 1759905068846
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69875752,
+    "txHash": "0x7460638c563e8a176450e846b4f7c8910a3a5486566ec0953e8c7aa4d2019b1c",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "46130616330000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "46.13061633",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:25.990Z",
+    "indexedAt": 1759907065990
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69875752,
+    "txHash": "0x7460638c563e8a176450e846b4f7c8910a3a5486566ec0953e8c7aa4d2019b1c",
+    "lastRewardBlock": "69875752",
+    "accRewardPerShare": "15619406574",
+    "formatted": {
+      "lastRewardBlock": "69875752",
+      "accRewardPerShare": "0.000000015619406574",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:26.240Z",
+    "indexedAt": 1759907066240
+  },
+  {
+    "eventName": "WhitelistUpdated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 69876657,
+    "txHash": "0x5d1279cb9770603414547cdd774728f3a2adccd887ad195e1433aaece4b9b3bf",
+    "account": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "status": false,
+    "formatted": {
+      "account": "0xec0a...F072",
+      "status": "Removed"
+    },
+    "timestamp": "2025-10-08T06:22:14.329Z",
+    "indexedAt": 1759904534329
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69876839,
+    "txHash": "0xd7716db43cceebfc7f38c9ba7b8013bf8d1b9a8c5861698c0360c93415d7942e",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "17653845498000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "17.653845498",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:25.991Z",
+    "indexedAt": 1759907065991
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69876839,
+    "txHash": "0xd7716db43cceebfc7f38c9ba7b8013bf8d1b9a8c5861698c0360c93415d7942e",
+    "lastRewardBlock": "69876839",
+    "accRewardPerShare": "16889324518",
+    "formatted": {
+      "lastRewardBlock": "69876839",
+      "accRewardPerShare": "0.000000016889324518",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:26.241Z",
+    "indexedAt": 1759907066241
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69912659,
+    "txHash": "0x17073c1be92ec534b206aa735e30c1ece6c3401be4051421b21a2e44f01c8cda",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "125543129997000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "125.543129997",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:37.103Z",
+    "indexedAt": 1759907077103
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69912659,
+    "txHash": "0x17073c1be92ec534b206aa735e30c1ece6c3401be4051421b21a2e44f01c8cda",
+    "lastRewardBlock": "69912659",
+    "accRewardPerShare": "58737034517",
+    "formatted": {
+      "lastRewardBlock": "69912659",
+      "accRewardPerShare": "0.000000058737034517",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:37.311Z",
+    "indexedAt": 1759907077311
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69913352,
+    "txHash": "0x46e3d2808b88f3ffdff9f9571723440de07eb86f3bcf5f8a7430d9b45ff14e7f",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "2428849497000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "2.428849497",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:37.704Z",
+    "indexedAt": 1759907077704
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69913352,
+    "txHash": "0x46e3d2808b88f3ffdff9f9571723440de07eb86f3bcf5f8a7430d9b45ff14e7f",
+    "lastRewardBlock": "69913352",
+    "accRewardPerShare": "59546651016",
+    "formatted": {
+      "lastRewardBlock": "69913352",
+      "accRewardPerShare": "0.000000059546651016",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:37.938Z",
+    "indexedAt": 1759907077938
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69916295,
+    "txHash": "0xb48b9bd346169f58198664f8a9d478d16b4388ae7b3e3d943a3177f150021970",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "10314724497000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "10.314724497",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:38.337Z",
+    "indexedAt": 1759907078337
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69916295,
+    "txHash": "0xb48b9bd346169f58198664f8a9d478d16b4388ae7b3e3d943a3177f150021970",
+    "lastRewardBlock": "69916295",
+    "accRewardPerShare": "62984892515",
+    "formatted": {
+      "lastRewardBlock": "69916295",
+      "accRewardPerShare": "0.000000062984892515",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:38.586Z",
+    "indexedAt": 1759907078586
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69923895,
+    "txHash": "0x4bc693017cf44369cb7b057473baf59291a6ebe4d1ee74490019411ffbcbc83e",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "26636733333000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "26.636733333",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:40.729Z",
+    "indexedAt": 1759907080729
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69923895,
+    "txHash": "0x4bc693017cf44369cb7b057473baf59291a6ebe4d1ee74490019411ffbcbc83e",
+    "lastRewardBlock": "69923895",
+    "accRewardPerShare": "71863803626",
+    "formatted": {
+      "lastRewardBlock": "69923895",
+      "accRewardPerShare": "0.000000071863803626",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:40.986Z",
+    "indexedAt": 1759907080986
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69926286,
+    "txHash": "0xe599dfa34935739296d2a68d097bd1098d541230d07dbb04401decc2d495bdde",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "8380056498000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "8.380056498",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:41.353Z",
+    "indexedAt": 1759907081353
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69926286,
+    "txHash": "0xe599dfa34935739296d2a68d097bd1098d541230d07dbb04401decc2d495bdde",
+    "lastRewardBlock": "69926286",
+    "accRewardPerShare": "74657155792",
+    "formatted": {
+      "lastRewardBlock": "69926286",
+      "accRewardPerShare": "0.000000074657155792",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:41.688Z",
+    "indexedAt": 1759907081688
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69929834,
+    "txHash": "0xcdca4788ad73429e163901a29cdfe4ab7020fb43e143c6de7288e0eadeb8ed2b",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "12435148665000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "12.435148665",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:42.770Z",
+    "indexedAt": 1759907082770
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69929834,
+    "txHash": "0xcdca4788ad73429e163901a29cdfe4ab7020fb43e143c6de7288e0eadeb8ed2b",
+    "lastRewardBlock": "69929834",
+    "accRewardPerShare": "78802205347",
+    "formatted": {
+      "lastRewardBlock": "69929834",
+      "accRewardPerShare": "0.000000078802205347",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:42.998Z",
+    "indexedAt": 1759907082998
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69931343,
+    "txHash": "0x06cfbe9b40d7d9e13d3814c62620088216398d6183c3a188c66c93e92837481c",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "5288793498000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "5.288793498",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:43.389Z",
+    "indexedAt": 1759907083389
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69931343,
+    "txHash": "0x06cfbe9b40d7d9e13d3814c62620088216398d6183c3a188c66c93e92837481c",
+    "lastRewardBlock": "69931343",
+    "accRewardPerShare": "80565136513",
+    "formatted": {
+      "lastRewardBlock": "69931343",
+      "accRewardPerShare": "0.000000080565136513",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:43.598Z",
+    "indexedAt": 1759907083598
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69931398,
+    "txHash": "0x3f3f3ebdebeacbe80ac5cffae9bc672b1acb0efad239c0079854f1f67d24db0d",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "192765831000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "0.192765831",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:43.391Z",
+    "indexedAt": 1759907083391
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69931398,
+    "txHash": "0x3f3f3ebdebeacbe80ac5cffae9bc672b1acb0efad239c0079854f1f67d24db0d",
+    "lastRewardBlock": "69931398",
+    "accRewardPerShare": "80629391790",
+    "formatted": {
+      "lastRewardBlock": "69931398",
+      "accRewardPerShare": "0.00000008062939179",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:43.599Z",
+    "indexedAt": 1759907083599
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69931487,
+    "txHash": "0x1d8a9f47495f40f9ba6d78534b71c5ad2031c8bac44ef3539bce029c7ee10867",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "311930166000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "0.311930166",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:43.392Z",
+    "indexedAt": 1759907083392
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69931487,
+    "txHash": "0x1d8a9f47495f40f9ba6d78534b71c5ad2031c8bac44ef3539bce029c7ee10867",
+    "lastRewardBlock": "69931487",
+    "accRewardPerShare": "80733368512",
+    "formatted": {
+      "lastRewardBlock": "69931487",
+      "accRewardPerShare": "0.000000080733368512",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:43.601Z",
+    "indexedAt": 1759907083601
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69932023,
+    "txHash": "0xc84b98bcd18f6bcc1ffba7df0c10fd78fcbeb7a96453a91393bb5d7684654584",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "48000000000000000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "48000.0",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:46.651Z",
+    "indexedAt": 1759907146651
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69932108,
+    "txHash": "0x330603bac97cc75fb6c52161266ed1f61acf29dedf99f87a9f2e8b16fac94ce8",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "1200000000000000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "1200.0",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:46.653Z",
+    "indexedAt": 1759907146653
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69932108,
+    "txHash": "0x330603bac97cc75fb6c52161266ed1f61acf29dedf99f87a9f2e8b16fac94ce8",
+    "lastRewardBlock": "69932108",
+    "accRewardPerShare": "4088685347",
+    "formatted": {
+      "lastRewardBlock": "69932108",
+      "accRewardPerShare": "0.000000004088685347",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:47.223Z",
+    "indexedAt": 1759907147223
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69932228,
+    "txHash": "0x13afea7ed2da51fd7d8c5f7c417b1435e490bd9b1e6ea8591cfd86798b123a23",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "1200000000000000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "1200.0",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:46.654Z",
+    "indexedAt": 1759907146654
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69932228,
+    "txHash": "0x13afea7ed2da51fd7d8c5f7c417b1435e490bd9b1e6ea8591cfd86798b123a23",
+    "lastRewardBlock": "69932228",
+    "accRewardPerShare": "9720160143",
+    "formatted": {
+      "lastRewardBlock": "69932228",
+      "accRewardPerShare": "0.000000009720160143",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:47.224Z",
+    "indexedAt": 1759907147224
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69932467,
+    "txHash": "0xf534d9eba49a4feb1a58c56badcf8ca31b822e81f22fe1468e04c6d00770f570",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "1400000000000000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "1400.0",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:46.656Z",
+    "indexedAt": 1759907146656
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69932467,
+    "txHash": "0xf534d9eba49a4feb1a58c56badcf8ca31b822e81f22fe1468e04c6d00770f570",
+    "lastRewardBlock": "69932467",
+    "accRewardPerShare": "20669132669",
+    "formatted": {
+      "lastRewardBlock": "69932467",
+      "accRewardPerShare": "0.000000020669132669",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:47.226Z",
+    "indexedAt": 1759907147226
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69932535,
+    "txHash": "0x399725869b6d0ed460d7664a8c2cc49fc5ca5c61a786231905cf2fafe100c3f1",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "1182159189257000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "1182.159189257",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:46.901Z",
+    "indexedAt": 1759907146901
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69932535,
+    "txHash": "0x399725869b6d0ed460d7664a8c2cc49fc5ca5c61a786231905cf2fafe100c3f1",
+    "lastRewardBlock": "69932535",
+    "accRewardPerShare": "23700127212",
+    "formatted": {
+      "lastRewardBlock": "69932535",
+      "accRewardPerShare": "0.000000023700127212",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:47.227Z",
+    "indexedAt": 1759907147227
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69933109,
+    "txHash": "0x96b7ab51657bfa423666c8f9deb213716602c7daf4f9c8bdcb578de7f9360dd0",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "1325311278624200000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "1325.3112786242",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:47.637Z",
+    "indexedAt": 1759907147637
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69933109,
+    "txHash": "0x96b7ab51657bfa423666c8f9deb213716602c7daf4f9c8bdcb578de7f9360dd0",
+    "lastRewardBlock": "69933109",
+    "accRewardPerShare": "49285287031",
+    "formatted": {
+      "lastRewardBlock": "69933109",
+      "accRewardPerShare": "0.000000049285287031",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:47.918Z",
+    "indexedAt": 1759907147918
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69934076,
+    "txHash": "0x04e980886ac129ddaefbcc0e367c2f54494d5da8cd7395e0590316ea5d0dd692",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "25000000000000000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "25000.0",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:47.401Z",
+    "indexedAt": 1759907147401
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69934076,
+    "txHash": "0x04e980886ac129ddaefbcc0e367c2f54494d5da8cd7395e0590316ea5d0dd692",
+    "lastRewardBlock": "69934076",
+    "accRewardPerShare": "92387812372",
+    "formatted": {
+      "lastRewardBlock": "69934076",
+      "accRewardPerShare": "0.000000092387812372",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:47.920Z",
+    "indexedAt": 1759907147920
+  },
+  {
+    "eventName": "EmergencyWithdraw",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69934115,
+    "txHash": "0x2412207892b378c43c208265556db52fea492c6da809b9bd2a991b5f92fffcab",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "51800000000000000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "51800.0",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:47.779Z",
+    "indexedAt": 1759907147779
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69934300,
+    "txHash": "0xb04e4f0f9f9962b81c7467aa20b7c2e723dee88499ea242dcfd303eb3611abf6",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "517194645325000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "517.194645325",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:47.639Z",
+    "indexedAt": 1759907147639
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69934300,
+    "txHash": "0xb04e4f0f9f9962b81c7467aa20b7c2e723dee88499ea242dcfd303eb3611abf6",
+    "lastRewardBlock": "69934300",
+    "accRewardPerShare": "113075598185",
+    "formatted": {
+      "lastRewardBlock": "69934300",
+      "accRewardPerShare": "0.000000113075598185",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:47.921Z",
+    "indexedAt": 1759907147921
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69934800,
+    "txHash": "0x2b9f135c3e1b3d656799885edbe26daf2d35f6362bea01f6470345e8f946fb88",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "5000000000000000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "5000.0",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:47.402Z",
+    "indexedAt": 1759907147402
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69934800,
+    "txHash": "0x2b9f135c3e1b3d656799885edbe26daf2d35f6362bea01f6470345e8f946fb88",
+    "lastRewardBlock": "69934800",
+    "accRewardPerShare": "159253691518",
+    "formatted": {
+      "lastRewardBlock": "69934800",
+      "accRewardPerShare": "0.000000159253691518",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:47.922Z",
+    "indexedAt": 1759907147922
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69934838,
+    "txHash": "0x48078e5954bb16b2bdf924f721bfce8b446635712dfe3c98708c5c9f1ce626a7",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "1242190710635000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "1242.190710635",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:47.640Z",
+    "indexedAt": 1759907147640
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69934838,
+    "txHash": "0x48078e5954bb16b2bdf924f721bfce8b446635712dfe3c98708c5c9f1ce626a7",
+    "lastRewardBlock": "69934838",
+    "accRewardPerShare": "162178304095",
+    "formatted": {
+      "lastRewardBlock": "69934838",
+      "accRewardPerShare": "0.000000162178304095",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:47.923Z",
+    "indexedAt": 1759907147923
+  },
+  {
+    "eventName": "Unstaked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69935250,
+    "txHash": "0xcf5e7cdaf40b386711167564a9958ee47853f4dffed3c3e14bd27ad7ad80ca5e",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "2500000000000000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "2500.0",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:48.221Z",
+    "indexedAt": 1759907148221
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69935250,
+    "txHash": "0xcf5e7cdaf40b386711167564a9958ee47853f4dffed3c3e14bd27ad7ad80ca5e",
+    "lastRewardBlock": "69935250",
+    "accRewardPerShare": "193887261517",
+    "formatted": {
+      "lastRewardBlock": "69935250",
+      "accRewardPerShare": "0.000000193887261517",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:48.563Z",
+    "indexedAt": 1759907148563
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69935363,
+    "txHash": "0x9bccc9eb143bdbfc51f6b6db2c6b5ec4027d4a1f13e95212df77a9debca120fb",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "100000000000000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "100.0",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:48.125Z",
+    "indexedAt": 1759907148125
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69935363,
+    "txHash": "0x9bccc9eb143bdbfc51f6b6db2c6b5ec4027d4a1f13e95212df77a9debca120fb",
+    "lastRewardBlock": "69935363",
+    "accRewardPerShare": "203374760692",
+    "formatted": {
+      "lastRewardBlock": "69935363",
+      "accRewardPerShare": "0.000000203374760692",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:48.564Z",
+    "indexedAt": 1759907148564
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69936759,
+    "txHash": "0xf64295d3d06f8c7037acb8e7d8718cc8b6e0ffc51a2bd84f73fd78c01493d88d",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "4435405864631700000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "4435.4058646317",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:48.324Z",
+    "indexedAt": 1759907148324
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69936759,
+    "txHash": "0xf64295d3d06f8c7037acb8e7d8718cc8b6e0ffc51a2bd84f73fd78c01493d88d",
+    "lastRewardBlock": "69936759",
+    "accRewardPerShare": "320158489484",
+    "formatted": {
+      "lastRewardBlock": "69936759",
+      "accRewardPerShare": "0.000000320158489484",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:48.565Z",
+    "indexedAt": 1759907148565
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69936866,
+    "txHash": "0xc06466e2992119c1185876d43fb7817db1672b205bee72d7bdab70c917db0dbe",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "18852498498000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "18.852498498",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:44.552Z",
+    "indexedAt": 1759907084552
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69936866,
+    "txHash": "0xc06466e2992119c1185876d43fb7817db1672b205bee72d7bdab70c917db0dbe",
+    "lastRewardBlock": "69936866",
+    "accRewardPerShare": "87017534678",
+    "formatted": {
+      "lastRewardBlock": "69936866",
+      "accRewardPerShare": "0.000000087017534678",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:44.777Z",
+    "indexedAt": 1759907084777
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69937398,
+    "txHash": "0x01245c81f2367f825d4c61e06f14cc0a69797c2f9d452e7d675ce7722f4a6c17",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "8000000000000000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "8000.0",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:48.755Z",
+    "indexedAt": 1759907148755
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69937398,
+    "txHash": "0x01245c81f2367f825d4c61e06f14cc0a69797c2f9d452e7d675ce7722f4a6c17",
+    "lastRewardBlock": "69937398",
+    "accRewardPerShare": "373614651875",
+    "formatted": {
+      "lastRewardBlock": "69937398",
+      "accRewardPerShare": "0.000000373614651875",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:49.185Z",
+    "indexedAt": 1759907149185
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69938897,
+    "txHash": "0x156d6e906ae84b2dc01b4d2c696b5710940e853cca0d93738555f24a8ef8107c",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "777763616928000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "777.763616928",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:48.968Z",
+    "indexedAt": 1759907148968
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69938897,
+    "txHash": "0x156d6e906ae84b2dc01b4d2c696b5710940e853cca0d93738555f24a8ef8107c",
+    "lastRewardBlock": "69938897",
+    "accRewardPerShare": "470835103991",
+    "formatted": {
+      "lastRewardBlock": "69938897",
+      "accRewardPerShare": "0.000000470835103991",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:49.187Z",
+    "indexedAt": 1759907149187
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69941373,
+    "txHash": "0x7f11f7e3b749e7c5ba7806383cf384f3756109bc85bb428ed577128d02130682",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "1284684933632000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "1284.684933632",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:50.245Z",
+    "indexedAt": 1759907150245
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69941373,
+    "txHash": "0x7f11f7e3b749e7c5ba7806383cf384f3756109bc85bb428ed577128d02130682",
+    "lastRewardBlock": "69941373",
+    "accRewardPerShare": "631420720695",
+    "formatted": {
+      "lastRewardBlock": "69941373",
+      "accRewardPerShare": "0.000000631420720695",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:50.466Z",
+    "indexedAt": 1759907150466
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69945718,
+    "txHash": "0x74ff7534d61aaed6206c475d0769deaebb95e502b9e92ac97728a9afc012e78a",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "2254424893632000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "2254.424893632",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:51.642Z",
+    "indexedAt": 1759907151642
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69945718,
+    "txHash": "0x74ff7534d61aaed6206c475d0769deaebb95e502b9e92ac97728a9afc012e78a",
+    "lastRewardBlock": "69945718",
+    "accRewardPerShare": "913223832399",
+    "formatted": {
+      "lastRewardBlock": "69945718",
+      "accRewardPerShare": "0.000000913223832399",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:51.890Z",
+    "indexedAt": 1759907151890
+  },
+  {
+    "eventName": "Unstaked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69945733,
+    "txHash": "0x4379cdfc5d498fe19b478b1f1baa603ca8a86da976a981f0dfd336f7c20f077a",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "2000000000000000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "2000.0",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:51.529Z",
+    "indexedAt": 1759907151529
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69945733,
+    "txHash": "0x4379cdfc5d498fe19b478b1f1baa603ca8a86da976a981f0dfd336f7c20f077a",
+    "lastRewardBlock": "69945733",
+    "accRewardPerShare": "914196685488",
+    "formatted": {
+      "lastRewardBlock": "69945733",
+      "accRewardPerShare": "0.000000914196685488",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:51.891Z",
+    "indexedAt": 1759907151891
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69945744,
+    "txHash": "0xa1b4f7c09e9110fc54fa0b6b1ad3b744a9815b5a5f8e597f387254a2116ecd39",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "1000000000000000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "1000.0",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:51.410Z",
+    "indexedAt": 1759907151410
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69945744,
+    "txHash": "0xa1b4f7c09e9110fc54fa0b6b1ad3b744a9815b5a5f8e597f387254a2116ecd39",
+    "lastRewardBlock": "69945744",
+    "accRewardPerShare": "914952576896",
+    "formatted": {
+      "lastRewardBlock": "69945744",
+      "accRewardPerShare": "0.000000914952576896",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:51.893Z",
+    "indexedAt": 1759907151893
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69946795,
+    "txHash": "0x216787eabf8d6c27d25c16240c5f977d5c4b0fe853cf789249ea98fc94894cd6",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "503260705891000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "503.260705891",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:51.644Z",
+    "indexedAt": 1759907151644
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69946795,
+    "txHash": "0x216787eabf8d6c27d25c16240c5f977d5c4b0fe853cf789249ea98fc94894cd6",
+    "lastRewardBlock": "69946795",
+    "accRewardPerShare": "985087224429",
+    "formatted": {
+      "lastRewardBlock": "69946795",
+      "accRewardPerShare": "0.000000985087224429",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:05:51.895Z",
+    "indexedAt": 1759907151895
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69947139,
+    "txHash": "0xc6d0b58308458123468d79899337f2c729c7402de1676b7c9c165f516706f85a",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "36005152833000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "36.005152833",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:48.567Z",
+    "indexedAt": 1759907088567
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69947139,
+    "txHash": "0xc6d0b58308458123468d79899337f2c729c7402de1676b7c9c165f516706f85a",
+    "lastRewardBlock": "69947139",
+    "accRewardPerShare": "99019252289",
+    "formatted": {
+      "lastRewardBlock": "69947139",
+      "accRewardPerShare": "0.000000099019252289",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:48.843Z",
+    "indexedAt": 1759907088843
+  },
+  {
+    "eventName": "PoolCreated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 69947599,
+    "txHash": "0x883d5b8cedbe7fcd1acbd40482a81ed62e0cc3dfa5265046ffcd965c66cc182b",
+    "poolAddress": "0x2b2962ef7853a0Be24155c4F4e3b75058071f94F",
+    "creator": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "stakingToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+    "rewardToken": "0xB8d7710f7d8349A506b75dD184F05777c82dAd0C",
+    "rewardPerBlock": "1473666666666666",
+    "startBlock": "69948555",
+    "endBlock": "72948555",
+    "poolInfo": {
+      "stakingToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "rewardToken": "0xB8d7710f7d8349A506b75dD184F05777c82dAd0C",
+      "totalStaked": "321328370437561611496455",
+      "rewardPerBlock": "1473666666666666",
+      "startBlock": "69948555",
+      "endBlock": "72948555",
+      "lastRewardBlock": "69949926",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "ORDER/ARENA Staking Pool",
+      "poolDescription": "You can earn some ARENA by Staking Orders.",
+      "stakingSymbol": "ORDER",
+      "rewardSymbol": "ARENA",
+      "stakingLogo": "https://static.starsarena.com/uploads/a99c28dd-fd47-42da-b424-8e59a3f33aa11746667360123.jpeg",
+      "rewardLogo": "https://static.starsarena.com/uploads/95dc787e-19e4-3cc5-7a2b-1ec4c80f02531747905925081.png"
+    },
+    "stakingTokenInfo": {
+      "address": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "name": "Pyramid LiquidityOrder",
+      "symbol": "ORDER",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "rewardTokenInfo": {
+      "address": "0xB8d7710f7d8349A506b75dD184F05777c82dAd0C",
+      "name": "ArenaToken",
+      "symbol": "ARENA",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "formatted": {
+      "poolAddress": "0x2b29...f94F",
+      "creator": "0x3fa6...8C83",
+      "stakingToken": "0x1BEd...8180",
+      "rewardToken": "0xB8d7...Ad0C",
+      "rewardPerBlock": "0.001473666666666666",
+      "startBlock": "69948555",
+      "endBlock": "72948555",
+      "poolName": "ORDER/ARENA Staking Pool",
+      "stakingSymbol": "ORDER",
+      "rewardSymbol": "ARENA",
+      "totalStaked": "321328.370437561611496455"
+    },
+    "timestamp": "2025-10-08T07:04:18.000Z",
+    "indexedAt": 1759907058000
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x2b2962ef7853a0Be24155c4F4e3b75058071f94F",
+    "blockNumber": 69948678,
+    "txHash": "0x1b199448e0a3ade807f6473429471f49f8d38d29e99211182b3553d9340f0021",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "1000000000000000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "1000.0",
+      "pool": "0x2b29...f94F"
+    },
+    "timestamp": "2025-10-08T07:06:22.506Z",
+    "indexedAt": 1759907182506
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x2b2962ef7853a0Be24155c4F4e3b75058071f94F",
+    "blockNumber": 69948772,
+    "txHash": "0x38b98a4e692d9b3a630e6ab69c8e3c0cb5581d2d630d366bd76081d83c134dc1",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "320328370437561611496455",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "320328.370437561611496455",
+      "pool": "0x2b29...f94F"
+    },
+    "timestamp": "2025-10-08T07:06:22.508Z",
+    "indexedAt": 1759907182508
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x2b2962ef7853a0Be24155c4F4e3b75058071f94F",
+    "blockNumber": 69948772,
+    "txHash": "0x38b98a4e692d9b3a630e6ab69c8e3c0cb5581d2d630d366bd76081d83c134dc1",
+    "lastRewardBlock": "69948772",
+    "accRewardPerShare": "138524666",
+    "formatted": {
+      "lastRewardBlock": "69948772",
+      "accRewardPerShare": "0.000000000138524666",
+      "pool": "0x2b29...f94F"
+    },
+    "timestamp": "2025-10-08T07:06:22.912Z",
+    "indexedAt": 1759907182912
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x2b2962ef7853a0Be24155c4F4e3b75058071f94F",
+    "blockNumber": 69948832,
+    "txHash": "0x5a97eb7cb6361e6d9aea479a559990c9ad364e332726194cfb025df03821cda4",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "226944593693303829",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "0.226944593693303829",
+      "pool": "0x2b29...f94F"
+    },
+    "timestamp": "2025-10-08T07:06:22.702Z",
+    "indexedAt": 1759907182702
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x2b2962ef7853a0Be24155c4F4e3b75058071f94F",
+    "blockNumber": 69948832,
+    "txHash": "0x5a97eb7cb6361e6d9aea479a559990c9ad364e332726194cfb025df03821cda4",
+    "lastRewardBlock": "69948832",
+    "accRewardPerShare": "138799836",
+    "formatted": {
+      "lastRewardBlock": "69948832",
+      "accRewardPerShare": "0.000000000138799836",
+      "pool": "0x2b29...f94F"
+    },
+    "timestamp": "2025-10-08T07:06:22.913Z",
+    "indexedAt": 1759907182913
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x2b2962ef7853a0Be24155c4F4e3b75058071f94F",
+    "blockNumber": 69949926,
+    "txHash": "0x6dbecda36bed390d9e4e9fc332264e168a2b69f696dfa6f990b493e57fc8b54c",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "1612191193145264747",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "1.612191193145264747",
+      "pool": "0x2b29...f94F"
+    },
+    "timestamp": "2025-10-08T07:06:23.294Z",
+    "indexedAt": 1759907183294
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x2b2962ef7853a0Be24155c4F4e3b75058071f94F",
+    "blockNumber": 69949926,
+    "txHash": "0x6dbecda36bed390d9e4e9fc332264e168a2b69f696dfa6f990b493e57fc8b54c",
+    "lastRewardBlock": "69949926",
+    "accRewardPerShare": "143817106",
+    "formatted": {
+      "lastRewardBlock": "69949926",
+      "accRewardPerShare": "0.000000000143817106",
+      "pool": "0x2b29...f94F"
+    },
+    "timestamp": "2025-10-08T07:06:23.507Z",
+    "indexedAt": 1759907183507
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69952437,
+    "txHash": "0x2b20c987d9bc6bdc8d54cdb920521804f991c799e11a308ee765e7329bf56a00",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "18568606998000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "18.568606998",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:49.822Z",
+    "indexedAt": 1759907089822
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69952437,
+    "txHash": "0x2b20c987d9bc6bdc8d54cdb920521804f991c799e11a308ee765e7329bf56a00",
+    "lastRewardBlock": "69952437",
+    "accRewardPerShare": "105208787955",
+    "formatted": {
+      "lastRewardBlock": "69952437",
+      "accRewardPerShare": "0.000000105208787955",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:04:50.003Z",
+    "indexedAt": 1759907090003
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x2b2962ef7853a0Be24155c4F4e3b75058071f94F",
+    "blockNumber": 69958961,
+    "txHash": "0xa513cd6e1876ba30ada87decd3639ed7ebd88c57a2da10b2dfbc34c4af9e2aa1",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "13314578102540954374",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "13.314578102540954374",
+      "pool": "0x2b29...f94F"
+    },
+    "timestamp": "2025-10-08T07:11:46.722Z",
+    "indexedAt": 1759907506722
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x2b2962ef7853a0Be24155c4F4e3b75058071f94F",
+    "blockNumber": 69958961,
+    "txHash": "0xa513cd6e1876ba30ada87decd3639ed7ebd88c57a2da10b2dfbc34c4af9e2aa1",
+    "lastRewardBlock": "69958961",
+    "accRewardPerShare": "185253155",
+    "formatted": {
+      "lastRewardBlock": "69958961",
+      "accRewardPerShare": "0.000000000185253155",
+      "pool": "0x2b29...f94F"
+    },
+    "timestamp": "2025-10-08T07:11:47.036Z",
+    "indexedAt": 1759907507036
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69959351,
+    "txHash": "0x3a2abc75b98f1631d29142fb04a896f19f034d45d5976ade9485899961a34a0a",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "5865151704118000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "5865.151704118",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:26:28.535Z",
+    "indexedAt": 1759908388535
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69959351,
+    "txHash": "0x3a2abc75b98f1631d29142fb04a896f19f034d45d5976ade9485899961a34a0a",
+    "lastRewardBlock": "69959351",
+    "accRewardPerShare": "1822966039303",
+    "formatted": {
+      "lastRewardBlock": "69959351",
+      "accRewardPerShare": "0.000001822966039303",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:26:28.673Z",
+    "indexedAt": 1759908388673
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69960041,
+    "txHash": "0x7944f39a65cfa941b6354e75cbe366ed1f785db3fcb147bfeaf7c189f2353d9b",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "26650752666000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "26.650752666",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:37:09.114Z",
+    "indexedAt": 1759909029114
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69960041,
+    "txHash": "0x7944f39a65cfa941b6354e75cbe366ed1f785db3fcb147bfeaf7c189f2353d9b",
+    "lastRewardBlock": "69960041",
+    "accRewardPerShare": "114092372177",
+    "formatted": {
+      "lastRewardBlock": "69960041",
+      "accRewardPerShare": "0.000000114092372177",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T07:37:09.366Z",
+    "indexedAt": 1759909029366
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69960056,
+    "txHash": "0x7afbe3684ced2976b2302e7bdd255a78820c5d5a2355f138bc292b5e09523158",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "329319206069000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "329.319206069",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:51:30.545Z",
+    "indexedAt": 1759909890545
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69960056,
+    "txHash": "0x7afbe3684ced2976b2302e7bdd255a78820c5d5a2355f138bc292b5e09523158",
+    "lastRewardBlock": "69960056",
+    "accRewardPerShare": "1870011640170",
+    "formatted": {
+      "lastRewardBlock": "69960056",
+      "accRewardPerShare": "0.00000187001164017",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:51:30.734Z",
+    "indexedAt": 1759909890734
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69960476,
+    "txHash": "0xe474451390f9b870d4a2ff759c2b95bf957fcb1f7f19ed6ea99ea90f59d0fdee",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "196190165311000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "196.190165311",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:51:30.547Z",
+    "indexedAt": 1759909890547
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69960476,
+    "txHash": "0xe474451390f9b870d4a2ff759c2b95bf957fcb1f7f19ed6ea99ea90f59d0fdee",
+    "lastRewardBlock": "69960476",
+    "accRewardPerShare": "1898038806643",
+    "formatted": {
+      "lastRewardBlock": "69960476",
+      "accRewardPerShare": "0.000001898038806643",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T07:51:30.735Z",
+    "indexedAt": 1759909890735
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69960743,
+    "txHash": "0x25e4b8e1057e8caf7fc336bbcee75306c681c4f8c83c37b5d2bd225149571be2",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "124720890805000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "124.720890805",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T08:13:26.907Z",
+    "indexedAt": 1759911206907
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69960743,
+    "txHash": "0x25e4b8e1057e8caf7fc336bbcee75306c681c4f8c83c37b5d2bd225149571be2",
+    "lastRewardBlock": "69960743",
+    "accRewardPerShare": "1915856076758",
+    "formatted": {
+      "lastRewardBlock": "69960743",
+      "accRewardPerShare": "0.000001915856076758",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T08:13:27.055Z",
+    "indexedAt": 1759911207055
+  },
+  {
+    "eventName": "PoolCreated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 69961156,
+    "txHash": "0x01a0bf2c61e15ae796b38ced2120689391f6af3997c41f9703b8fcd8d47a2f6a",
+    "poolAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "creator": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "stakingToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+    "rewardToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+    "rewardPerBlock": "366666666666666666",
+    "startBlock": "69962126",
+    "endBlock": "72962126",
+    "poolInfo": {
+      "stakingToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "rewardToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "totalStaked": "0",
+      "rewardPerBlock": "366666666666666666",
+      "startBlock": "69962126",
+      "endBlock": "72962126",
+      "lastRewardBlock": "69962126",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "ORDER/ORDER Staking pool",
+      "poolDescription": "order",
+      "stakingSymbol": "ORDER",
+      "rewardSymbol": "ORDER",
+      "stakingLogo": "https://static.starsarena.com/uploads/f60f9c85-5cb5-3da3-9172-2880210f46681746359811581.png",
+      "rewardLogo": "https://static.starsarena.com/uploads/f60f9c85-5cb5-3da3-9172-2880210f46681746359811581.png"
+    },
+    "stakingTokenInfo": {
+      "address": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "name": "Pyramid LiquidityOrder",
+      "symbol": "ORDER",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "rewardTokenInfo": {
+      "address": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "name": "Pyramid LiquidityOrder",
+      "symbol": "ORDER",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "formatted": {
+      "poolAddress": "0xf0cd...978c",
+      "creator": "0x3fa6...8C83",
+      "stakingToken": "0x1BEd...8180",
+      "rewardToken": "0x1BEd...8180",
+      "rewardPerBlock": "0.366666666666666666",
+      "startBlock": "69962126",
+      "endBlock": "72962126",
+      "poolName": "ORDER/ORDER Staking pool",
+      "stakingSymbol": "ORDER",
+      "rewardSymbol": "ORDER",
+      "totalStaked": "0.0"
+    },
+    "timestamp": "2025-10-08T08:12:17.260Z",
+    "indexedAt": 1759911137260
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69962574,
+    "txHash": "0xe1cbe549c28d7c32ee4b9ff5cd47703bbabde74907feea6b85e4f0c653baecd5",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "47413562156508000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "47413.562156508",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T08:44:24.055Z",
+    "indexedAt": 1759913064055
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "blockNumber": 69962574,
+    "txHash": "0xe1cbe549c28d7c32ee4b9ff5cd47703bbabde74907feea6b85e4f0c653baecd5",
+    "lastRewardBlock": "69962574",
+    "accRewardPerShare": "2038041176314",
+    "formatted": {
+      "lastRewardBlock": "69962574",
+      "accRewardPerShare": "0.000002038041176314",
+      "pool": "0xF814...46e6"
+    },
+    "timestamp": "2025-10-08T08:44:24.193Z",
+    "indexedAt": 1759913064193
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69962621,
+    "txHash": "0xe03f8c1163ea5ed3c96c91c14cb3eb4f2ac357be49e91dc58cbf6260151841c3",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "304461366807000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "304.461366807",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T08:43:37.678Z",
+    "indexedAt": 1759913017678
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "blockNumber": 69962621,
+    "txHash": "0xe03f8c1163ea5ed3c96c91c14cb3eb4f2ac357be49e91dc58cbf6260151841c3",
+    "lastRewardBlock": "69962621",
+    "accRewardPerShare": "117106528843",
+    "formatted": {
+      "lastRewardBlock": "69962621",
+      "accRewardPerShare": "0.000000117106528843",
+      "pool": "0x3e0e...0949"
+    },
+    "timestamp": "2025-10-08T08:43:37.852Z",
+    "indexedAt": 1759913017852
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69962751,
+    "txHash": "0x86affc7b65bd0812c60d01a9d8dcde9afa2e917486af3489e8c3de9824d34168",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "147000000000000000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "147000.0",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T08:56:48.208Z",
+    "indexedAt": 1759913808208
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69962770,
+    "txHash": "0x8922dd70bb925a530fb43e4aecdc3efd7cba8f37d7405a23175f9e7b5c815ba0",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "147000000000000000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "147000.0",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T08:56:48.210Z",
+    "indexedAt": 1759913808210
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69962770,
+    "txHash": "0x8922dd70bb925a530fb43e4aecdc3efd7cba8f37d7405a23175f9e7b5c815ba0",
+    "lastRewardBlock": "69962770",
+    "accRewardPerShare": "47392290",
+    "formatted": {
+      "lastRewardBlock": "69962770",
+      "accRewardPerShare": "0.00000000004739229",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T08:56:48.635Z",
+    "indexedAt": 1759913808635
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69962802,
+    "txHash": "0x101afc0425a48e3cf9407367cf8e895ea77695e218494593bc6aa19ee740913d",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "147000000000000000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "147000.0",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T08:56:48.212Z",
+    "indexedAt": 1759913808212
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69962802,
+    "txHash": "0x101afc0425a48e3cf9407367cf8e895ea77695e218494593bc6aa19ee740913d",
+    "lastRewardBlock": "69962802",
+    "accRewardPerShare": "87301587",
+    "formatted": {
+      "lastRewardBlock": "69962802",
+      "accRewardPerShare": "0.000000000087301587",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T08:56:48.636Z",
+    "indexedAt": 1759913808636
+  },
+  {
+    "eventName": "Unstaked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69962870,
+    "txHash": "0x5f5ac22095b64406951e8b61ae91e9e463f88c75f4f3b4a481235f6db1d67d4e",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "294000000000000000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "294000.0",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T08:56:48.343Z",
+    "indexedAt": 1759913808343
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69962870,
+    "txHash": "0x5f5ac22095b64406951e8b61ae91e9e463f88c75f4f3b4a481235f6db1d67d4e",
+    "lastRewardBlock": "69962870",
+    "accRewardPerShare": "143839757",
+    "formatted": {
+      "lastRewardBlock": "69962870",
+      "accRewardPerShare": "0.000000000143839757",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T08:56:48.638Z",
+    "indexedAt": 1759913808638
+  },
+  {
+    "eventName": "Unstaked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69962907,
+    "txHash": "0x8b633a4ef109d3b9a1c314aeb071ebe597e470165fc135d9082f20b3dee0fad1",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "147000000000000000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "147000.0",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T08:56:48.345Z",
+    "indexedAt": 1759913808345
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69962907,
+    "txHash": "0x8b633a4ef109d3b9a1c314aeb071ebe597e470165fc135d9082f20b3dee0fad1",
+    "lastRewardBlock": "69962907",
+    "accRewardPerShare": "236130006",
+    "formatted": {
+      "lastRewardBlock": "69962907",
+      "accRewardPerShare": "0.000000000236130006",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T08:56:48.640Z",
+    "indexedAt": 1759913808640
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69963005,
+    "txHash": "0x1e626fc36cd43957b12b1d974b1198bf6e093da59260cd19a4dbd8cf824cec9e",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "100000000000000000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "100000.0",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T08:56:48.770Z",
+    "indexedAt": 1759913808770
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69963007,
+    "txHash": "0x87196aaeb87e06f2073ce1df6390ca306619b457c6d9fbe710b8246e83204567",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "100000000000000000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "100000.0",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T08:56:48.772Z",
+    "indexedAt": 1759913808772
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69963007,
+    "txHash": "0x87196aaeb87e06f2073ce1df6390ca306619b457c6d9fbe710b8246e83204567",
+    "lastRewardBlock": "69963007",
+    "accRewardPerShare": "243463339",
+    "formatted": {
+      "lastRewardBlock": "69963007",
+      "accRewardPerShare": "0.000000000243463339",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T08:56:49.151Z",
+    "indexedAt": 1759913809151
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69963015,
+    "txHash": "0xa1d75eda08e1d37d9146ea4b85cad150634ebff267b3deb895823ca55d9e4c0f",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "100000000000000000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "100000.0",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T08:56:48.774Z",
+    "indexedAt": 1759913808774
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69963015,
+    "txHash": "0xa1d75eda08e1d37d9146ea4b85cad150634ebff267b3deb895823ca55d9e4c0f",
+    "lastRewardBlock": "69963015",
+    "accRewardPerShare": "258130005",
+    "formatted": {
+      "lastRewardBlock": "69963015",
+      "accRewardPerShare": "0.000000000258130005",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T08:56:49.153Z",
+    "indexedAt": 1759913809153
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69963114,
+    "txHash": "0xd91db88b498098d7409ad74cf8f9ef344444e948edffb05e773d938a621f46d6",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "1000000000000000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "1000.0",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T09:11:44.713Z",
+    "indexedAt": 1759914704713
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69963114,
+    "txHash": "0xd91db88b498098d7409ad74cf8f9ef344444e948edffb05e773d938a621f46d6",
+    "lastRewardBlock": "69963114",
+    "accRewardPerShare": "379130004",
+    "formatted": {
+      "lastRewardBlock": "69963114",
+      "accRewardPerShare": "0.000000000379130004",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T09:11:45.116Z",
+    "indexedAt": 1759914705116
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69963115,
+    "txHash": "0x557432c44361b2b1c4209eb3685940008912716c8cdad0dab1546e4bf45b076a",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "1000000000000000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "1000.0",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T09:11:44.715Z",
+    "indexedAt": 1759914704715
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69963115,
+    "txHash": "0x557432c44361b2b1c4209eb3685940008912716c8cdad0dab1546e4bf45b076a",
+    "lastRewardBlock": "69963115",
+    "accRewardPerShare": "380348165",
+    "formatted": {
+      "lastRewardBlock": "69963115",
+      "accRewardPerShare": "0.000000000380348165",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T09:11:45.118Z",
+    "indexedAt": 1759914705118
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69963155,
+    "txHash": "0x8bdc400ef7cdcc53ceea75f92b926a364784490dfa6e5651fbf0a7852a167d20",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "1000000000000000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "1000.0",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T09:11:44.716Z",
+    "indexedAt": 1759914704716
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69963155,
+    "txHash": "0x8bdc400ef7cdcc53ceea75f92b926a364784490dfa6e5651fbf0a7852a167d20",
+    "lastRewardBlock": "69963155",
+    "accRewardPerShare": "428913286",
+    "formatted": {
+      "lastRewardBlock": "69963155",
+      "accRewardPerShare": "0.000000000428913286",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T09:11:45.120Z",
+    "indexedAt": 1759914705120
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69963226,
+    "txHash": "0x6e129364fb6df912705c3d9a23dfea7788b3f8a9d53b0172932fc5c77c3a8ef1",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "100000000000000000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "100000.0",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T09:11:44.718Z",
+    "indexedAt": 1759914704718
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69963226,
+    "txHash": "0x6e129364fb6df912705c3d9a23dfea7788b3f8a9d53b0172932fc5c77c3a8ef1",
+    "lastRewardBlock": "69963226",
+    "accRewardPerShare": "514831877",
+    "formatted": {
+      "lastRewardBlock": "69963226",
+      "accRewardPerShare": "0.000000000514831877",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T09:11:45.121Z",
+    "indexedAt": 1759914705121
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69963373,
+    "txHash": "0x6aee98d05d0bc20d58e67f8f0d68b88ac7facd836e3d481317c0ee6f687ef5d1",
+    "lastRewardBlock": "69963373",
+    "accRewardPerShare": "648578775",
+    "formatted": {
+      "lastRewardBlock": "69963373",
+      "accRewardPerShare": "0.000000000648578775",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T09:11:45.123Z",
+    "indexedAt": 1759914705123
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69963991,
+    "txHash": "0xef28437d2c5248529d10ad1313a77bc2189e66d00a68f7c4b9bfccfe890491fa",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "132428469186000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "132.428469186",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T09:29:10.778Z",
+    "indexedAt": 1759915750778
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69963991,
+    "txHash": "0xef28437d2c5248529d10ad1313a77bc2189e66d00a68f7c4b9bfccfe890491fa",
+    "lastRewardBlock": "69963991",
+    "accRewardPerShare": "1210861653",
+    "formatted": {
+      "lastRewardBlock": "69963991",
+      "accRewardPerShare": "0.000000001210861653",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T09:29:11.064Z",
+    "indexedAt": 1759915751064
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69978457,
+    "txHash": "0x3393d5db158206b499d3e971b00d6375f1bc05b28af33f0c7647c043c2b7d9b9",
+    "user": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "amount": "4234840842339000000000",
+    "formatted": {
+      "user": "0x3fa6...8C83",
+      "amount": "4234.840842339",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T18:31:13.917Z",
+    "indexedAt": 1759948273917
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "blockNumber": 69978457,
+    "txHash": "0x3393d5db158206b499d3e971b00d6375f1bc05b28af33f0c7647c043c2b7d9b9",
+    "lastRewardBlock": "69978457",
+    "accRewardPerShare": "14372648253",
+    "formatted": {
+      "lastRewardBlock": "69978457",
+      "accRewardPerShare": "0.000000014372648253",
+      "pool": "0xf0cd...978c"
+    },
+    "timestamp": "2025-10-08T18:31:14.191Z",
+    "indexedAt": 1759948274191
+  },
+  {
+    "eventName": "PoolCreated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 69988655,
+    "txHash": "0x8f8ca34238e0a5a536dfdd8d9da43f17896abe0896c3a3ce4cfb703171206d91",
+    "poolAddress": "0x8CAE9D2Dc3a4586C9EDC9788414079198191C144",
+    "creator": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "stakingToken": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+    "rewardToken": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+    "rewardPerBlock": "366666666666666666",
+    "startBlock": "69989624",
+    "endBlock": "72989624",
+    "poolInfo": {
+      "stakingToken": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+      "rewardToken": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+      "totalStaked": "0",
+      "rewardPerBlock": "366666666666666666",
+      "startBlock": "69989624",
+      "endBlock": "72989624",
+      "lastRewardBlock": "69989624",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "XO",
+      "poolDescription": "XO",
+      "stakingSymbol": "XO",
+      "rewardSymbol": "XO",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F259fc7af-b7ed-e89c-d30b-48618a71d0321759948156257.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F259fc7af-b7ed-e89c-d30b-48618a71d0321759948156257.jpeg&w=1920&q=75"
+    },
+    "stakingTokenInfo": {
+      "address": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+      "name": "Trader XO",
+      "symbol": "XO",
+      "decimals": 18,
+      "totalSupply": "376677728000000000000000000"
+    },
+    "rewardTokenInfo": {
+      "address": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+      "name": "Trader XO",
+      "symbol": "XO",
+      "decimals": 18,
+      "totalSupply": "376677728000000000000000000"
+    },
+    "formatted": {
+      "poolAddress": "0x8CAE...C144",
+      "creator": "0x3fa6...8C83",
+      "stakingToken": "0xf76e...33C3",
+      "rewardToken": "0xf76e...33C3",
+      "rewardPerBlock": "0.366666666666666666",
+      "startBlock": "69989624",
+      "endBlock": "72989624",
+      "poolName": "XO",
+      "stakingSymbol": "XO",
+      "rewardSymbol": "XO",
+      "totalStaked": "0.0"
+    },
+    "timestamp": "2025-10-08T20:24:06.851Z",
+    "indexedAt": 1759955046851
+  },
+  {
+    "eventName": "PoolCreated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 69993574,
+    "txHash": "0x7e2c67579f977090164c1fdd730a715f8b9f7413ea2e3e284fea747fef8bc718",
+    "poolAddress": "0x5114a2077307ddd3341c5208f2be8a793d711CE7",
+    "creator": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "stakingToken": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+    "rewardToken": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+    "rewardPerBlock": "336666666666666666",
+    "startBlock": "69994469",
+    "endBlock": "72994469",
+    "poolInfo": {
+      "stakingToken": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+      "rewardToken": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+      "totalStaked": "0",
+      "rewardPerBlock": "336666666666666666",
+      "startBlock": "69994469",
+      "endBlock": "72994469",
+      "lastRewardBlock": "69994469",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "OXOXOX",
+      "poolDescription": "OXOXOX",
+      "stakingSymbol": "oxox",
+      "rewardSymbol": "oxox",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F259fc7af-b7ed-e89c-d30b-48618a71d0321759948156257.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F259fc7af-b7ed-e89c-d30b-48618a71d0321759948156257.jpeg&w=1920&q=75"
+    },
+    "stakingTokenInfo": {
+      "address": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+      "name": "Trader XO",
+      "symbol": "XO",
+      "decimals": 18,
+      "totalSupply": "376677728000000000000000000"
+    },
+    "rewardTokenInfo": {
+      "address": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+      "name": "Trader XO",
+      "symbol": "XO",
+      "decimals": 18,
+      "totalSupply": "376677728000000000000000000"
+    },
+    "formatted": {
+      "poolAddress": "0x5114...1CE7",
+      "creator": "0x3fa6...8C83",
+      "stakingToken": "0xf76e...33C3",
+      "rewardToken": "0xf76e...33C3",
+      "rewardPerBlock": "0.336666666666666666",
+      "startBlock": "69994469",
+      "endBlock": "72994469",
+      "poolName": "OXOXOX",
+      "stakingSymbol": "XO",
+      "rewardSymbol": "XO",
+      "totalStaked": "0.0"
+    },
+    "timestamp": "2025-10-08T22:07:56.399Z",
+    "indexedAt": 1759961276399
+  },
+  {
+    "eventName": "PoolCreated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 69996159,
+    "txHash": "0x4eef8303d70662f1b0300c7afddcefce93a91d82e8a0a36609a8790202b26bdf",
+    "poolAddress": "0xd5f5dc36E3C12FAce773f51D4cC2Df81b66c2B83",
+    "creator": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "stakingToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+    "rewardToken": "0x34a1D2105dd1b658A48EAD516A9CE3032082799C",
+    "rewardPerBlock": "36333333333333",
+    "startBlock": "69997111",
+    "endBlock": "72997111",
+    "poolInfo": {
+      "stakingToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "rewardToken": "0x34a1D2105dd1b658A48EAD516A9CE3032082799C",
+      "totalStaked": "0",
+      "rewardPerBlock": "36333333333333",
+      "startBlock": "69997111",
+      "endBlock": "72997111",
+      "lastRewardBlock": "69997111",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "GLADIUS STAKING",
+      "poolDescription": "GG",
+      "stakingSymbol": "ORDER",
+      "rewardSymbol": "GLADIUS",
+      "stakingLogo": "https://static.starsarena.com/uploads/a99c28dd-fd47-42da-b424-8e59a3f33aa11746667360123.jpeg",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F2747327d-cc5b-5cb0-02f7-662caf7ae2a51758005626844.jpeg&w=1920&q=75"
+    },
+    "stakingTokenInfo": {
+      "address": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "name": "Pyramid LiquidityOrder",
+      "symbol": "ORDER",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "rewardTokenInfo": {
+      "address": "0x34a1D2105dd1b658A48EAD516A9CE3032082799C",
+      "name": "GLADIUS",
+      "symbol": "GLADIUS",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "formatted": {
+      "poolAddress": "0xd5f5...2B83",
+      "creator": "0x3fa6...8C83",
+      "stakingToken": "0x1BEd...8180",
+      "rewardToken": "0x34a1...799C",
+      "rewardPerBlock": "0.000036333333333333",
+      "startBlock": "69997111",
+      "endBlock": "72997111",
+      "poolName": "GLADIUS STAKING",
+      "stakingSymbol": "ORDER",
+      "rewardSymbol": "GLADIUS",
+      "totalStaked": "0.0"
+    },
+    "timestamp": "2025-10-09T08:41:35.238Z",
+    "indexedAt": 1759999295238
+  },
+  {
+    "eventName": "PoolCreated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 69997531,
+    "txHash": "0xd850b2bf9927cef1716db68eee2925e4306b558ec69dd34e92b76382c4e2b0a8",
+    "poolAddress": "0x598E649d8E0f1fdfD9a16d3578638e94C5b26a7F",
+    "creator": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "stakingToken": "0x34a1D2105dd1b658A48EAD516A9CE3032082799C",
+    "rewardToken": "0xaF59422E22F8F0AD263A48b437785386F7083105",
+    "rewardPerBlock": "50764000000000000",
+    "startBlock": "69998509",
+    "endBlock": "72998509",
+    "poolInfo": {
+      "stakingToken": "0x34a1D2105dd1b658A48EAD516A9CE3032082799C",
+      "rewardToken": "0xaF59422E22F8F0AD263A48b437785386F7083105",
+      "totalStaked": "0",
+      "rewardPerBlock": "50764000000000000",
+      "startBlock": "69998509",
+      "endBlock": "72998509",
+      "lastRewardBlock": "69998509",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "GLADIUS STAKING",
+      "poolDescription": "GG",
+      "stakingSymbol": "GLADIUS",
+      "rewardSymbol": "KEK",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F2747327d-cc5b-5cb0-02f7-662caf7ae2a51758005626844.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F643a5363-1a68-19b5-b2e0-4114eaf55f211749744902800.jpeg&w=1920&q=75"
+    },
+    "stakingTokenInfo": {
+      "address": "0x34a1D2105dd1b658A48EAD516A9CE3032082799C",
+      "name": "GLADIUS",
+      "symbol": "GLADIUS",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "rewardTokenInfo": {
+      "address": "0xaF59422E22F8F0AD263A48b437785386F7083105",
+      "name": "KEK ON AVAX",
+      "symbol": "KEK",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "formatted": {
+      "poolAddress": "0x598E...6a7F",
+      "creator": "0x3fa6...8C83",
+      "stakingToken": "0x34a1...799C",
+      "rewardToken": "0xaF59...3105",
+      "rewardPerBlock": "0.050764",
+      "startBlock": "69998509",
+      "endBlock": "72998509",
+      "poolName": "GLADIUS STAKING",
+      "stakingSymbol": "GLADIUS",
+      "rewardSymbol": "KEK",
+      "totalStaked": "0.0"
+    },
+    "timestamp": "2025-10-09T08:41:36.100Z",
+    "indexedAt": 1759999296100
+  },
+  {
+    "eventName": "PoolCreated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 69999302,
+    "txHash": "0x419d51544a980997191404d3ad6c71f0340787224056b1f7d296a00d04eb666c",
+    "poolAddress": "0xE6025B0f4193A82e40a1C623e49e4885BE473F40",
+    "creator": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "stakingToken": "0xbe11b494B6D7AB83906b67c3Dd727D9D10E446f8",
+    "rewardToken": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+    "rewardPerBlock": "2259091333333333333",
+    "startBlock": "70000277",
+    "endBlock": "73000277",
+    "poolInfo": {
+      "stakingToken": "0xbe11b494B6D7AB83906b67c3Dd727D9D10E446f8",
+      "rewardToken": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+      "totalStaked": "0",
+      "rewardPerBlock": "2259091333333333333",
+      "startBlock": "70000277",
+      "endBlock": "73000277",
+      "lastRewardBlock": "70000277",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "SLOP-XO",
+      "poolDescription": "SLOP-XO",
+      "stakingSymbol": "SLOP",
+      "rewardSymbol": "XO",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F297496e9-881f-3f93-2ff4-7f48cdb69d7c1759249692039.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F259fc7af-b7ed-e89c-d30b-48618a71d0321759948156257.jpeg&w=1920&q=75"
+    },
+    "stakingTokenInfo": {
+      "address": "0xbe11b494B6D7AB83906b67c3Dd727D9D10E446f8",
+      "name": "SLOP",
+      "symbol": "SLOP",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "rewardTokenInfo": {
+      "address": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+      "name": "Trader XO",
+      "symbol": "XO",
+      "decimals": 18,
+      "totalSupply": "24700915000000000000000000"
+    },
+    "formatted": {
+      "poolAddress": "0xE602...3F40",
+      "creator": "0x3fa6...8C83",
+      "stakingToken": "0xbe11...46f8",
+      "rewardToken": "0xf76e...33C3",
+      "rewardPerBlock": "2.259091333333333333",
+      "startBlock": "70000277",
+      "endBlock": "73000277",
+      "poolName": "SLOP-XO",
+      "stakingSymbol": "SLOP",
+      "rewardSymbol": "XO",
+      "totalStaked": "0.0"
+    },
+    "timestamp": "2025-10-09T08:41:37.761Z",
+    "indexedAt": 1759999297761
+  },
+  {
+    "eventName": "PoolCreated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 70002044,
+    "txHash": "0xc160a43df50cca95073aba495fd8ef86846d43069290e819c71787978730d370",
+    "poolAddress": "0x9ba949F6a1F8C0B36271D472123EbdA83CBcd39d",
+    "creator": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "stakingToken": "0x36A8e1B497dF7AF69D4cF6c970bf87085B826c0f",
+    "rewardToken": "0x18bdD50c0027050FdEAC1Dbb6Db017A6F89B486a",
+    "rewardPerBlock": "16723000000000000",
+    "startBlock": "70002995",
+    "endBlock": "73002995",
+    "poolInfo": {
+      "stakingToken": "0x36A8e1B497dF7AF69D4cF6c970bf87085B826c0f",
+      "rewardToken": "0x18bdD50c0027050FdEAC1Dbb6Db017A6F89B486a",
+      "totalStaked": "1700000000000000000000",
+      "rewardPerBlock": "16723000000000000",
+      "startBlock": "70002995",
+      "endBlock": "73002995",
+      "lastRewardBlock": "70015274",
+      "creator": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072"
+    },
+    "poolMetadata": {
+      "poolName": "DILDO/SHIT STAKING POOL",
+      "poolDescription": "LOL",
+      "stakingSymbol": "DILDO",
+      "rewardSymbol": "SHIT",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2Fefd039de-00cd-f29a-77d3-02edfbf7833c1747123759808.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F817ee7fc-474d-57ce-6950-9f56ffdf793b1747409110815.jpeg&w=1920&q=75"
+    },
+    "stakingTokenInfo": {
+      "address": "0x36A8e1B497dF7AF69D4cF6c970bf87085B826c0f",
+      "name": "Big Green Dildo",
+      "symbol": "DILDO",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "rewardTokenInfo": {
+      "address": "0x18bdD50c0027050FdEAC1Dbb6Db017A6F89B486a",
+      "name": "Shitcoin on Avax",
+      "symbol": "SHIT",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "formatted": {
+      "poolAddress": "0x9ba9...d39d",
+      "creator": "0xec0a...F072",
+      "stakingToken": "0x36A8...6c0f",
+      "rewardToken": "0x18bd...486a",
+      "rewardPerBlock": "0.016723",
+      "startBlock": "70002995",
+      "endBlock": "73002995",
+      "poolName": "DILDO/SHIT STAKING POOL",
+      "stakingSymbol": "DILDO",
+      "rewardSymbol": "SHIT",
+      "totalStaked": "1700.0"
+    },
+    "timestamp": "2025-10-09T08:41:40.162Z",
+    "indexedAt": 1759999300162
+  },
+  {
+    "eventName": "Staked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x9ba949F6a1F8C0B36271D472123EbdA83CBcd39d",
+    "blockNumber": 70003478,
+    "txHash": "0xbf192f696f754fd4daeb12de962a994a560658605c4c14aa34fd3b756784023f",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "1800000000000000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "1800.0",
+      "pool": "0x9ba9...d39d"
+    },
+    "timestamp": "2025-10-09T08:42:34.695Z",
+    "indexedAt": 1759999354695
+  },
+  {
+    "eventName": "Unstaked",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x9ba949F6a1F8C0B36271D472123EbdA83CBcd39d",
+    "blockNumber": 70003536,
+    "txHash": "0x20f3ce744fe71d8cacbedc70493747dd29c836983ad34a2ec75e9587818c8492",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "100000000000000000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "100.0",
+      "pool": "0x9ba9...d39d"
+    },
+    "timestamp": "2025-10-09T08:42:34.950Z",
+    "indexedAt": 1759999354950
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x9ba949F6a1F8C0B36271D472123EbdA83CBcd39d",
+    "blockNumber": 70003536,
+    "txHash": "0x20f3ce744fe71d8cacbedc70493747dd29c836983ad34a2ec75e9587818c8492",
+    "lastRewardBlock": "70003536",
+    "accRewardPerShare": "538852222",
+    "formatted": {
+      "lastRewardBlock": "70003536",
+      "accRewardPerShare": "0.000000000538852222",
+      "pool": "0x9ba9...d39d"
+    },
+    "timestamp": "2025-10-09T08:42:35.727Z",
+    "indexedAt": 1759999355727
+  },
+  {
+    "eventName": "RewardClaimed",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x9ba949F6a1F8C0B36271D472123EbdA83CBcd39d",
+    "blockNumber": 70015274,
+    "txHash": "0xe459632276e3448faa2f8bb31c178dda5fb47f3f37547ebf3fdaba33d0818560",
+    "user": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+    "amount": "197264507998600000000",
+    "formatted": {
+      "user": "0xec0a...F072",
+      "amount": "197.2645079986",
+      "pool": "0x9ba9...d39d"
+    },
+    "timestamp": "2025-10-09T08:42:41.334Z",
+    "indexedAt": 1759999361334
+  },
+  {
+    "eventName": "PoolUpdated",
+    "contractName": "EcosystemStaking",
+    "contractAddress": "0x9ba949F6a1F8C0B36271D472123EbdA83CBcd39d",
+    "blockNumber": 70015274,
+    "txHash": "0xe459632276e3448faa2f8bb31c178dda5fb47f3f37547ebf3fdaba33d0818560",
+    "lastRewardBlock": "70015274",
+    "accRewardPerShare": "116006248692",
+    "formatted": {
+      "lastRewardBlock": "70015274",
+      "accRewardPerShare": "0.000000116006248692",
+      "pool": "0x9ba9...d39d"
+    },
+    "timestamp": "2025-10-09T08:42:41.739Z",
+    "indexedAt": 1759999361739
+  },
+  {
+    "eventName": "PoolCreated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 70018482,
+    "txHash": "0x73655ff430939877fa3b169de10258324e2a7870e0891cc112c7165e37d1e3cb",
+    "poolAddress": "0x7a93a964Ca8281eF0877d041049DD4528447c229",
+    "creator": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "stakingToken": "0x986A82FE6dBC5BF5135E0cF6F72440eA52B9E7d0",
+    "rewardToken": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+    "rewardPerBlock": "1581364000000000000",
+    "startBlock": "70019459",
+    "endBlock": "73019459",
+    "poolInfo": {
+      "stakingToken": "0x986A82FE6dBC5BF5135E0cF6F72440eA52B9E7d0",
+      "rewardToken": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+      "totalStaked": "0",
+      "rewardPerBlock": "1581364000000000000",
+      "startBlock": "70019459",
+      "endBlock": "73019459",
+      "lastRewardBlock": "70019459",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "test1",
+      "poolDescription": "test4",
+      "stakingSymbol": "test44",
+      "rewardSymbol": "test55",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F259fc7af-b7ed-e89c-d30b-48618a71d0321759948156257.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F297496e9-881f-3f93-2ff4-7f48cdb69d7c1759249692039.jpeg&w=1920&q=75"
+    },
+    "stakingTokenInfo": {
+      "address": "0x986A82FE6dBC5BF5135E0cF6F72440eA52B9E7d0",
+      "name": "make avax great again",
+      "symbol": "MAGA",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "rewardTokenInfo": {
+      "address": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+      "name": "Trader XO",
+      "symbol": "XO",
+      "decimals": 18,
+      "totalSupply": "24700915000000000000000000"
+    },
+    "formatted": {
+      "poolAddress": "0x7a93...c229",
+      "creator": "0x3fa6...8C83",
+      "stakingToken": "0x986A...E7d0",
+      "rewardToken": "0xf76e...33C3",
+      "rewardPerBlock": "1.581364",
+      "startBlock": "70019459",
+      "endBlock": "73019459",
+      "poolName": "test1",
+      "stakingSymbol": "MAGA",
+      "rewardSymbol": "XO",
+      "totalStaked": "0.0"
+    },
+    "timestamp": "2025-10-09T09:16:16.004Z",
+    "indexedAt": 1760001376004
+  },
+  {
+    "eventName": "PoolCreated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 70018980,
+    "txHash": "0x0114f19d5c77eda45557f043ce893bf305769b8cf90e6702d2b9980f35a6a6c7",
+    "poolAddress": "0x04b629B6448Dcdb9e289d03eA86AD732eb6EB6B8",
+    "creator": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "stakingToken": "0xB8d7710f7d8349A506b75dD184F05777c82dAd0C",
+    "rewardToken": "0xbe11b494B6D7AB83906b67c3Dd727D9D10E446f8",
+    "rewardPerBlock": "36364333333333333",
+    "startBlock": "70019958",
+    "endBlock": "73019958",
+    "poolInfo": {
+      "stakingToken": "0xB8d7710f7d8349A506b75dD184F05777c82dAd0C",
+      "rewardToken": "0xbe11b494B6D7AB83906b67c3Dd727D9D10E446f8",
+      "totalStaked": "0",
+      "rewardPerBlock": "36364333333333333",
+      "startBlock": "70019958",
+      "endBlock": "73019958",
+      "lastRewardBlock": "70019958",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "XOx",
+      "poolDescription": "xx",
+      "stakingSymbol": "GLADIUS",
+      "rewardSymbol": "ORDER",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2Fcf2495b4-ca19-def0-31a8-78ea746af86a1749209670944.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F2747327d-cc5b-5cb0-02f7-662caf7ae2a51758005626844.jpeg&w=1920&q=75"
+    },
+    "stakingTokenInfo": {
+      "address": "0xB8d7710f7d8349A506b75dD184F05777c82dAd0C",
+      "name": "ArenaToken",
+      "symbol": "ARENA",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "rewardTokenInfo": {
+      "address": "0xbe11b494B6D7AB83906b67c3Dd727D9D10E446f8",
+      "name": "SLOP",
+      "symbol": "SLOP",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "formatted": {
+      "poolAddress": "0x04b6...B6B8",
+      "creator": "0x3fa6...8C83",
+      "stakingToken": "0xB8d7...Ad0C",
+      "rewardToken": "0xbe11...46f8",
+      "rewardPerBlock": "0.036364333333333333",
+      "startBlock": "70019958",
+      "endBlock": "73019958",
+      "poolName": "XOx",
+      "stakingSymbol": "ARENA",
+      "rewardSymbol": "SLOP",
+      "totalStaked": "0.0"
+    },
+    "timestamp": "2025-10-09T09:28:21.504Z",
+    "indexedAt": 1760002101504
+  },
+  {
+    "eventName": "PoolCreated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 70020178,
+    "txHash": "0x623ba622765a1d1456c7d3203503ce5c095386d8b2f955cb3dc3ecce2cea2c3f",
+    "poolAddress": "0xBf8F93D6dc84133d2fC01a561b7fE1930A2aaCb8",
+    "creator": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "stakingToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+    "rewardToken": "0xeA325Ccc2b98DD04d947a9E68C27C8daE6ad0F7E",
+    "rewardPerBlock": "39183666666666666",
+    "startBlock": "70021159",
+    "endBlock": "73021159",
+    "poolInfo": {
+      "stakingToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "rewardToken": "0xeA325Ccc2b98DD04d947a9E68C27C8daE6ad0F7E",
+      "totalStaked": "0",
+      "rewardPerBlock": "39183666666666666",
+      "startBlock": "70021159",
+      "endBlock": "73021159",
+      "lastRewardBlock": "70021159",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "ORDER>SLOP [TEST]",
+      "poolDescription": "mm",
+      "stakingSymbol": "GLADIUS",
+      "rewardSymbol": "AYNE",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2Fcf2495b4-ca19-def0-31a8-78ea746af86a1749209670944.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F2747327d-cc5b-5cb0-02f7-662caf7ae2a51758005626844.jpeg&w=1920&q=75"
+    },
+    "stakingTokenInfo": {
+      "address": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "name": "Pyramid LiquidityOrder",
+      "symbol": "ORDER",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "rewardTokenInfo": {
+      "address": "0xeA325Ccc2b98DD04d947a9E68C27C8daE6ad0F7E",
+      "name": "AreYouNotEntertained",
+      "symbol": "AYNE",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "formatted": {
+      "poolAddress": "0xBf8F...aCb8",
+      "creator": "0x3fa6...8C83",
+      "stakingToken": "0x1BEd...8180",
+      "rewardToken": "0xeA32...0F7E",
+      "rewardPerBlock": "0.039183666666666666",
+      "startBlock": "70021159",
+      "endBlock": "73021159",
+      "poolName": "ORDER>SLOP [TEST]",
+      "stakingSymbol": "ORDER",
+      "rewardSymbol": "AYNE",
+      "totalStaked": "0.0"
+    },
+    "timestamp": "2025-10-09T10:07:26.178Z",
+    "indexedAt": 1760004446178
+  },
+  {
+    "eventName": "PoolCreated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 70035536,
+    "txHash": "0xe8bdf6516935f97b36723ad4dd15799e4a50f4308061cfc1327cd52e8161c991",
+    "poolAddress": "0x1c8F1112Ad877E0e40E64845c4DA80BE084442C7",
+    "creator": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "stakingToken": "0x34a1D2105dd1b658A48EAD516A9CE3032082799C",
+    "rewardToken": "0xB8d7710f7d8349A506b75dD184F05777c82dAd0C",
+    "rewardPerBlock": "10000000000000",
+    "startBlock": "70036506",
+    "endBlock": "73036506",
+    "poolInfo": {
+      "stakingToken": "0x34a1D2105dd1b658A48EAD516A9CE3032082799C",
+      "rewardToken": "0xB8d7710f7d8349A506b75dD184F05777c82dAd0C",
+      "totalStaked": "0",
+      "rewardPerBlock": "10000000000000",
+      "startBlock": "70036506",
+      "endBlock": "73036506",
+      "lastRewardBlock": "70036506",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "0000110000",
+      "poolDescription": "0000110000",
+      "stakingSymbol": "MAGA",
+      "rewardSymbol": "SLOT",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2Fcf2495b4-ca19-def0-31a8-78ea746af86a1749209670944.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F2747327d-cc5b-5cb0-02f7-662caf7ae2a51758005626844.jpeg&w=1920&q=75"
+    },
+    "stakingTokenInfo": {
+      "address": "0x34a1D2105dd1b658A48EAD516A9CE3032082799C",
+      "name": "GLADIUS",
+      "symbol": "GLADIUS",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "rewardTokenInfo": {
+      "address": "0xB8d7710f7d8349A506b75dD184F05777c82dAd0C",
+      "name": "ArenaToken",
+      "symbol": "ARENA",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "formatted": {
+      "poolAddress": "0x1c8F...42C7",
+      "creator": "0x3fa6...8C83",
+      "stakingToken": "0x34a1...799C",
+      "rewardToken": "0xB8d7...Ad0C",
+      "rewardPerBlock": "0.00001",
+      "startBlock": "70036506",
+      "endBlock": "73036506",
+      "poolName": "0000110000",
+      "stakingSymbol": "GLADIUS",
+      "rewardSymbol": "ARENA",
+      "totalStaked": "0.0"
+    },
+    "timestamp": "2025-10-09T20:41:18.919Z",
+    "indexedAt": 1760042478919
+  },
+  {
+    "eventName": "PoolCreated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 70035581,
+    "txHash": "0xf300caf9ab5cddc85a12144e8a9a21eafbdca49935963c058aab1cd6286e7179",
+    "poolAddress": "0x86510771B9AB4a4eFb71482a6cd13E4FD03b581C",
+    "creator": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "stakingToken": "0x34a1D2105dd1b658A48EAD516A9CE3032082799C",
+    "rewardToken": "0xB8d7710f7d8349A506b75dD184F05777c82dAd0C",
+    "rewardPerBlock": "10000000000000",
+    "startBlock": "70036506",
+    "endBlock": "73036506",
+    "poolInfo": {
+      "stakingToken": "0x34a1D2105dd1b658A48EAD516A9CE3032082799C",
+      "rewardToken": "0xB8d7710f7d8349A506b75dD184F05777c82dAd0C",
+      "totalStaked": "0",
+      "rewardPerBlock": "10000000000000",
+      "startBlock": "70036506",
+      "endBlock": "73036506",
+      "lastRewardBlock": "70036506",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "0000110000",
+      "poolDescription": "0000110000",
+      "stakingSymbol": "MAGA",
+      "rewardSymbol": "SLOT",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2Fcf2495b4-ca19-def0-31a8-78ea746af86a1749209670944.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F2747327d-cc5b-5cb0-02f7-662caf7ae2a51758005626844.jpeg&w=1920&q=75"
+    },
+    "stakingTokenInfo": {
+      "address": "0x34a1D2105dd1b658A48EAD516A9CE3032082799C",
+      "name": "GLADIUS",
+      "symbol": "GLADIUS",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "rewardTokenInfo": {
+      "address": "0xB8d7710f7d8349A506b75dD184F05777c82dAd0C",
+      "name": "ArenaToken",
+      "symbol": "ARENA",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "formatted": {
+      "poolAddress": "0x8651...581C",
+      "creator": "0x3fa6...8C83",
+      "stakingToken": "0x34a1...799C",
+      "rewardToken": "0xB8d7...Ad0C",
+      "rewardPerBlock": "0.00001",
+      "startBlock": "70036506",
+      "endBlock": "73036506",
+      "poolName": "0000110000",
+      "stakingSymbol": "GLADIUS",
+      "rewardSymbol": "ARENA",
+      "totalStaked": "0.0"
+    },
+    "timestamp": "2025-10-09T20:41:19.774Z",
+    "indexedAt": 1760042479774
+  }
+]

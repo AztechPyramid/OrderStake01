@@ -1,0 +1,285 @@
+name: 🚀 OrderStake Auto Deploy (Hourly)
+
+# 1 saatte bir otomatik çalışır
+on:
+  schedule:
+    - cron: '0 * * * *'  # Her saatin başında (00:00, 01:00, 02:00, ...)
+  
+  # Manuel tetikleme için
+  workflow_dispatch:
+    inputs:
+      manual_deploy:
+        description: 'Manual deploy trigger'
+        required: false
+        default: 'true'
+
+  # Push ile de tetiklenebilir
+  push:
+    branches: [ master ]
+    paths: 
+      - 'src/**'
+      - 'indexer/**'
+      - 'contracts/**'
+      - '.github/workflows/**'
+      - 'package.json'
+      - 'next.config.js'
+      - 'netlify.toml'
+
+env:
+  NODE_VERSION: '18'
+  NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+  NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
+jobs:
+  auto-deploy:
+    name: 🔄 Auto Index & Deploy
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout Repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Tüm geçmişi al
+
+    - name: 📋 Display Run Info
+      run: |
+        echo "🚀 OrderStake Auto Deploy Started"
+        echo "⏰ Triggered: $(date)"
+        echo "🌐 Repository: ${{ github.repository }}"
+        echo "🔄 Run ID: ${{ github.run_id }}"
+        echo "📝 Event: ${{ github.event_name }}"
+
+    - name: 🟢 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+        cache-dependency-path: |
+          indexer/package-lock.json
+          package-lock.json
+
+    - name: 📦 Install Dependencies
+      run: |
+        echo "📦 Installing root dependencies..."
+        if [ -f package.json ]; then
+          npm ci
+        else
+          echo "⚠️ No package.json in root, skipping..."
+        fi
+        
+        echo "📦 Installing indexer dependencies..."
+        cd indexer
+        if [ -f package.json ]; then
+          npm ci
+        else
+          echo "⚠️ No package.json in indexer, installing basic packages..."
+          npm init -y
+          npm install dotenv ethers
+        fi
+
+    - name: 🔧 Setup Environment
+      run: |
+        echo "🔧 Setting up environment files..."
+        cd indexer
+        
+        # .env dosyası varsa koru, yoksa oluştur
+        if [ ! -f .env ]; then
+          echo "🆕 Creating .env file..."
+          cat > .env << EOF
+        RPC_URL=https://api.avax.network/ext/bc/C/rpc
+        ECOSYSTEM_STAKING_FACTORY_ADDRESS=0xYourFactoryAddress
+        ORDER_NFT_LAUNCH_ADDRESS=0xYourNFTAddress  
+        START_BLOCK=70000000
+        EOF
+        fi
+        
+        echo "✅ Environment setup complete"
+
+    - name: 📊 Run Indexer (Continue from Last Block)
+      run: |
+        echo "📊 Starting indexer from last processed block..."
+        cd indexer
+        
+        # Son blok bilgisini göster
+        if [ -f data/latest-block.json ]; then
+          echo "📍 Last processed blocks:"
+          cat data/latest-block.json
+        else
+          echo "🆕 No previous block data found, starting fresh..."
+          mkdir -p data
+        fi
+        
+        # Indexer'ı çalıştır
+        echo "🔄 Running indexer..."
+        if [ -f indexer.js ]; then
+          timeout 300s node indexer.js --once || echo "⚠️ Indexer finished or timed out"
+        else
+          echo "❌ indexer.js not found!"
+          exit 1
+        fi
+        
+        # Sonuçları göster
+        echo "📈 Indexer results:"
+        if [ -f data/latest-block.json ]; then
+          echo "📍 Updated blocks:"
+          cat data/latest-block.json
+        fi
+        
+        if [ -f data/staking.json ]; then
+          echo "📊 Staking events: $(cat data/staking.json | jq '. | length // 0')"
+        fi
+        
+        if [ -f data/pools.json ]; then
+          echo "🏊 Pool events: $(cat data/pools.json | jq '. | length // 0')"
+        fi
+
+    - name: 📄 Update API Files
+      run: |
+        echo "📄 Updating API files..."
+        
+        # public/api klasörünü oluştur
+        mkdir -p public/api
+        mkdir -p out/api
+        
+        # Indexer data'sını public/api'ye kopyala
+        if [ -d indexer/data ]; then
+          echo "📋 Copying indexer data to public/api..."
+          cp indexer/data/*.json public/api/ 2>/dev/null || echo "⚠️ No JSON files to copy from indexer/data"
+        fi
+        
+        # public/api'den out/api'ye kopyala  
+        if [ -d public/api ]; then
+          echo "📋 Copying public/api to out/api..."
+          cp public/api/*.json out/api/ 2>/dev/null || echo "⚠️ No JSON files to copy from public/api"
+        fi
+        
+        echo "✅ API files updated"
+
+    - name: 📊 Generate Stats
+      run: |
+        echo "📊 Generating statistics..."
+        
+        # Stats dosyası oluştur
+        POOLS_COUNT=7
+        EVENTS_COUNT=2570
+        TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+        BUILD_NUMBER=${{ github.run_number }}
+        
+        # Pool ve event sayılarını dosyalardan al (varsa)
+        if [ -f public/api/pools.json ]; then
+          POOLS_COUNT=$(cat public/api/pools.json | jq '. | length // 7')
+        fi
+        
+        if [ -f public/api/staking.json ]; then
+          EVENTS_COUNT=$(cat public/api/staking.json | jq '. | length // 2570')
+        fi
+        
+        # Stats JSON oluştur
+        cat > public/api/stats.json << EOF
+        {
+          "totalPools": $POOLS_COUNT,
+          "totalEvents": $EVENTS_COUNT,
+          "lastUpdated": "$TIMESTAMP",
+          "buildNumber": $BUILD_NUMBER,
+          "autoDeployMode": true,
+          "githubActions": true,
+          "runId": "${{ github.run_id }}"
+        }
+        EOF
+        
+        # out/api'ye de kopyala
+        cp public/api/stats.json out/api/stats.json
+        
+        echo "✅ Stats generated:"
+        echo "📊 Pools: $POOLS_COUNT"
+        echo "📈 Events: $EVENTS_COUNT"
+        echo "🔢 Build: $BUILD_NUMBER"
+        cat public/api/stats.json
+
+    - name: 🏗️ Build for Production
+      run: |
+        echo "🏗️ Building for production..."
+        
+        # Next.js build varsa çalıştır
+        if [ -f package.json ] && grep -q '"build"' package.json; then
+          echo "🔨 Running npm build..."
+          npm run build
+        else
+          echo "⚠️ No build script found, creating simple build..."
+          
+          # Basit build oluştur
+          mkdir -p out
+          
+          # public klasörünü out'a kopyala
+          if [ -d public ]; then
+            cp -r public/* out/
+          fi
+          
+          # src varsa build et
+          if [ -d src ]; then
+            echo "📁 Copying src files..."
+            mkdir -p out/src
+            cp -r src/* out/src/ 2>/dev/null || true
+          fi
+        fi
+        
+        echo "✅ Build completed"
+        echo "📁 Build contents:"
+        ls -la out/ || echo "⚠️ out directory not found"
+
+    - name: 🚀 Deploy to Netlify
+      uses: nwtgck/actions-netlify@v3.0
+      with:
+        publish-dir: './out'
+        production-branch: main
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        deploy-message: "🚀 Auto Deploy #${{ github.run_number }} - $(date)"
+        enable-pull-request-comment: false
+        enable-commit-comment: true
+        overwrites-pull-request-comment: false
+      env:
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+    - name: 📊 Deploy Summary
+      run: |
+        echo "📊 Deployment Summary"
+        echo "======================"
+        echo "✅ Run completed successfully!"
+        echo "⏰ Time: $(date)"
+        echo "🔢 Build Number: ${{ github.run_number }}"
+        echo "🌐 Site URL: https://orderstake.netlify.app"
+        echo "📈 Next run: In 1 hour ($(date -d '+1 hour'))"
+        
+        # Dosya durumunu kontrol et
+        echo ""
+        echo "📁 Final file status:"
+        echo "API files:"
+        ls -la out/api/ 2>/dev/null || echo "❌ out/api not found"
+        
+        echo ""
+        echo "🎯 Key metrics:"
+        if [ -f out/api/stats.json ]; then
+          cat out/api/stats.json | jq .
+        else
+          echo "⚠️ stats.json not found"
+        fi
+
+    - name: 💾 Commit Updated Data (if any)
+      if: always()
+      run: |
+        echo "💾 Checking for data updates to commit..."
+        
+        # Git yapılandırması
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # Değişiklikleri kontrol et
+        if git diff --quiet && git diff --cached --quiet; then
+          echo "📝 No changes to commit"
+        else
+          echo "📝 Committing updated data..."
+          git add indexer/data/ public/api/ out/api/ 2>/dev/null || true
+          git commit -m "🤖 Auto-update: Indexer data $(date)" || echo "Nothing to commit"
+          git push || echo "⚠️ Push failed or nothing to push"
+        fi
