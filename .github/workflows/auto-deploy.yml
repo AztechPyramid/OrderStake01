@@ -13,7 +13,17 @@ on:
         required: false
         default: 'true'
 
-  # Push trigger'ını kaldırdık - sadece scheduled ve manual çalışacak
+  # Push ile de tetiklenebilir
+  push:
+    branches: [ master ]
+    paths: 
+      - 'src/**'
+      - 'indexer/**'
+      - 'contracts/**'
+      - '.github/workflows/**'
+      - 'package.json'
+      - 'next.config.js'
+      - 'netlify.toml'
 
 env:
   NODE_VERSION: '18'
