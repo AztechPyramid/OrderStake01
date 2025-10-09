@@ -61,48 +61,6 @@ export interface PoolStats {
 
 const BLOCKS_PER_YEAR = 15768000n; // Avalanche: ~2 seconds per block
 
-// Helper function to safely get token decimals
-const safeGetDecimals = async (contract: Contract, tokenName: string = 'token'): Promise<number> => {
-  try {
-    // First try to call decimals() function
-    const decimals = await contract.decimals();
-    
-    // Validate that decimals is a reasonable number (0-255 for uint8)
-    if (typeof decimals === 'number' && decimals >= 0 && decimals <= 255) {
-      return decimals;
-    } else if (typeof decimals === 'bigint') {
-      const num = Number(decimals);
-      if (num >= 0 && num <= 255) {
-        return num;
-      }
-    }
-    
-    console.warn(`${tokenName} decimals returned unexpected value:`, decimals, 'using default 18');
-    return 18;
-  } catch (error: any) {
-    console.warn(`Could not get ${tokenName} decimals:`, error.message || error);
-    
-    // For specific errors that indicate the contract doesn't support decimals
-    if (error.message?.includes('revert') || 
-        error.message?.includes('missing revert data') ||
-        error.code === 'CALL_EXCEPTION') {
-      console.warn(`${tokenName} contract may not be a standard ERC20 token, using 18 decimals`);
-    }
-    
-    return 18; // Default fallback
-  }
-};
-
-// Helper function to check if address is a contract
-const isContract = async (provider: BrowserProvider, address: string): Promise<boolean> => {
-  try {
-    const code = await provider.getCode(address);
-    return code !== '0x';
-  } catch {
-    return false;
-  }
-};
-
 export const useEcosystemStaking = (poolAddress: string) => {
   const { address, sdk, isConnected } = useArenaSDK();
   const [isLoading, setIsLoading] = useState(false);
@@ -137,24 +95,11 @@ export const useEcosystemStaking = (poolAddress: string) => {
       const tvlUSD = parseFloat(data.totalStaked) * stakingTokenPrice;
       
       // Calculate APY
-      // Calculate remaining rewards in the pool with error handling
-      let remainingRewards = '0';
-      try {
-        const rewardTokenContract = new Contract(data.rewardToken, ERC20ABI, provider);
-        
-        // Check if reward token is a valid contract
-        const isRewardContract = await isContract(provider, data.rewardToken);
-        if (!isRewardContract) {
-          console.warn('Reward token is not a contract, skipping balance check');
-        } else {
-          const contractRewardDecimals = await safeGetDecimals(rewardTokenContract, 'reward token for stats');
-          const rewardBalance = await rewardTokenContract.balanceOf(poolAddress);
-          remainingRewards = ethers.formatUnits(rewardBalance, contractRewardDecimals);
-        }
-      } catch (error) {
-        console.warn('Could not fetch remaining rewards, using default 0:', error);
-        remainingRewards = '0';
-      }
+      // Calculate remaining rewards in the pool
+      const rewardTokenContract = new Contract(data.rewardToken, ERC20ABI, provider);
+      const rewardTokenDecimals = await rewardTokenContract.decimals();
+      const rewardBalance = await rewardTokenContract.balanceOf(poolAddress);
+      const remainingRewards = ethers.formatUnits(rewardBalance, rewardTokenDecimals);
 
       // Convert blocks to dates (Avalanche: ~2 seconds per block)
       const currentTimestamp = Date.now();
@@ -202,42 +147,20 @@ export const useEcosystemStaking = (poolAddress: string) => {
 
   // Fetch pool data
   const fetchPoolData = useCallback(async () => {
-    const timeoutId = setTimeout(() => {
-      setError('Request timeout. Please try again.');
-      setIsLoading(false);
-    }, 30000); // 30 second timeout
-
     try {
       const provider = getProvider();
-      if (!provider) {
-        clearTimeout(timeoutId);
-        return;
-      }
+      if (!provider) return;
       
       const contract = new Contract(poolAddress, ECOSYSTEM_STAKING_ABI, provider);
       const poolInfo = await contract.getPoolInfo();
       
-      // Validate that token addresses are contracts
-      const [isStakingContract, isRewardContract] = await Promise.all([
-        isContract(provider, poolInfo._stakingToken),
-        isContract(provider, poolInfo._rewardToken)
-      ]);
-      
-      if (!isStakingContract) {
-        throw new Error(`Staking token address ${poolInfo._stakingToken} is not a contract`);
-      }
-      
-      if (!isRewardContract) {
-        throw new Error(`Reward token address ${poolInfo._rewardToken} is not a contract`);
-      }
-      
-      // Get token decimals with safe error handling
+      // Get token decimals for proper formatting
       const stakingTokenContract = new Contract(poolInfo._stakingToken, ERC20ABI, provider);
       const rewardTokenContract = new Contract(poolInfo._rewardToken, ERC20ABI, provider);
       
       const [stakingDecimals, rewardDecimals] = await Promise.all([
-        safeGetDecimals(stakingTokenContract, 'staking token'),
-        safeGetDecimals(rewardTokenContract, 'reward token')
+        stakingTokenContract.decimals(),
+        rewardTokenContract.decimals()
       ]);
       
       // Store decimals for other functions
@@ -257,9 +180,7 @@ export const useEcosystemStaking = (poolAddress: string) => {
 
       setPoolData(data);
       await calculateStats(data);
-      clearTimeout(timeoutId);
     } catch (err: any) {
-      clearTimeout(timeoutId);
       console.error('Error fetching pool data:', err);
       setError(err.message);
     }
@@ -318,37 +239,17 @@ export const useEcosystemStaking = (poolAddress: string) => {
       const provider = getProvider();
       if (!provider) return;
       
-      // Check if staking token is a valid contract
-      const isStakingContract = await isContract(provider, poolData.stakingToken);
-      if (!isStakingContract) {
-        console.warn('Staking token is not a contract, cannot fetch balance/allowance');
-        setStakingTokenBalance('0');
-        setStakingTokenAllowance('0');
-        return;
-      }
-      
       const tokenContract = new Contract(poolData.stakingToken, ERC20ABI, provider);
       
-      // Use stored decimals or fallback to 18
-      const safeDecimals = stakingTokenDecimals || 18;
+      const [balance, allowance] = await Promise.all([
+        tokenContract.balanceOf(address),
+        tokenContract.allowance(address, poolAddress)
+      ]);
       
-      try {
-        const [balance, allowance] = await Promise.all([
-          tokenContract.balanceOf(address),
-          tokenContract.allowance(address, poolAddress)
-        ]);
-        
-        setStakingTokenBalance(ethers.formatUnits(balance, safeDecimals));
-        setStakingTokenAllowance(ethers.formatUnits(allowance, safeDecimals));
-      } catch (error) {
-        console.warn('Error fetching token balance/allowance:', error);
-        setStakingTokenBalance('0');
-        setStakingTokenAllowance('0');
-      }
+      setStakingTokenBalance(ethers.formatUnits(balance, stakingTokenDecimals));
+      setStakingTokenAllowance(ethers.formatUnits(allowance, stakingTokenDecimals));
     } catch (err: any) {
-      console.error('Error in fetchTokenInfo:', err);
-      setStakingTokenBalance('0');
-      setStakingTokenAllowance('0');
+      console.error('Error fetching token info:', err);
     }
   }, [address, poolData, getProvider, poolAddress, stakingTokenDecimals]);
 

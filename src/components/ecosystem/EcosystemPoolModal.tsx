@@ -29,8 +29,6 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
     error,
     isConnected,
     address,
-    fetchPoolData,
-    fetchPoolMetadata,
     fetchUserInfo,
     fetchTokenInfo,
     approveStakingToken,
@@ -47,19 +45,6 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
   const [activeTab, setActiveTab] = useState<'stake' | 'unstake' | 'claim'>('stake');
   const [isCopied, setIsCopied] = useState(false);
   const [copiedAddress, setCopiedAddress] = useState<string | null>(null);
-  const [isDataLoaded, setIsDataLoaded] = useState(false);
-  const [loadingTimeout, setLoadingTimeout] = useState(false);
-
-  // Retry function for failed loads
-  const retryLoad = () => {
-    setLoadingTimeout(false);
-    fetchPoolData();
-    fetchPoolMetadata();
-    if (address) {
-      fetchUserInfo();
-      fetchTokenInfo();
-    }
-  };
 
   // Clear inputs when modal closes
   useEffect(() => {
@@ -68,45 +53,10 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
       setUnstakeAmount('');
       setActiveTab('stake');
       setCopiedAddress(null);
-      setIsDataLoaded(false);
-      setLoadingTimeout(false);
     }
   }, [isOpen]);
 
-  // Set data loaded when pool data is available
-  useEffect(() => {
-    if (poolData && poolMetadata) {
-      setIsDataLoaded(true);
-    }
-  }, [poolData, poolMetadata]);
-
-  // Loading timeout - if loading takes too long, show error
-  useEffect(() => {
-    if (isOpen && isLoading) {
-      const timeout = setTimeout(() => {
-        setLoadingTimeout(true);
-      }, 10000); // 10 seconds timeout
-
-      return () => clearTimeout(timeout);
-    }
-  }, [isOpen, isLoading]);
-
-  // Get user-friendly error message
-  const getUserFriendlyError = (errorMessage: string) => {
-    if (errorMessage.includes('missing revert data') || errorMessage.includes('CALL_EXCEPTION')) {
-      return 'This pool may contain invalid token contracts. Please contact the pool creator.';
-    }
-    if (errorMessage.includes('not a contract')) {
-      return 'One or more token addresses are invalid. Please verify the pool configuration.';
-    }
-    if (errorMessage.includes('timeout')) {
-      return 'Request timeout. Please check your network connection and try again.';
-    }
-    if (errorMessage.includes('network') || errorMessage.includes('connection')) {
-      return 'Network connection issue. Please check your internet and try again.';
-    }
-    return errorMessage;
-  };
+  // Refresh user data when modal opens
   useEffect(() => {
     if (isOpen && isConnected && address && poolData) {
       fetchUserInfo();
@@ -211,77 +161,9 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
 
         {/* Content */}
         <div className="p-6">
-          {error ? (
-            <div className="flex flex-col items-center justify-center py-8">
-              <div className="text-red-400 mb-4">❌</div>
-              <p className="text-sm text-text-secondary mb-4 text-center max-w-md">
-                {getUserFriendlyError(error)}
-              </p>
-              <div className="flex gap-2">
-                <button
-                  onClick={retryLoad}
-                  className="px-4 py-2 bg-accent-primary hover:bg-accent-primary/80 text-white rounded-lg transition-colors"
-                >
-                  Retry
-                </button>
-                <button
-                  onClick={onClose}
-                  className="px-4 py-2 bg-surface-secondary hover:bg-surface-tertiary text-text-primary rounded-lg transition-colors"
-                >
-                  Close
-                </button>
-              </div>
-              {error.includes('missing revert data') && (
-                <div className="mt-4 p-3 bg-yellow-500/10 border border-yellow-500/30 rounded-lg max-w-md">
-                  <p className="text-xs text-yellow-400 text-center">
-                    💡 This error usually occurs when the pool uses non-standard token contracts. 
-                    The pool may still work, but some features might be limited.
-                  </p>
-                </div>
-              )}
-            </div>
-          ) : (!poolData || !isDataLoaded) && !loadingTimeout ? (
-            <div className="flex flex-col items-center justify-center py-8">
-              <Loader2 className="w-8 h-8 animate-spin text-accent-primary mb-4" />
-              <p className="text-sm text-text-secondary">Loading pool data...</p>
-            </div>
-          ) : loadingTimeout ? (
-            <div className="flex flex-col items-center justify-center py-8">
-              <div className="text-yellow-400 mb-4">⚠️</div>
-              <p className="text-sm text-text-secondary mb-4 text-center max-w-md">
-                Loading is taking longer than expected. This might be due to network issues or problematic token contracts.
-              </p>
-              <div className="flex gap-2">
-                <button
-                  onClick={retryLoad}
-                  className="px-4 py-2 bg-accent-primary hover:bg-accent-primary/80 text-white rounded-lg transition-colors"
-                >
-                  Retry
-                </button>
-                <button
-                  onClick={onClose}
-                  className="px-4 py-2 bg-surface-secondary hover:bg-surface-tertiary text-text-primary rounded-lg transition-colors"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          ) : error ? (
-            <div className="flex flex-col items-center justify-center py-8">
-              <div className="text-red-400 mb-4">❌</div>
-              <p className="text-sm text-text-secondary mb-4">Error: {error}</p>
-              <button
-                onClick={() => {
-                  setIsDataLoaded(false);
-                  if (isConnected && address) {
-                    fetchUserInfo();
-                    fetchTokenInfo();
-                  }
-                }}
-                className="px-4 py-2 bg-accent-primary hover:bg-accent-primary/80 text-white rounded-lg transition-colors"
-              >
-                Retry
-              </button>
+          {!poolData ? (
+            <div className="flex items-center justify-center py-8">
+              <Loader2 className="w-8 h-8 animate-spin text-accent-primary" />
             </div>
           ) : (
             <>
@@ -346,7 +228,7 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
                 <div className="bg-surface-secondary rounded-lg p-4">
                   <p className="text-sm text-text-tertiary mb-1">Total Staked</p>
                   <p className="text-xl font-bold text-text-primary">
-                    {poolData ? Number(poolData.totalStaked).toLocaleString(undefined, { maximumFractionDigits: 2 }) : '0'}
+                    {Number(poolData.totalStaked).toLocaleString(undefined, { maximumFractionDigits: 2 })}
                   </p>
                   {poolMetadata?.stakingSymbol && (
                     <p className="text-xs text-text-tertiary">{poolMetadata.stakingSymbol}</p>
@@ -355,7 +237,7 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
                 <div className="bg-surface-secondary rounded-lg p-4">
                   <p className="text-sm text-text-tertiary mb-1">Reward/Block</p>
                   <p className="text-xl font-bold text-accent-primary">
-                    {poolData ? Number(poolData.rewardPerBlock).toLocaleString(undefined, { maximumFractionDigits: 6 }) : '0'}
+                    {Number(poolData.rewardPerBlock).toLocaleString(undefined, { maximumFractionDigits: 6 })}
                   </p>
                   {poolMetadata?.rewardSymbol && (
                     <p className="text-xs text-text-tertiary">{poolMetadata.rewardSymbol}</p>
@@ -660,7 +542,7 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
                         </span>
                       </div>
                       <button
-                        onClick={() => copyToClipboard(poolData?.stakingToken || '', 'staking')}
+                        onClick={() => copyToClipboard(poolData.stakingToken, 'staking')}
                         className="flex items-center gap-1 text-xs text-accent-primary hover:text-accent-secondary transition-colors"
                       >
                         {copiedAddress === 'staking' ? (
@@ -673,7 +555,7 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
                         )}
                       </button>
                     </div>
-                    <p className="text-xs font-mono text-text-primary break-all">{poolData?.stakingToken || 'N/A'}</p>
+                    <p className="text-xs font-mono text-text-primary break-all">{poolData.stakingToken}</p>
                   </div>
                 )}
 
@@ -697,7 +579,7 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
                         </span>
                       </div>
                       <button
-                        onClick={() => copyToClipboard(poolData?.rewardToken || '', 'reward')}
+                        onClick={() => copyToClipboard(poolData.rewardToken, 'reward')}
                         className="flex items-center gap-1 text-xs text-accent-primary hover:text-accent-secondary transition-colors"
                       >
                         {copiedAddress === 'reward' ? (
@@ -710,7 +592,7 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
                         )}
                       </button>
                     </div>
-                    <p className="text-xs font-mono text-text-primary break-all">{poolData?.rewardToken || 'N/A'}</p>
+                    <p className="text-xs font-mono text-text-primary break-all">{poolData.rewardToken}</p>
                   </div>
                 )}
               </div>
