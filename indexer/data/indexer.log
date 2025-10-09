@@ -16774,3 +16774,28 @@
 [2025-10-09T11:06:25.697Z] [INFO] 📭 No pools discovered, skipping pool events indexing
 [2025-10-09T11:06:25.697Z] [INFO] ✅ Step 1.3 completed
 [2025-10-09T11:06:25.697Z] [INFO] ✅ Processed factory events 70021460-70022772
+[2025-10-09T12:10:55.565Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-09T12:10:55.567Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-09T12:10:55.822Z] [INFO] ✅ Connected to network: avalanche (43114)
+[2025-10-09T12:10:55.827Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-09T12:10:55.827Z] [WARN] ⚠️  Skipping OrderToken: ABI file not found at /home/runner/work/OrderStake01/OrderStake01/indexer/abi/OrderToken.json
+[2025-10-09T12:10:55.827Z] [INFO] 📚 Loaded 1 contracts
+[2025-10-09T12:10:55.827Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-09T12:10:55.860Z] [INFO] ✅ Network verified: avalanche (43114)
+[2025-10-09T12:10:55.861Z] [INFO] 🎯 Event listeners initialized
+[2025-10-09T12:10:55.860Z] [INFO] 🚀 Blockchain manager initialized
+[2025-10-09T12:10:55.863Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-09T12:10:55.863Z] [INFO] 🤖 Running in one-time mode (GitHub Actions)
+[2025-10-09T12:10:55.951Z] [INFO] 🔍 Step 1.0: Loading known pools from storage...
+[2025-10-09T12:10:55.952Z] [INFO] ✅ Step 1.0 completed
+[2025-10-09T12:10:55.952Z] [INFO] 🔍 Step 1.2: Indexing factory events...
+[2025-10-09T12:10:55.952Z] [INFO] 🔍 Querying factory events 70022773-70024772
+[2025-10-09T12:10:55.951Z] [INFO] 📚 Incremental indexing from block 70022773 to 70025147 (last processed: 70022772)
+[2025-10-09T12:10:55.952Z] [WARN] ⚠️ Could not load known pools from storage: this.storage.getPoolsData is not a function
+[2025-10-09T12:10:56.694Z] [INFO] ✅ Processed factory events 70022773-70024772
+[2025-10-09T12:10:56.794Z] [INFO] 🔍 Querying factory events 70024773-70025147
+[2025-10-09T12:10:57.211Z] [INFO] ✅ Step 1.2 completed
+[2025-10-09T12:10:57.211Z] [INFO] 🔍 Step 1.3: Indexing pool events...
+[2025-10-09T12:10:57.211Z] [INFO] 📭 No pools discovered, skipping pool events indexing
+[2025-10-09T12:10:57.211Z] [INFO] ✅ Step 1.3 completed
+[2025-10-09T12:10:57.211Z] [INFO] ✅ Processed factory events 70024773-70025147
