@@ -1,0 +1,4602 @@
+[2025-10-08T05:40:36.835Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-08T05:40:36.841Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T05:40:37.098Z] [INFO] ✅ Connected to network: unknown (43114)
+[2025-10-08T05:41:10.768Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-08T05:41:10.774Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T05:41:11.028Z] [INFO] ✅ Connected to network: unknown (43114)
+[2025-10-08T05:42:43.809Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-08T05:42:43.815Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T05:42:44.320Z] [INFO] ✅ Connected to network: unknown (43114)
+[2025-10-08T05:43:10.951Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-08T05:43:10.957Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T05:43:11.228Z] [INFO] ✅ Connected to network: unknown (43114)
+[2025-10-08T05:45:18.287Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-08T05:45:18.293Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T05:45:18.568Z] [INFO] ✅ Connected to network: unknown (43114)
+[2025-10-08T05:45:18.575Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-08T05:45:18.574Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-08T05:45:18.575Z] [WARN] ⚠️  Skipping OrderToken: Contract is inactive
+[2025-10-08T05:45:18.648Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-08T05:45:18.649Z] [INFO] 🌐 Network: avalanche (Chain ID: 43114)
+[2025-10-08T05:45:18.648Z] [INFO] 🎯 Event listeners initialized
+[2025-10-08T05:45:18.647Z] [INFO] ✅ Network verified: unknown (43114)
+[2025-10-08T05:45:18.649Z] [INFO] 🔥 Starting OrderStake Event Indexer...
+[2025-10-08T05:45:18.649Z] [INFO] 🔗 RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T05:45:18.649Z] [INFO] 📝 Contract Status:
+[2025-10-08T05:45:18.650Z] [INFO]   • EcosystemStakingFactory: 0x3E3d...43A7 ✅
+[2025-10-08T05:45:18.650Z] [INFO]   • OrderNFTLaunch: 0x0000...0000 ⏸️ Inactive
+[2025-10-08T05:45:18.650Z] [INFO]   • OrderToken: 0x1BEd...8180 ⏸️ Inactive
+[2025-10-08T05:45:18.911Z] [INFO] 📚 Indexing past staking events from block 0 to 69955843
+[2025-10-08T05:45:19.163Z] [ERROR] ❌ Error querying factory events 0-9999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 0 to 9999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x0",
+        "toBlock": "0x270f"
+      }
+    ],
+    "id": 6,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:19.409Z] [ERROR] ❌ Error querying factory events 10000-19999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 10000 to 19999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x2710",
+        "toBlock": "0x4e1f"
+      }
+    ],
+    "id": 8,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:19.675Z] [ERROR] ❌ Error querying factory events 20000-29999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 20000 to 29999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x4e20",
+        "toBlock": "0x752f"
+      }
+    ],
+    "id": 10,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:19.826Z] [ERROR] ❌ Error querying factory events 30000-39999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 30000 to 39999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x7530",
+        "toBlock": "0x9c3f"
+      }
+    ],
+    "id": 12,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:20.092Z] [ERROR] ❌ Error querying factory events 40000-49999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 40000 to 49999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x9c40",
+        "toBlock": "0xc34f"
+      }
+    ],
+    "id": 14,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:20.337Z] [ERROR] ❌ Error querying factory events 50000-59999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 50000 to 59999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xc350",
+        "toBlock": "0xea5f"
+      }
+    ],
+    "id": 16,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:20.587Z] [ERROR] ❌ Error querying factory events 60000-69999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 60000 to 69999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xea60",
+        "toBlock": "0x1116f"
+      }
+    ],
+    "id": 18,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:20.836Z] [ERROR] ❌ Error querying factory events 70000-79999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 70000 to 79999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x11170",
+        "toBlock": "0x1387f"
+      }
+    ],
+    "id": 20,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:21.086Z] [ERROR] ❌ Error querying factory events 80000-89999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 80000 to 89999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x13880",
+        "toBlock": "0x15f8f"
+      }
+    ],
+    "id": 22,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:21.222Z] [ERROR] ❌ Error querying factory events 90000-99999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 90000 to 99999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x15f90",
+        "toBlock": "0x1869f"
+      }
+    ],
+    "id": 24,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:21.487Z] [ERROR] ❌ Error querying factory events 100000-109999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 100000 to 109999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x186a0",
+        "toBlock": "0x1adaf"
+      }
+    ],
+    "id": 26,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:21.625Z] [ERROR] ❌ Error querying factory events 110000-119999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 110000 to 119999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x1adb0",
+        "toBlock": "0x1d4bf"
+      }
+    ],
+    "id": 28,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:21.876Z] [ERROR] ❌ Error querying factory events 120000-129999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 120000 to 129999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x1d4c0",
+        "toBlock": "0x1fbcf"
+      }
+    ],
+    "id": 30,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:22.171Z] [ERROR] ❌ Error querying factory events 130000-139999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 130000 to 139999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x1fbd0",
+        "toBlock": "0x222df"
+      }
+    ],
+    "id": 32,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:22.432Z] [ERROR] ❌ Error querying factory events 140000-149999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 140000 to 149999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x222e0",
+        "toBlock": "0x249ef"
+      }
+    ],
+    "id": 34,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:22.680Z] [ERROR] ❌ Error querying factory events 150000-159999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 150000 to 159999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x249f0",
+        "toBlock": "0x270ff"
+      }
+    ],
+    "id": 36,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:22.928Z] [ERROR] ❌ Error querying factory events 160000-169999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 160000 to 169999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x27100",
+        "toBlock": "0x2980f"
+      }
+    ],
+    "id": 38,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:23.073Z] [ERROR] ❌ Error querying factory events 170000-179999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 170000 to 179999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x29810",
+        "toBlock": "0x2bf1f"
+      }
+    ],
+    "id": 40,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:23.213Z] [ERROR] ❌ Error querying factory events 180000-189999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 180000 to 189999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x2bf20",
+        "toBlock": "0x2e62f"
+      }
+    ],
+    "id": 42,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:23.458Z] [ERROR] ❌ Error querying factory events 190000-199999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 190000 to 199999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x2e630",
+        "toBlock": "0x30d3f"
+      }
+    ],
+    "id": 44,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:23.601Z] [ERROR] ❌ Error querying factory events 200000-209999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 200000 to 209999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x30d40",
+        "toBlock": "0x3344f"
+      }
+    ],
+    "id": 46,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:23.775Z] [ERROR] ❌ Error querying factory events 210000-219999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 210000 to 219999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x33450",
+        "toBlock": "0x35b5f"
+      }
+    ],
+    "id": 48,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:24.014Z] [ERROR] ❌ Error querying factory events 220000-229999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 220000 to 229999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x35b60",
+        "toBlock": "0x3826f"
+      }
+    ],
+    "id": 50,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:24.263Z] [ERROR] ❌ Error querying factory events 230000-239999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 230000 to 239999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x38270",
+        "toBlock": "0x3a97f"
+      }
+    ],
+    "id": 52,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:24.529Z] [ERROR] ❌ Error querying factory events 240000-249999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 240000 to 249999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x3a980",
+        "toBlock": "0x3d08f"
+      }
+    ],
+    "id": 54,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:24.776Z] [ERROR] ❌ Error querying factory events 250000-259999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 250000 to 259999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x3d090",
+        "toBlock": "0x3f79f"
+      }
+    ],
+    "id": 56,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:25.041Z] [ERROR] ❌ Error querying factory events 260000-269999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 260000 to 269999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x3f7a0",
+        "toBlock": "0x41eaf"
+      }
+    ],
+    "id": 58,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:25.289Z] [ERROR] ❌ Error querying factory events 270000-279999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 270000 to 279999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x41eb0",
+        "toBlock": "0x445bf"
+      }
+    ],
+    "id": 60,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:25.435Z] [ERROR] ❌ Error querying factory events 280000-289999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 280000 to 289999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x445c0",
+        "toBlock": "0x46ccf"
+      }
+    ],
+    "id": 62,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:25.569Z] [ERROR] ❌ Error querying factory events 290000-299999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 290000 to 299999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x46cd0",
+        "toBlock": "0x493df"
+      }
+    ],
+    "id": 64,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:25.831Z] [ERROR] ❌ Error querying factory events 300000-309999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 300000 to 309999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x493e0",
+        "toBlock": "0x4baef"
+      }
+    ],
+    "id": 66,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:26.077Z] [ERROR] ❌ Error querying factory events 310000-319999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 310000 to 319999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x4baf0",
+        "toBlock": "0x4e1ff"
+      }
+    ],
+    "id": 68,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:26.230Z] [ERROR] ❌ Error querying factory events 320000-329999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 320000 to 329999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x4e200",
+        "toBlock": "0x5090f"
+      }
+    ],
+    "id": 70,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:26.401Z] [ERROR] ❌ Error querying factory events 330000-339999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 330000 to 339999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x50910",
+        "toBlock": "0x5301f"
+      }
+    ],
+    "id": 72,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:26.666Z] [ERROR] ❌ Error querying factory events 340000-349999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 340000 to 349999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x53020",
+        "toBlock": "0x5572f"
+      }
+    ],
+    "id": 74,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:26.911Z] [ERROR] ❌ Error querying factory events 350000-359999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 350000 to 359999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x55730",
+        "toBlock": "0x57e3f"
+      }
+    ],
+    "id": 76,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:27.051Z] [ERROR] ❌ Error querying factory events 360000-369999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 360000 to 369999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x57e40",
+        "toBlock": "0x5a54f"
+      }
+    ],
+    "id": 78,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:27.194Z] [ERROR] ❌ Error querying factory events 370000-379999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 370000 to 379999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x5a550",
+        "toBlock": "0x5cc5f"
+      }
+    ],
+    "id": 80,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:27.436Z] [ERROR] ❌ Error querying factory events 380000-389999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 380000 to 389999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x5cc60",
+        "toBlock": "0x5f36f"
+      }
+    ],
+    "id": 82,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:27.707Z] [ERROR] ❌ Error querying factory events 390000-399999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 390000 to 399999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x5f370",
+        "toBlock": "0x61a7f"
+      }
+    ],
+    "id": 84,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:27.950Z] [ERROR] ❌ Error querying factory events 400000-409999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 400000 to 409999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x61a80",
+        "toBlock": "0x6418f"
+      }
+    ],
+    "id": 86,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:28.198Z] [ERROR] ❌ Error querying factory events 410000-419999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 410000 to 419999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x64190",
+        "toBlock": "0x6689f"
+      }
+    ],
+    "id": 88,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:28.478Z] [ERROR] ❌ Error querying factory events 420000-429999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 420000 to 429999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x668a0",
+        "toBlock": "0x68faf"
+      }
+    ],
+    "id": 90,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:28.725Z] [ERROR] ❌ Error querying factory events 430000-439999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 430000 to 439999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x68fb0",
+        "toBlock": "0x6b6bf"
+      }
+    ],
+    "id": 92,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:28.975Z] [ERROR] ❌ Error querying factory events 440000-449999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 440000 to 449999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x6b6c0",
+        "toBlock": "0x6ddcf"
+      }
+    ],
+    "id": 94,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:29.111Z] [ERROR] ❌ Error querying factory events 450000-459999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 450000 to 459999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x6ddd0",
+        "toBlock": "0x704df"
+      }
+    ],
+    "id": 96,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:29.251Z] [ERROR] ❌ Error querying factory events 460000-469999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 460000 to 469999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x704e0",
+        "toBlock": "0x72bef"
+      }
+    ],
+    "id": 98,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:29.497Z] [ERROR] ❌ Error querying factory events 470000-479999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 470000 to 479999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x72bf0",
+        "toBlock": "0x752ff"
+      }
+    ],
+    "id": 100,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:29.748Z] [ERROR] ❌ Error querying factory events 480000-489999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 480000 to 489999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x75300",
+        "toBlock": "0x77a0f"
+      }
+    ],
+    "id": 102,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:29.993Z] [ERROR] ❌ Error querying factory events 490000-499999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 490000 to 499999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x77a10",
+        "toBlock": "0x7a11f"
+      }
+    ],
+    "id": 104,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:30.132Z] [ERROR] ❌ Error querying factory events 500000-509999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 500000 to 509999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x7a120",
+        "toBlock": "0x7c82f"
+      }
+    ],
+    "id": 106,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:30.272Z] [ERROR] ❌ Error querying factory events 510000-519999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 510000 to 519999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x7c830",
+        "toBlock": "0x7ef3f"
+      }
+    ],
+    "id": 108,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:30.523Z] [ERROR] ❌ Error querying factory events 520000-529999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 520000 to 529999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x7ef40",
+        "toBlock": "0x8164f"
+      }
+    ],
+    "id": 110,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:30.768Z] [ERROR] ❌ Error querying factory events 530000-539999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 530000 to 539999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x81650",
+        "toBlock": "0x83d5f"
+      }
+    ],
+    "id": 112,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:30.925Z] [ERROR] ❌ Error querying factory events 540000-549999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 540000 to 549999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x83d60",
+        "toBlock": "0x8646f"
+      }
+    ],
+    "id": 114,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:31.172Z] [ERROR] ❌ Error querying factory events 550000-559999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 550000 to 559999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x86470",
+        "toBlock": "0x88b7f"
+      }
+    ],
+    "id": 116,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:31.420Z] [ERROR] ❌ Error querying factory events 560000-569999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 560000 to 569999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x88b80",
+        "toBlock": "0x8b28f"
+      }
+    ],
+    "id": 118,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:31.679Z] [ERROR] ❌ Error querying factory events 570000-579999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 570000 to 579999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x8b290",
+        "toBlock": "0x8d99f"
+      }
+    ],
+    "id": 120,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:31.817Z] [ERROR] ❌ Error querying factory events 580000-589999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 580000 to 589999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x8d9a0",
+        "toBlock": "0x900af"
+      }
+    ],
+    "id": 122,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:32.064Z] [ERROR] ❌ Error querying factory events 590000-599999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 590000 to 599999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x900b0",
+        "toBlock": "0x927bf"
+      }
+    ],
+    "id": 124,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:32.208Z] [ERROR] ❌ Error querying factory events 600000-609999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 600000 to 609999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x927c0",
+        "toBlock": "0x94ecf"
+      }
+    ],
+    "id": 126,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:32.345Z] [ERROR] ❌ Error querying factory events 610000-619999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 610000 to 619999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x94ed0",
+        "toBlock": "0x975df"
+      }
+    ],
+    "id": 128,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:32.504Z] [ERROR] ❌ Error querying factory events 620000-629999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 620000 to 629999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x975e0",
+        "toBlock": "0x99cef"
+      }
+    ],
+    "id": 130,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:32.768Z] [ERROR] ❌ Error querying factory events 630000-639999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 630000 to 639999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x99cf0",
+        "toBlock": "0x9c3ff"
+      }
+    ],
+    "id": 132,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:33.014Z] [ERROR] ❌ Error querying factory events 640000-649999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 640000 to 649999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x9c400",
+        "toBlock": "0x9eb0f"
+      }
+    ],
+    "id": 134,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:33.264Z] [ERROR] ❌ Error querying factory events 650000-659999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 650000 to 659999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x9eb10",
+        "toBlock": "0xa121f"
+      }
+    ],
+    "id": 136,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:33.514Z] [ERROR] ❌ Error querying factory events 660000-669999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 660000 to 669999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xa1220",
+        "toBlock": "0xa392f"
+      }
+    ],
+    "id": 138,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:33.760Z] [ERROR] ❌ Error querying factory events 670000-679999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 670000 to 679999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xa3930",
+        "toBlock": "0xa603f"
+      }
+    ],
+    "id": 140,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:34.005Z] [ERROR] ❌ Error querying factory events 680000-689999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 680000 to 689999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xa6040",
+        "toBlock": "0xa874f"
+      }
+    ],
+    "id": 142,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:34.253Z] [ERROR] ❌ Error querying factory events 690000-699999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 690000 to 699999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xa8750",
+        "toBlock": "0xaae5f"
+      }
+    ],
+    "id": 144,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:34.499Z] [ERROR] ❌ Error querying factory events 700000-709999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 700000 to 709999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xaae60",
+        "toBlock": "0xad56f"
+      }
+    ],
+    "id": 146,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:34.793Z] [ERROR] ❌ Error querying factory events 710000-719999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 710000 to 719999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xad570",
+        "toBlock": "0xafc7f"
+      }
+    ],
+    "id": 148,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:35.042Z] [ERROR] ❌ Error querying factory events 720000-729999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 720000 to 729999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xafc80",
+        "toBlock": "0xb238f"
+      }
+    ],
+    "id": 150,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:35.287Z] [ERROR] ❌ Error querying factory events 730000-739999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 730000 to 739999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xb2390",
+        "toBlock": "0xb4a9f"
+      }
+    ],
+    "id": 152,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:35.580Z] [ERROR] ❌ Error querying factory events 740000-749999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 740000 to 749999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xb4aa0",
+        "toBlock": "0xb71af"
+      }
+    ],
+    "id": 154,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:35.829Z] [ERROR] ❌ Error querying factory events 750000-759999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 750000 to 759999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xb71b0",
+        "toBlock": "0xb98bf"
+      }
+    ],
+    "id": 156,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:36.075Z] [ERROR] ❌ Error querying factory events 760000-769999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 760000 to 769999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xb98c0",
+        "toBlock": "0xbbfcf"
+      }
+    ],
+    "id": 158,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:36.319Z] [ERROR] ❌ Error querying factory events 770000-779999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 770000 to 779999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xbbfd0",
+        "toBlock": "0xbe6df"
+      }
+    ],
+    "id": 160,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:36.575Z] [ERROR] ❌ Error querying factory events 780000-789999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 780000 to 789999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xbe6e0",
+        "toBlock": "0xc0def"
+      }
+    ],
+    "id": 162,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:36.824Z] [ERROR] ❌ Error querying factory events 790000-799999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 790000 to 799999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xc0df0",
+        "toBlock": "0xc34ff"
+      }
+    ],
+    "id": 164,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:37.069Z] [ERROR] ❌ Error querying factory events 800000-809999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 800000 to 809999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xc3500",
+        "toBlock": "0xc5c0f"
+      }
+    ],
+    "id": 166,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:37.238Z] [ERROR] ❌ Error querying factory events 810000-819999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 810000 to 819999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xc5c10",
+        "toBlock": "0xc831f"
+      }
+    ],
+    "id": 168,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:37.503Z] [ERROR] ❌ Error querying factory events 820000-829999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 820000 to 829999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xc8320",
+        "toBlock": "0xcaa2f"
+      }
+    ],
+    "id": 170,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:37.751Z] [ERROR] ❌ Error querying factory events 830000-839999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 830000 to 839999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xcaa30",
+        "toBlock": "0xcd13f"
+      }
+    ],
+    "id": 172,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:37.999Z] [ERROR] ❌ Error querying factory events 840000-849999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 840000 to 849999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xcd140",
+        "toBlock": "0xcf84f"
+      }
+    ],
+    "id": 174,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:38.149Z] [ERROR] ❌ Error querying factory events 850000-859999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 850000 to 859999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xcf850",
+        "toBlock": "0xd1f5f"
+      }
+    ],
+    "id": 176,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:38.402Z] [ERROR] ❌ Error querying factory events 860000-869999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 860000 to 869999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xd1f60",
+        "toBlock": "0xd466f"
+      }
+    ],
+    "id": 178,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:38.542Z] [ERROR] ❌ Error querying factory events 870000-879999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 870000 to 879999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xd4670",
+        "toBlock": "0xd6d7f"
+      }
+    ],
+    "id": 180,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:38.790Z] [ERROR] ❌ Error querying factory events 880000-889999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 880000 to 889999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xd6d80",
+        "toBlock": "0xd948f"
+      }
+    ],
+    "id": 182,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:39.036Z] [ERROR] ❌ Error querying factory events 890000-899999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 890000 to 899999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xd9490",
+        "toBlock": "0xdbb9f"
+      }
+    ],
+    "id": 184,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:39.180Z] [ERROR] ❌ Error querying factory events 900000-909999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 900000 to 909999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xdbba0",
+        "toBlock": "0xde2af"
+      }
+    ],
+    "id": 186,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:39.419Z] [ERROR] ❌ Error querying factory events 910000-919999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 910000 to 919999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xde2b0",
+        "toBlock": "0xe09bf"
+      }
+    ],
+    "id": 188,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:39.587Z] [ERROR] ❌ Error querying factory events 920000-929999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 920000 to 929999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xe09c0",
+        "toBlock": "0xe30cf"
+      }
+    ],
+    "id": 190,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:39.867Z] [ERROR] ❌ Error querying factory events 930000-939999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 930000 to 939999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xe30d0",
+        "toBlock": "0xe57df"
+      }
+    ],
+    "id": 192,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:40.117Z] [ERROR] ❌ Error querying factory events 940000-949999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 940000 to 949999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xe57e0",
+        "toBlock": "0xe7eef"
+      }
+    ],
+    "id": 194,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:40.261Z] [ERROR] ❌ Error querying factory events 950000-959999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 950000 to 959999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xe7ef0",
+        "toBlock": "0xea5ff"
+      }
+    ],
+    "id": 196,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:40.505Z] [ERROR] ❌ Error querying factory events 960000-969999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 960000 to 969999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xea600",
+        "toBlock": "0xecd0f"
+      }
+    ],
+    "id": 198,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:40.645Z] [ERROR] ❌ Error querying factory events 970000-979999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 970000 to 979999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xecd10",
+        "toBlock": "0xef41f"
+      }
+    ],
+    "id": 200,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:40.788Z] [ERROR] ❌ Error querying factory events 980000-989999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 980000 to 989999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xef420",
+        "toBlock": "0xf1b2f"
+      }
+    ],
+    "id": 202,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:41.034Z] [ERROR] ❌ Error querying factory events 990000-999999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 990000 to 999999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xf1b30",
+        "toBlock": "0xf423f"
+      }
+    ],
+    "id": 204,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:41.180Z] [ERROR] ❌ Error querying factory events 1000000-1009999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1000000 to 1009999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xf4240",
+        "toBlock": "0xf694f"
+      }
+    ],
+    "id": 206,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:41.420Z] [ERROR] ❌ Error querying factory events 1010000-1019999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1010000 to 1019999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xf6950",
+        "toBlock": "0xf905f"
+      }
+    ],
+    "id": 208,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:41.559Z] [ERROR] ❌ Error querying factory events 1020000-1029999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1020000 to 1029999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xf9060",
+        "toBlock": "0xfb76f"
+      }
+    ],
+    "id": 210,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:41.695Z] [ERROR] ❌ Error querying factory events 1030000-1039999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1030000 to 1039999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xfb770",
+        "toBlock": "0xfde7f"
+      }
+    ],
+    "id": 212,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:41.944Z] [ERROR] ❌ Error querying factory events 1040000-1049999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1040000 to 1049999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0xfde80",
+        "toBlock": "0x10058f"
+      }
+    ],
+    "id": 214,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:42.195Z] [ERROR] ❌ Error querying factory events 1050000-1059999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1050000 to 1059999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x100590",
+        "toBlock": "0x102c9f"
+      }
+    ],
+    "id": 216,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:42.339Z] [ERROR] ❌ Error querying factory events 1060000-1069999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1060000 to 1069999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x102ca0",
+        "toBlock": "0x1053af"
+      }
+    ],
+    "id": 218,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:42.580Z] [ERROR] ❌ Error querying factory events 1070000-1079999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1070000 to 1079999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x1053b0",
+        "toBlock": "0x107abf"
+      }
+    ],
+    "id": 220,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:42.834Z] [ERROR] ❌ Error querying factory events 1080000-1089999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1080000 to 1089999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x107ac0",
+        "toBlock": "0x10a1cf"
+      }
+    ],
+    "id": 222,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:42.970Z] [ERROR] ❌ Error querying factory events 1090000-1099999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1090000 to 1099999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x10a1d0",
+        "toBlock": "0x10c8df"
+      }
+    ],
+    "id": 224,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:43.218Z] [ERROR] ❌ Error querying factory events 1100000-1109999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1100000 to 1109999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x10c8e0",
+        "toBlock": "0x10efef"
+      }
+    ],
+    "id": 226,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:43.483Z] [ERROR] ❌ Error querying factory events 1110000-1119999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1110000 to 1119999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x10eff0",
+        "toBlock": "0x1116ff"
+      }
+    ],
+    "id": 228,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:43.730Z] [ERROR] ❌ Error querying factory events 1120000-1129999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1120000 to 1129999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x111700",
+        "toBlock": "0x113e0f"
+      }
+    ],
+    "id": 230,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:43.976Z] [ERROR] ❌ Error querying factory events 1130000-1139999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1130000 to 1139999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x113e10",
+        "toBlock": "0x11651f"
+      }
+    ],
+    "id": 232,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:44.236Z] [ERROR] ❌ Error querying factory events 1140000-1149999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1140000 to 1149999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x116520",
+        "toBlock": "0x118c2f"
+      }
+    ],
+    "id": 234,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:44.502Z] [ERROR] ❌ Error querying factory events 1150000-1159999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1150000 to 1159999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x118c30",
+        "toBlock": "0x11b33f"
+      }
+    ],
+    "id": 236,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:44.747Z] [ERROR] ❌ Error querying factory events 1160000-1169999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1160000 to 1169999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x11b340",
+        "toBlock": "0x11da4f"
+      }
+    ],
+    "id": 238,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:44.995Z] [ERROR] ❌ Error querying factory events 1170000-1179999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1170000 to 1179999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x11da50",
+        "toBlock": "0x12015f"
+      }
+    ],
+    "id": 240,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:45.136Z] [ERROR] ❌ Error querying factory events 1180000-1189999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1180000 to 1189999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x120160",
+        "toBlock": "0x12286f"
+      }
+    ],
+    "id": 242,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:45.271Z] [ERROR] ❌ Error querying factory events 1190000-1199999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1190000 to 1199999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x122870",
+        "toBlock": "0x124f7f"
+      }
+    ],
+    "id": 244,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:45.413Z] [ERROR] ❌ Error querying factory events 1200000-1209999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1200000 to 1209999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x124f80",
+        "toBlock": "0x12768f"
+      }
+    ],
+    "id": 246,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:45.659Z] [ERROR] ❌ Error querying factory events 1210000-1219999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1210000 to 1219999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x127690",
+        "toBlock": "0x129d9f"
+      }
+    ],
+    "id": 248,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:45.800Z] [ERROR] ❌ Error querying factory events 1220000-1229999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1220000 to 1229999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x129da0",
+        "toBlock": "0x12c4af"
+      }
+    ],
+    "id": 250,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:46.047Z] [ERROR] ❌ Error querying factory events 1230000-1239999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1230000 to 1239999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x12c4b0",
+        "toBlock": "0x12ebbf"
+      }
+    ],
+    "id": 252,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:46.298Z] [ERROR] ❌ Error querying factory events 1240000-1249999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1240000 to 1249999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x12ebc0",
+        "toBlock": "0x1312cf"
+      }
+    ],
+    "id": 254,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:46.545Z] [ERROR] ❌ Error querying factory events 1250000-1259999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1250000 to 1259999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x1312d0",
+        "toBlock": "0x1339df"
+      }
+    ],
+    "id": 256,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:46.793Z] [ERROR] ❌ Error querying factory events 1260000-1269999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1260000 to 1269999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x1339e0",
+        "toBlock": "0x1360ef"
+      }
+    ],
+    "id": 258,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:47.042Z] [ERROR] ❌ Error querying factory events 1270000-1279999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1270000 to 1279999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x1360f0",
+        "toBlock": "0x1387ff"
+      }
+    ],
+    "id": 260,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:47.349Z] [ERROR] ❌ Error querying factory events 1280000-1289999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1280000 to 1289999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x138800",
+        "toBlock": "0x13af0f"
+      }
+    ],
+    "id": 262,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:47.484Z] [ERROR] ❌ Error querying factory events 1290000-1299999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1290000 to 1299999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x13af10",
+        "toBlock": "0x13d61f"
+      }
+    ],
+    "id": 264,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:47.633Z] [ERROR] ❌ Error querying factory events 1300000-1309999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1300000 to 1309999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x13d620",
+        "toBlock": "0x13fd2f"
+      }
+    ],
+    "id": 266,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:47.874Z] [ERROR] ❌ Error querying factory events 1310000-1319999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1310000 to 1319999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x13fd30",
+        "toBlock": "0x14243f"
+      }
+    ],
+    "id": 268,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:48.015Z] [ERROR] ❌ Error querying factory events 1320000-1329999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1320000 to 1329999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x142440",
+        "toBlock": "0x144b4f"
+      }
+    ],
+    "id": 270,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:48.162Z] [ERROR] ❌ Error querying factory events 1330000-1339999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1330000 to 1339999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x144b50",
+        "toBlock": "0x14725f"
+      }
+    ],
+    "id": 272,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:48.417Z] [ERROR] ❌ Error querying factory events 1340000-1349999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1340000 to 1349999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x147260",
+        "toBlock": "0x14996f"
+      }
+    ],
+    "id": 274,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:48.560Z] [ERROR] ❌ Error querying factory events 1350000-1359999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1350000 to 1359999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x149970",
+        "toBlock": "0x14c07f"
+      }
+    ],
+    "id": 276,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:48.867Z] [ERROR] ❌ Error querying factory events 1360000-1369999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1360000 to 1369999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x14c080",
+        "toBlock": "0x14e78f"
+      }
+    ],
+    "id": 278,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:49.112Z] [ERROR] ❌ Error querying factory events 1370000-1379999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1370000 to 1379999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x14e790",
+        "toBlock": "0x150e9f"
+      }
+    ],
+    "id": 281,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:49.249Z] [ERROR] ❌ Error querying factory events 1380000-1389999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1380000 to 1389999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x150ea0",
+        "toBlock": "0x1535af"
+      }
+    ],
+    "id": 283,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:49.496Z] [ERROR] ❌ Error querying factory events 1390000-1399999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1390000 to 1399999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x1535b0",
+        "toBlock": "0x155cbf"
+      }
+    ],
+    "id": 285,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:49.741Z] [ERROR] ❌ Error querying factory events 1400000-1409999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1400000 to 1409999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x155cc0",
+        "toBlock": "0x1583cf"
+      }
+    ],
+    "id": 287,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:49.882Z] [ERROR] ❌ Error querying factory events 1410000-1419999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1410000 to 1419999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x1583d0",
+        "toBlock": "0x15aadf"
+      }
+    ],
+    "id": 289,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:50.138Z] [ERROR] ❌ Error querying factory events 1420000-1429999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1420000 to 1429999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x15aae0",
+        "toBlock": "0x15d1ef"
+      }
+    ],
+    "id": 291,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:50.386Z] [ERROR] ❌ Error querying factory events 1430000-1439999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1430000 to 1439999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x15d1f0",
+        "toBlock": "0x15f8ff"
+      }
+    ],
+    "id": 293,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:50.634Z] [ERROR] ❌ Error querying factory events 1440000-1449999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1440000 to 1449999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x15f900",
+        "toBlock": "0x16200f"
+      }
+    ],
+    "id": 295,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:50.777Z] [ERROR] ❌ Error querying factory events 1450000-1459999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1450000 to 1459999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x162010",
+        "toBlock": "0x16471f"
+      }
+    ],
+    "id": 297,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:51.019Z] [ERROR] ❌ Error querying factory events 1460000-1469999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1460000 to 1469999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x164720",
+        "toBlock": "0x166e2f"
+      }
+    ],
+    "id": 299,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:51.159Z] [ERROR] ❌ Error querying factory events 1470000-1479999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1470000 to 1479999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x166e30",
+        "toBlock": "0x16953f"
+      }
+    ],
+    "id": 301,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:51.302Z] [ERROR] ❌ Error querying factory events 1480000-1489999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1480000 to 1489999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x169540",
+        "toBlock": "0x16bc4f"
+      }
+    ],
+    "id": 303,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:51.548Z] [ERROR] ❌ Error querying factory events 1490000-1499999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1490000 to 1499999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x16bc50",
+        "toBlock": "0x16e35f"
+      }
+    ],
+    "id": 305,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:51.700Z] [ERROR] ❌ Error querying factory events 1500000-1509999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1500000 to 1509999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x16e360",
+        "toBlock": "0x170a6f"
+      }
+    ],
+    "id": 307,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:51.841Z] [ERROR] ❌ Error querying factory events 1510000-1519999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1510000 to 1519999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x170a70",
+        "toBlock": "0x17317f"
+      }
+    ],
+    "id": 309,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:51.978Z] [ERROR] ❌ Error querying factory events 1520000-1529999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1520000 to 1529999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x173180",
+        "toBlock": "0x17588f"
+      }
+    ],
+    "id": 311,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:52.229Z] [ERROR] ❌ Error querying factory events 1530000-1539999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1530000 to 1539999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x175890",
+        "toBlock": "0x177f9f"
+      }
+    ],
+    "id": 313,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:52.477Z] [ERROR] ❌ Error querying factory events 1540000-1549999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1540000 to 1549999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x177fa0",
+        "toBlock": "0x17a6af"
+      }
+    ],
+    "id": 315,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:52.723Z] [ERROR] ❌ Error querying factory events 1550000-1559999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1550000 to 1559999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x17a6b0",
+        "toBlock": "0x17cdbf"
+      }
+    ],
+    "id": 317,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:52.971Z] [ERROR] ❌ Error querying factory events 1560000-1569999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1560000 to 1569999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x17cdc0",
+        "toBlock": "0x17f4cf"
+      }
+    ],
+    "id": 319,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:53.216Z] [ERROR] ❌ Error querying factory events 1570000-1579999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1570000 to 1579999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x17f4d0",
+        "toBlock": "0x181bdf"
+      }
+    ],
+    "id": 321,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:53.358Z] [ERROR] ❌ Error querying factory events 1580000-1589999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1580000 to 1589999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x181be0",
+        "toBlock": "0x1842ef"
+      }
+    ],
+    "id": 323,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:53.603Z] [ERROR] ❌ Error querying factory events 1590000-1599999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1590000 to 1599999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x1842f0",
+        "toBlock": "0x1869ff"
+      }
+    ],
+    "id": 325,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:53.851Z] [ERROR] ❌ Error querying factory events 1600000-1609999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1600000 to 1609999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x186a00",
+        "toBlock": "0x18910f"
+      }
+    ],
+    "id": 327,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:54.117Z] [ERROR] ❌ Error querying factory events 1610000-1619999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1610000 to 1619999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x189110",
+        "toBlock": "0x18b81f"
+      }
+    ],
+    "id": 329,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:54.255Z] [ERROR] ❌ Error querying factory events 1620000-1629999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1620000 to 1629999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x18b820",
+        "toBlock": "0x18df2f"
+      }
+    ],
+    "id": 331,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:45:54.507Z] [ERROR] ❌ Error querying factory events 1630000-1639999:
+{
+  "code": "UNKNOWN_ERROR",
+  "error": {
+    "code": -32000,
+    "message": "requested too many blocks from 1630000 to 1639999, maximum is set to 2048"
+  },
+  "payload": {
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x3e3d8a430ff70e89c035301943375377cc7343a7",
+        "topics": [
+          "0xa2ef419740fc832b1bb2db408ebdfebd59ab8ed8c47c92411ee60fdfb6cd5d12"
+        ],
+        "fromBlock": "0x18df30",
+        "toBlock": "0x19063f"
+      }
+    ],
+    "id": 333,
+    "jsonrpc": "2.0"
+  },
+  "shortMessage": "could not coalesce error"
+}
+[2025-10-08T05:47:13.214Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-08T05:47:13.220Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T05:47:13.513Z] [INFO] ✅ Connected to network: unknown (43114)
+[2025-10-08T05:47:13.520Z] [WARN] ⚠️  Skipping OrderToken: Contract is inactive
+[2025-10-08T05:47:13.520Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-08T05:47:13.519Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-08T05:47:13.594Z] [INFO] ✅ Network verified: unknown (43114)
+[2025-10-08T05:47:13.595Z] [INFO] 🎯 Event listeners initialized
+[2025-10-08T05:47:13.596Z] [INFO] 🔥 Starting OrderStake Event Indexer...
+[2025-10-08T05:47:13.595Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-08T05:47:13.596Z] [INFO] 🌐 Network: avalanche (Chain ID: 43114)
+[2025-10-08T05:47:13.596Z] [INFO] 📝 Contract Status:
+[2025-10-08T05:47:13.596Z] [INFO] 🔗 RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T05:47:13.596Z] [INFO]   • EcosystemStakingFactory: 0x3E3d...43A7 ✅
+[2025-10-08T05:47:13.596Z] [INFO]   • OrderNFTLaunch: 0x0000...0000 ⏸️ Inactive
+[2025-10-08T05:47:13.596Z] [INFO]   • OrderToken: 0x1BEd...8180 ⏸️ Inactive
+[2025-10-08T05:47:13.851Z] [INFO] 📚 Indexing past staking events from block 0 to 69955923
+[2025-10-08T05:47:14.001Z] [ERROR] ❌ Error querying factory events 0-1999:
+{}
+[2025-10-08T05:47:14.269Z] [ERROR] ❌ Error querying factory events 2000-3999:
+{}
+[2025-10-08T05:47:14.431Z] [ERROR] ❌ Error querying factory events 4000-5999:
+{}
+[2025-10-08T05:47:14.701Z] [ERROR] ❌ Error querying factory events 6000-7999:
+{}
+[2025-10-08T05:47:14.951Z] [ERROR] ❌ Error querying factory events 8000-9999:
+{}
+[2025-10-08T05:47:15.233Z] [ERROR] ❌ Error querying factory events 10000-11999:
+{}
+[2025-10-08T05:47:15.377Z] [ERROR] ❌ Error querying factory events 12000-13999:
+{}
+[2025-10-08T05:47:15.539Z] [ERROR] ❌ Error querying factory events 14000-15999:
+{}
+[2025-10-08T05:47:15.689Z] [ERROR] ❌ Error querying factory events 16000-17999:
+{}
+[2025-10-08T05:47:15.835Z] [ERROR] ❌ Error querying factory events 18000-19999:
+{}
+[2025-10-08T05:47:16.107Z] [ERROR] ❌ Error querying factory events 20000-21999:
+{}
+[2025-10-08T05:47:16.368Z] [ERROR] ❌ Error querying factory events 22000-23999:
+{}
+[2025-10-08T05:47:16.633Z] [ERROR] ❌ Error querying factory events 24000-25999:
+{}
+[2025-10-08T05:47:16.784Z] [ERROR] ❌ Error querying factory events 26000-27999:
+{}
+[2025-10-08T05:47:17.046Z] [ERROR] ❌ Error querying factory events 28000-29999:
+{}
+[2025-10-08T05:47:17.196Z] [ERROR] ❌ Error querying factory events 30000-31999:
+{}
+[2025-10-08T05:47:17.348Z] [ERROR] ❌ Error querying factory events 32000-33999:
+{}
+[2025-10-08T05:47:17.603Z] [ERROR] ❌ Error querying factory events 34000-35999:
+{}
+[2025-10-08T05:47:17.761Z] [ERROR] ❌ Error querying factory events 36000-37999:
+{}
+[2025-10-08T05:47:17.905Z] [ERROR] ❌ Error querying factory events 38000-39999:
+{}
+[2025-10-08T05:47:18.063Z] [ERROR] ❌ Error querying factory events 40000-41999:
+{}
+[2025-10-08T05:47:18.225Z] [ERROR] ❌ Error querying factory events 42000-43999:
+{}
+[2025-10-08T05:47:18.492Z] [ERROR] ❌ Error querying factory events 44000-45999:
+{}
+[2025-10-08T05:47:18.739Z] [ERROR] ❌ Error querying factory events 46000-47999:
+{}
+[2025-10-08T05:47:19.006Z] [ERROR] ❌ Error querying factory events 48000-49999:
+{}
+[2025-10-08T05:47:19.254Z] [ERROR] ❌ Error querying factory events 50000-51999:
+{}
+[2025-10-08T05:47:19.516Z] [ERROR] ❌ Error querying factory events 52000-53999:
+{}
+[2025-10-08T05:47:19.666Z] [ERROR] ❌ Error querying factory events 54000-55999:
+{}
+[2025-10-08T05:47:19.917Z] [ERROR] ❌ Error querying factory events 56000-57999:
+{}
+[2025-10-08T05:47:20.069Z] [ERROR] ❌ Error querying factory events 58000-59999:
+{}
+[2025-10-08T05:47:20.332Z] [ERROR] ❌ Error querying factory events 60000-61999:
+{}
+[2025-10-08T05:47:20.579Z] [ERROR] ❌ Error querying factory events 62000-63999:
+{}
+[2025-10-08T05:47:20.829Z] [ERROR] ❌ Error querying factory events 64000-65999:
+{}
+[2025-10-08T05:47:20.984Z] [ERROR] ❌ Error querying factory events 66000-67999:
+{}
+[2025-10-08T05:47:21.252Z] [ERROR] ❌ Error querying factory events 68000-69999:
+{}
+[2025-10-08T05:47:21.497Z] [ERROR] ❌ Error querying factory events 70000-71999:
+{}
+[2025-10-08T05:47:21.803Z] [ERROR] ❌ Error querying factory events 72000-73999:
+{}
+[2025-10-08T05:47:22.052Z] [ERROR] ❌ Error querying factory events 74000-75999:
+{}
+[2025-10-08T05:47:22.316Z] [ERROR] ❌ Error querying factory events 76000-77999:
+{}
+[2025-10-08T05:47:22.564Z] [ERROR] ❌ Error querying factory events 78000-79999:
+{}
+[2025-10-08T05:47:22.830Z] [ERROR] ❌ Error querying factory events 80000-81999:
+{}
+[2025-10-08T05:47:41.366Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-08T05:47:41.372Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T05:47:41.657Z] [INFO] ✅ Connected to network: unknown (43114)
+[2025-10-08T05:47:41.662Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-08T05:47:41.663Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-08T05:47:41.663Z] [WARN] ⚠️  Skipping OrderToken: Contract is inactive
+[2025-10-08T05:47:41.742Z] [INFO] 🎯 Event listeners initialized
+[2025-10-08T05:47:41.743Z] [INFO] 🔗 RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T05:47:41.742Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-08T05:47:41.741Z] [INFO] ✅ Network verified: unknown (43114)
+[2025-10-08T05:47:41.742Z] [INFO] 🌐 Network: avalanche (Chain ID: 43114)
+[2025-10-08T05:47:41.743Z] [INFO]   • EcosystemStakingFactory: 0x3E3d...43A7 ✅
+[2025-10-08T05:47:41.742Z] [INFO] 🔥 Starting OrderStake Event Indexer...
+[2025-10-08T05:47:41.743Z] [INFO] 📝 Contract Status:
+[2025-10-08T05:47:41.744Z] [INFO]   • OrderToken: 0x1BEd...8180 ⏸️ Inactive
+[2025-10-08T05:47:41.744Z] [INFO]   • OrderNFTLaunch: 0x0000...0000 ⏸️ Inactive
+[2025-10-08T05:47:42.016Z] [INFO] 📚 Indexing past staking events from block 0 to 69955948
+[2025-10-08T05:47:42.263Z] [ERROR] ❌ Error querying factory events 0-1999:
+{}
+[2025-10-08T05:47:42.514Z] [ERROR] ❌ Error querying factory events 2000-3999:
+{}
+[2025-10-08T05:47:42.663Z] [ERROR] ❌ Error querying factory events 4000-5999:
+{}
+[2025-10-08T05:47:42.828Z] [ERROR] ❌ Error querying factory events 6000-7999:
+{}
+[2025-10-08T05:47:42.969Z] [ERROR] ❌ Error querying factory events 8000-9999:
+{}
+[2025-10-08T05:47:43.109Z] [ERROR] ❌ Error querying factory events 10000-11999:
+{}
+[2025-10-08T05:47:43.265Z] [ERROR] ❌ Error querying factory events 12000-13999:
+{}
+[2025-10-08T05:47:43.403Z] [ERROR] ❌ Error querying factory events 14000-15999:
+{}
+[2025-10-08T05:47:43.558Z] [ERROR] ❌ Error querying factory events 16000-17999:
+{}
+[2025-10-08T05:47:43.697Z] [ERROR] ❌ Error querying factory events 18000-19999:
+{}
+[2025-10-08T05:47:43.840Z] [ERROR] ❌ Error querying factory events 20000-21999:
+{}
+[2025-10-08T05:47:43.990Z] [ERROR] ❌ Error querying factory events 22000-23999:
+{}
+[2025-10-08T05:47:44.252Z] [ERROR] ❌ Error querying factory events 24000-25999:
+{}
+[2025-10-08T05:47:44.514Z] [ERROR] ❌ Error querying factory events 26000-27999:
+{}
+[2025-10-08T05:47:44.663Z] [ERROR] ❌ Error querying factory events 28000-29999:
+{}
+[2025-10-08T05:47:44.820Z] [ERROR] ❌ Error querying factory events 30000-31999:
+{}
+[2025-10-08T05:47:44.968Z] [ERROR] ❌ Error querying factory events 32000-33999:
+{}
+[2025-10-08T05:47:45.239Z] [ERROR] ❌ Error querying factory events 34000-35999:
+{}
+[2025-10-08T05:47:45.497Z] [ERROR] ❌ Error querying factory events 36000-37999:
+{}
+[2025-10-08T05:47:45.640Z] [ERROR] ❌ Error querying factory events 38000-39999:
+{}
+[2025-10-08T05:47:45.799Z] [ERROR] ❌ Error querying factory events 40000-41999:
+{}
+[2025-10-08T05:47:45.936Z] [ERROR] ❌ Error querying factory events 42000-43999:
+{}
+[2025-10-08T05:47:46.076Z] [ERROR] ❌ Error querying factory events 44000-45999:
+{}
+[2025-10-08T05:47:46.220Z] [ERROR] ❌ Error querying factory events 46000-47999:
+{}
+[2025-10-08T05:47:46.492Z] [ERROR] ❌ Error querying factory events 48000-49999:
+{}
+[2025-10-08T05:47:46.742Z] [ERROR] ❌ Error querying factory events 50000-51999:
+{}
+[2025-10-08T05:47:46.892Z] [ERROR] ❌ Error querying factory events 52000-53999:
+{}
+[2025-10-08T05:47:47.042Z] [ERROR] ❌ Error querying factory events 54000-55999:
+{}
+[2025-10-08T05:47:47.290Z] [ERROR] ❌ Error querying factory events 56000-57999:
+{}
+[2025-10-08T05:47:47.535Z] [ERROR] ❌ Error querying factory events 58000-59999:
+{}
+[2025-10-08T05:47:47.677Z] [ERROR] ❌ Error querying factory events 60000-61999:
+{}
+[2025-10-08T05:47:47.923Z] [ERROR] ❌ Error querying factory events 62000-63999:
+{}
+[2025-10-08T05:47:48.184Z] [ERROR] ❌ Error querying factory events 64000-65999:
+{}
+[2025-10-08T05:47:48.433Z] [ERROR] ❌ Error querying factory events 66000-67999:
+{}
+[2025-10-08T05:47:48.681Z] [ERROR] ❌ Error querying factory events 68000-69999:
+{}
+[2025-10-08T05:47:48.927Z] [ERROR] ❌ Error querying factory events 70000-71999:
+{}
+[2025-10-08T05:47:49.074Z] [ERROR] ❌ Error querying factory events 72000-73999:
+{}
+[2025-10-08T05:47:49.216Z] [ERROR] ❌ Error querying factory events 74000-75999:
+{}
+[2025-10-08T05:47:49.468Z] [ERROR] ❌ Error querying factory events 76000-77999:
+{}
+[2025-10-08T05:47:49.716Z] [ERROR] ❌ Error querying factory events 78000-79999:
+{}
+[2025-10-08T05:47:49.850Z] [ERROR] ❌ Error querying factory events 80000-81999:
+{}
+[2025-10-08T05:47:50.272Z] [ERROR] ❌ Error querying factory events 82000-83999:
+{}
+[2025-10-08T05:47:50.412Z] [ERROR] ❌ Error querying factory events 84000-85999:
+{}
+[2025-10-08T05:47:50.558Z] [ERROR] ❌ Error querying factory events 86000-87999:
+{}
+[2025-10-08T05:48:05.908Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-08T05:48:05.915Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T05:48:06.447Z] [INFO] ✅ Connected to network: unknown (43114)
+[2025-10-08T05:48:06.455Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-08T05:48:06.456Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-08T05:48:06.456Z] [WARN] ⚠️  Skipping OrderToken: Contract is inactive
+[2025-10-08T05:48:06.529Z] [INFO] ✅ Network verified: unknown (43114)
+[2025-10-08T05:48:06.530Z] [INFO] 🎯 Event listeners initialized
+[2025-10-08T05:48:06.531Z] [INFO] 🔗 RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T05:48:06.531Z] [INFO] 🌐 Network: avalanche (Chain ID: 43114)
+[2025-10-08T05:48:06.531Z] [INFO] 🔥 Starting OrderStake Event Indexer...
+[2025-10-08T05:48:06.530Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-08T05:48:06.531Z] [INFO] 📝 Contract Status:
+[2025-10-08T05:48:06.532Z] [INFO]   • OrderToken: 0x1BEd...8180 ⏸️ Inactive
+[2025-10-08T05:48:06.532Z] [INFO]   • OrderNFTLaunch: 0x0000...0000 ⏸️ Inactive
+[2025-10-08T05:48:06.531Z] [INFO]   • EcosystemStakingFactory: 0x3E3d...43A7 ✅
+[2025-10-08T05:48:06.790Z] [INFO] 📚 Indexing past staking events from block 0 to 69955963
+[2025-10-08T05:48:07.807Z] [ERROR] ❌ Error querying factory events 0-1999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:08.111Z] [ERROR] ❌ Error querying factory events 2000-3999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:08.379Z] [ERROR] ❌ Error querying factory events 4000-5999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:08.527Z] [ERROR] ❌ Error querying factory events 6000-7999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:08.779Z] [ERROR] ❌ Error querying factory events 8000-9999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:09.020Z] [ERROR] ❌ Error querying factory events 10000-11999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:09.169Z] [ERROR] ❌ Error querying factory events 12000-13999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:09.320Z] [ERROR] ❌ Error querying factory events 14000-15999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:09.573Z] [ERROR] ❌ Error querying factory events 16000-17999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:09.819Z] [ERROR] ❌ Error querying factory events 18000-19999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:09.972Z] [ERROR] ❌ Error querying factory events 20000-21999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:10.270Z] [ERROR] ❌ Error querying factory events 22000-23999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:10.626Z] [ERROR] ❌ Error querying factory events 24000-25999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:10.919Z] [ERROR] ❌ Error querying factory events 26000-27999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:11.175Z] [ERROR] ❌ Error querying factory events 28000-29999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:11.322Z] [ERROR] ❌ Error querying factory events 30000-31999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:11.458Z] [ERROR] ❌ Error querying factory events 32000-33999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:11.606Z] [ERROR] ❌ Error querying factory events 34000-35999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:11.846Z] [ERROR] ❌ Error querying factory events 36000-37999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:12.108Z] [ERROR] ❌ Error querying factory events 38000-39999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:12.253Z] [ERROR] ❌ Error querying factory events 40000-41999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:12.513Z] [ERROR] ❌ Error querying factory events 42000-43999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:12.659Z] [ERROR] ❌ Error querying factory events 44000-45999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:12.899Z] [ERROR] ❌ Error querying factory events 46000-47999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:48:13.159Z] [ERROR] ❌ Error querying factory events 48000-49999:
+{
+  "message": "factory.filters.StakingStatusUpdated is not a function",
+  "stack": "TypeError: factory.filters.StakingStatusUpdated is not a function\n    at StakingEventListener.indexFactoryEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:112:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:72:5)\n    at async StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:28:7)\n    at async OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:11)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:345:5)"
+}
+[2025-10-08T05:56:56.530Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T05:56:56.523Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-08T05:56:56.941Z] [INFO] ✅ Connected to network: unknown (43114)
+[2025-10-08T05:56:56.948Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-08T05:56:56.948Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-08T05:56:56.948Z] [WARN] ⚠️  Skipping OrderToken: Contract is inactive
+[2025-10-08T05:56:57.031Z] [INFO] ✅ Network verified: unknown (43114)
+[2025-10-08T05:56:57.037Z] [INFO] 🎯 Event listeners initialized
+[2025-10-08T05:56:57.038Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-08T05:56:57.039Z] [INFO] 🔥 Starting OrderStake Event Indexer...
+[2025-10-08T05:56:57.039Z] [INFO] 🔗 RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T05:56:57.040Z] [INFO]   • EcosystemStakingFactory: 0x3E3d...43A7 ✅
+[2025-10-08T05:56:57.039Z] [INFO] 📝 Contract Status:
+[2025-10-08T05:56:57.039Z] [INFO] 🌐 Network: avalanche (Chain ID: 43114)
+[2025-10-08T05:56:57.040Z] [INFO]   • OrderNFTLaunch: 0x0000...0000 ⏸️ Inactive
+[2025-10-08T05:56:57.040Z] [INFO]   • OrderToken: 0x1BEd...8180 ⏸️ Inactive
+[2025-10-08T05:56:57.041Z] [WARN] ⚠️  OrderNFTLaunch not available, skipping factory events
+[2025-10-08T05:56:57.040Z] [ERROR] ❌ Failed to start staking listener:
+{}
+[2025-10-08T05:56:57.042Z] [INFO] ✅ Past NFT events indexed
+[2025-10-08T05:56:57.042Z] [WARN] ⚠️  OrderNFTLaunch not available for real-time listening
+[2025-10-08T05:56:57.043Z] [INFO] 🎨 NFT event listener started
+[2025-10-08T05:56:57.043Z] [INFO] ✅ nft listener started
+[2025-10-08T05:56:57.044Z] [INFO] Press Ctrl+C to stop gracefully
+[2025-10-08T05:56:57.044Z] [INFO] 🎉 OrderStake Indexer is now running!
+[2025-10-08T06:03:21.270Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-08T06:03:21.277Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T06:03:21.543Z] [INFO] ✅ Connected to network: unknown (43114)
+[2025-10-08T06:03:21.550Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-08T06:03:21.551Z] [WARN] ⚠️  Skipping OrderToken: Contract is inactive
+[2025-10-08T06:03:21.551Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-08T06:03:21.623Z] [INFO] ✅ Network verified: unknown (43114)
+[2025-10-08T06:03:21.624Z] [INFO] 🎯 Event listeners initialized
+[2025-10-08T06:03:21.624Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-08T06:03:21.624Z] [INFO] 🌐 Network: avalanche (Chain ID: 43114)
+[2025-10-08T06:03:21.624Z] [INFO] 🔥 Starting OrderStake Event Indexer...
+[2025-10-08T06:03:21.625Z] [INFO] 🔗 RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T06:03:21.625Z] [INFO]   • EcosystemStakingFactory: 0x3E3d...43A7 ✅
+[2025-10-08T06:03:21.625Z] [INFO]   • OrderNFTLaunch: 0x0000...0000 ⏸️ Inactive
+[2025-10-08T06:03:21.625Z] [INFO] 📝 Contract Status:
+[2025-10-08T06:03:21.626Z] [ERROR] ❌ Failed to start staking listener:
+{}
+[2025-10-08T06:03:21.627Z] [WARN] ⚠️  OrderNFTLaunch not available, skipping factory events
+[2025-10-08T06:03:21.625Z] [INFO]   • OrderToken: 0x1BEd...8180 ⏸️ Inactive
+[2025-10-08T06:03:21.628Z] [INFO] ✅ Past NFT events indexed
+[2025-10-08T06:03:21.628Z] [WARN] ⚠️  OrderNFTLaunch not available for real-time listening
+[2025-10-08T06:03:21.630Z] [INFO] ✅ nft listener started
+[2025-10-08T06:03:21.629Z] [INFO] 🎨 NFT event listener started
+[2025-10-08T06:03:21.630Z] [INFO] 🎉 OrderStake Indexer is now running!
+[2025-10-08T06:03:21.630Z] [INFO] Press Ctrl+C to stop gracefully
+[2025-10-08T06:04:34.482Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-08T06:04:34.486Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T06:04:34.783Z] [INFO] ✅ Connected to network: unknown (43114)
+[2025-10-08T06:04:34.792Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-08T06:04:34.792Z] [WARN] ⚠️  Skipping OrderToken: Contract is inactive
+[2025-10-08T06:04:34.791Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-08T06:04:34.867Z] [INFO] ✅ Network verified: unknown (43114)
+[2025-10-08T06:04:34.868Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-08T06:04:34.868Z] [INFO] 🔥 Starting OrderStake Event Indexer...
+[2025-10-08T06:04:34.868Z] [INFO] 🌐 Network: avalanche (Chain ID: 43114)
+[2025-10-08T06:04:34.869Z] [INFO] 🔗 RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T06:04:34.869Z] [INFO] 📝 Contract Status:
+[2025-10-08T06:04:34.869Z] [INFO]   • EcosystemStakingFactory: 0x3E3d...43A7 ✅
+[2025-10-08T06:04:34.869Z] [INFO]   • OrderNFTLaunch: 0x0000...0000 ⏸️ Inactive
+[2025-10-08T06:04:34.868Z] [INFO] 🎯 Event listeners initialized
+[2025-10-08T06:04:34.870Z] [ERROR] ❌ Failed to start staking listener:
+{}
+[2025-10-08T06:04:34.870Z] [WARN] ⚠️  OrderNFTLaunch not available, skipping factory events
+[2025-10-08T06:04:34.869Z] [INFO]   • OrderToken: 0x1BEd...8180 ⏸️ Inactive
+[2025-10-08T06:04:34.872Z] [INFO] ✅ Past NFT events indexed
+[2025-10-08T06:04:34.873Z] [WARN] ⚠️  OrderNFTLaunch not available for real-time listening
+[2025-10-08T06:04:34.874Z] [INFO] 🎨 NFT event listener started
+[2025-10-08T06:04:34.874Z] [INFO] ✅ nft listener started
+[2025-10-08T06:04:34.875Z] [INFO] Press Ctrl+C to stop gracefully
+[2025-10-08T06:04:34.875Z] [INFO] 🎉 OrderStake Indexer is now running!
+[2025-10-08T06:05:06.284Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-08T06:05:06.290Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T06:05:06.565Z] [INFO] ✅ Connected to network: unknown (43114)
+[2025-10-08T06:05:06.574Z] [WARN] ⚠️  Skipping OrderToken: Contract is inactive
+[2025-10-08T06:05:06.573Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-08T06:05:06.573Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-08T06:05:06.648Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-08T06:05:06.648Z] [INFO] 🎯 Event listeners initialized
+[2025-10-08T06:05:06.649Z] [INFO] 🔥 Starting OrderStake Event Indexer...
+[2025-10-08T06:05:06.649Z] [INFO] 🌐 Network: avalanche (Chain ID: 43114)
+[2025-10-08T06:05:06.647Z] [INFO] ✅ Network verified: unknown (43114)
+[2025-10-08T06:05:06.650Z] [INFO] 📝 Contract Status:
+[2025-10-08T06:05:06.650Z] [INFO]   • EcosystemStakingFactory: 0x3E3d...43A7 ✅
+[2025-10-08T06:05:06.649Z] [INFO] 🔗 RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T06:05:06.651Z] [ERROR] ❌ Failed to start staking listener:
+{}
+[2025-10-08T06:05:06.650Z] [INFO]   • OrderNFTLaunch: 0x0000...0000 ⏸️ Inactive
+[2025-10-08T06:05:06.650Z] [INFO]   • OrderToken: 0x1BEd...8180 ⏸️ Inactive
+[2025-10-08T06:05:06.652Z] [WARN] ⚠️  OrderNFTLaunch not available, skipping factory events
+[2025-10-08T06:05:06.653Z] [INFO] ✅ Past NFT events indexed
+[2025-10-08T06:05:06.653Z] [WARN] ⚠️  OrderNFTLaunch not available for real-time listening
+[2025-10-08T06:05:06.654Z] [INFO] 🎨 NFT event listener started
+[2025-10-08T06:05:06.655Z] [INFO] 🎉 OrderStake Indexer is now running!
+[2025-10-08T06:05:06.655Z] [INFO] Press Ctrl+C to stop gracefully
+[2025-10-08T06:05:06.654Z] [INFO] ✅ nft listener started
+[2025-10-08T06:06:20.258Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-08T06:06:20.265Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T06:06:20.537Z] [INFO] ✅ Connected to network: unknown (43114)
+[2025-10-08T06:06:20.544Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-08T06:06:20.544Z] [WARN] ⚠️  Skipping OrderToken: Contract is inactive
+[2025-10-08T06:06:20.544Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-08T06:06:20.619Z] [INFO] 🎯 Event listeners initialized
+[2025-10-08T06:06:20.621Z] [INFO] 🌐 Network: avalanche (Chain ID: 43114)
+[2025-10-08T06:06:20.621Z] [INFO] 🔥 Starting OrderStake Event Indexer...
+[2025-10-08T06:06:20.619Z] [INFO] ✅ Network verified: unknown (43114)
+[2025-10-08T06:06:20.621Z] [INFO] 🔗 RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T06:06:20.622Z] [INFO] 📝 Contract Status:
+[2025-10-08T06:06:20.620Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-08T06:06:20.622Z] [INFO]   • OrderNFTLaunch: 0x0000...0000 ⏸️ Inactive
+[2025-10-08T06:06:20.622Z] [INFO]   • EcosystemStakingFactory: 0x3E3d...43A7 ✅
+[2025-10-08T06:06:20.623Z] [ERROR] ❌ Failed to start staking listener:
+{}
+[2025-10-08T06:06:20.622Z] [INFO]   • OrderToken: 0x1BEd...8180 ⏸️ Inactive
+[2025-10-08T06:06:20.623Z] [WARN] ⚠️  OrderNFTLaunch not available, skipping factory events
+[2025-10-08T06:06:20.625Z] [WARN] ⚠️  OrderNFTLaunch not available for real-time listening
+[2025-10-08T06:06:20.624Z] [INFO] ✅ Past NFT events indexed
+[2025-10-08T06:06:20.626Z] [INFO] 🎨 NFT event listener started
+[2025-10-08T06:06:20.626Z] [INFO] ✅ nft listener started
+[2025-10-08T06:06:20.626Z] [INFO] 🎉 OrderStake Indexer is now running!
+[2025-10-08T06:06:20.626Z] [INFO] Press Ctrl+C to stop gracefully
+[2025-10-08T06:07:33.496Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-08T06:07:33.509Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T06:07:34.808Z] [INFO] ✅ Connected to network: unknown (43114)
+[2025-10-08T06:07:34.817Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-08T06:07:34.818Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-08T06:07:34.818Z] [WARN] ⚠️  Skipping OrderToken: Contract is inactive
+[2025-10-08T06:07:34.894Z] [INFO] ✅ Network verified: unknown (43114)
+[2025-10-08T06:07:34.895Z] [INFO] 🎯 Event listeners initialized
+[2025-10-08T06:07:34.896Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-08T06:07:34.896Z] [INFO] 🌐 Network: avalanche (Chain ID: 43114)
+[2025-10-08T06:07:34.896Z] [INFO] 🔥 Starting OrderStake Event Indexer...
+[2025-10-08T06:07:34.897Z] [INFO] 📝 Contract Status:
+[2025-10-08T06:07:34.896Z] [INFO] 🔗 RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T06:07:34.897Z] [INFO]   • OrderNFTLaunch: 0x0000...0000 ⏸️ Inactive
+[2025-10-08T06:07:34.899Z] [ERROR] ❌ Failed to start staking listener:
+{}
+[2025-10-08T06:07:34.897Z] [INFO]   • OrderToken: 0x1BEd...8180 ⏸️ Inactive
+[2025-10-08T06:07:34.897Z] [INFO]   • EcosystemStakingFactory: 0x3E3d...43A7 ✅
+[2025-10-08T06:07:34.900Z] [WARN] ⚠️  OrderNFTLaunch not available, skipping factory events
+[2025-10-08T06:07:34.903Z] [WARN] ⚠️  OrderNFTLaunch not available for real-time listening
+[2025-10-08T06:07:34.903Z] [INFO] ✅ Past NFT events indexed
+[2025-10-08T06:07:34.905Z] [INFO] 🎉 OrderStake Indexer is now running!
+[2025-10-08T06:07:34.905Z] [INFO] Press Ctrl+C to stop gracefully
+[2025-10-08T06:07:34.905Z] [INFO] 🎨 NFT event listener started
+[2025-10-08T06:07:34.905Z] [INFO] ✅ nft listener started
+[2025-10-08T06:08:39.863Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-08T06:08:39.869Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T06:08:40.131Z] [INFO] ✅ Connected to network: unknown (43114)
+[2025-10-08T06:08:40.139Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-08T06:08:40.139Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-08T06:08:40.140Z] [WARN] ⚠️  Skipping OrderToken: Contract is inactive
+[2025-10-08T06:08:40.212Z] [INFO] 🎯 Event listeners initialized
+[2025-10-08T06:08:40.212Z] [INFO] ✅ Network verified: unknown (43114)
+[2025-10-08T06:08:40.212Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-08T06:08:40.213Z] [INFO] 🔥 Starting OrderStake Event Indexer...
+[2025-10-08T06:08:40.213Z] [INFO] 🌐 Network: avalanche (Chain ID: 43114)
+[2025-10-08T06:08:40.213Z] [INFO] 🔗 RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T06:08:40.213Z] [INFO] 📝 Contract Status:
+[2025-10-08T06:08:40.214Z] [INFO]   • OrderNFTLaunch: 0x0000...0000 ⏸️ Inactive
+[2025-10-08T06:08:40.214Z] [INFO]   • EcosystemStakingFactory: 0x3E3d...43A7 ✅
+[2025-10-08T06:08:40.214Z] [INFO]   • OrderToken: 0x1BEd...8180 ⏸️ Inactive
+[2025-10-08T06:08:40.216Z] [ERROR] ❌ Failed to start staking listener:
+{}
+[2025-10-08T06:08:40.217Z] [WARN] ⚠️  OrderNFTLaunch not available, skipping factory events
+[2025-10-08T06:08:40.218Z] [INFO] ✅ Past NFT events indexed
+[2025-10-08T06:08:40.218Z] [WARN] ⚠️  OrderNFTLaunch not available for real-time listening
+[2025-10-08T06:08:40.219Z] [INFO] ✅ nft listener started
+[2025-10-08T06:08:40.219Z] [INFO] 🎨 NFT event listener started
+[2025-10-08T06:08:40.219Z] [INFO] 🎉 OrderStake Indexer is now running!
+[2025-10-08T06:08:40.219Z] [INFO] Press Ctrl+C to stop gracefully
+[2025-10-08T06:10:02.788Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T06:10:02.782Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-08T06:10:03.060Z] [INFO] ✅ Connected to network: unknown (43114)
+[2025-10-08T06:10:03.068Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-08T06:10:03.069Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-08T06:10:03.069Z] [WARN] ⚠️  Skipping OrderToken: Contract is inactive
+[2025-10-08T06:10:03.143Z] [INFO] 🎯 Event listeners initialized
+[2025-10-08T06:10:03.143Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-08T06:10:03.144Z] [INFO] 🌐 Network: avalanche (Chain ID: 43114)
+[2025-10-08T06:10:03.144Z] [INFO] 🔥 Starting OrderStake Event Indexer...
+[2025-10-08T06:10:03.145Z] [INFO]   • OrderNFTLaunch: 0x0000...0000 ⏸️ Inactive
+[2025-10-08T06:10:03.144Z] [INFO] 📝 Contract Status:
+[2025-10-08T06:10:03.145Z] [INFO]   • EcosystemStakingFactory: 0x3E3d...43A7 ✅
+[2025-10-08T06:10:03.144Z] [INFO] 🔗 RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T06:10:03.145Z] [INFO]   • OrderToken: 0x1BEd...8180 ⏸️ Inactive
+[2025-10-08T06:10:03.145Z] [INFO] 🔍 Step 1: Indexing past events...
+[2025-10-08T06:10:03.145Z] [INFO] 🎯 Starting Staking Event Listener...
+[2025-10-08T06:10:03.146Z] [ERROR] ❌ Error starting staking event listener:
+{
+  "message": "this.blockchain.getConfig is not a function",
+  "code": "No code",
+  "stack": "TypeError: this.blockchain.getConfig is not a function\n    at StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:80:38)\n    at StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:29:18)\n    at OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:26)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:353:5)",
+  "name": "TypeError",
+  "toString": "TypeError: this.blockchain.getConfig is not a function",
+  "errorType": "object",
+  "errorConstructor": "TypeError"
+}
+[2025-10-08T06:10:03.146Z] [ERROR] ❌ Error indexing past events:
+{
+  "message": "this.blockchain.getConfig is not a function",
+  "code": "No code",
+  "stack": "TypeError: this.blockchain.getConfig is not a function\n    at StakingEventListener.indexPastEvents (D:\\OrderStake01\\indexer\\listeners\\staking.js:80:38)\n    at StakingEventListener.start (D:\\OrderStake01\\indexer\\listeners\\staking.js:29:18)\n    at OrderStakeIndexer.start (D:\\OrderStake01\\indexer\\indexer.js:137:26)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async main (D:\\OrderStake01\\indexer\\indexer.js:353:5)",
+  "name": "TypeError"
+}
+[2025-10-08T06:10:03.148Z] [ERROR] ❌ Failed to start staking listener:
+{}
+[2025-10-08T06:10:03.148Z] [WARN] ⚠️  OrderNFTLaunch not available, skipping factory events
+[2025-10-08T06:10:03.142Z] [INFO] ✅ Network verified: unknown (43114)
+[2025-10-08T06:10:03.149Z] [INFO] ✅ Past NFT events indexed
+[2025-10-08T06:10:03.150Z] [WARN] ⚠️  OrderNFTLaunch not available for real-time listening
+[2025-10-08T06:10:03.151Z] [INFO] 🎨 NFT event listener started
+[2025-10-08T06:10:03.151Z] [INFO] ✅ nft listener started
+[2025-10-08T06:10:03.151Z] [INFO] 🎉 OrderStake Indexer is now running!
+[2025-10-08T06:10:03.151Z] [INFO] Press Ctrl+C to stop gracefully
+[2025-10-08T06:10:41.572Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-08T06:10:41.578Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T06:10:41.845Z] [INFO] ✅ Connected to network: unknown (43114)
+[2025-10-08T06:10:41.880Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-08T06:10:41.894Z] [WARN] ⚠️  Skipping OrderToken: Contract is inactive
+[2025-10-08T06:10:41.892Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-08T06:10:41.978Z] [INFO] ✅ Network verified: unknown (43114)
+[2025-10-08T06:10:41.979Z] [INFO] 🎯 Event listeners initialized
+[2025-10-08T06:10:41.980Z] [INFO] 🌐 Network: avalanche (Chain ID: 43114)
+[2025-10-08T06:10:41.980Z] [INFO] 🔥 Starting OrderStake Event Indexer...
+[2025-10-08T06:10:41.981Z] [INFO] 🔗 RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-08T06:10:41.981Z] [INFO]   • EcosystemStakingFactory: 0x3E3d...43A7 ✅
+[2025-10-08T06:10:41.981Z] [INFO]   • OrderNFTLaunch: 0x0000...0000 ⏸️ Inactive
+[2025-10-08T06:10:41.981Z] [INFO] 📝 Contract Status:
+[2025-10-08T06:10:41.979Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-08T06:10:41.981Z] [INFO]   • OrderToken: 0x1BEd...8180 ⏸️ Inactive
+[2025-10-08T06:10:41.982Z] [INFO] 🔍 Step 1: Indexing past events...
+[2025-10-08T06:10:41.982Z] [INFO] 🎯 Starting Staking Event Listener...
+[2025-10-08T06:10:42.137Z] [INFO] 🔍 Step 1.1: Discovering existing pools...
+[2025-10-08T06:10:42.136Z] [INFO] 📚 Indexing past staking events from block 0 to 69956863
+[2025-10-08T06:10:42.137Z] [INFO] 🔍 Discovering existing pools from factory...
+[2025-10-08T06:10:42.403Z] [ERROR] ❌ Error getting all pools:
+{
+  "code": "UNSUPPORTED_OPERATION",
+  "operation": "fragment",
+  "info": {
+    "key": "getAllPools",
+    "args": []
+  },
+  "shortMessage": "no matching fragment"
+}
+[2025-10-08T06:10:42.401Z] [INFO] 🏭 Factory System Info:
+{
+  "admin": "0x87A7...9B4F",
+  "orderToken": "0x1BEd...8180",
+  "burnAmount": "1000000.0",
+  "poolCount": 4,
+  "deadAddress": "0x0000...dEaD"
+}
+[2025-10-08T06:10:42.403Z] [INFO] 📦 Found 0 existing pools
+[2025-10-08T06:10:42.403Z] [INFO] ✅ Step 1.1 completed
+[2025-10-08T06:10:42.403Z] [INFO] 🔍 Step 1.2: Indexing factory events...
+[2025-10-08T06:10:42.404Z] [INFO] 🔍 Querying factory events 0-1999
+[2025-10-08T06:10:43.186Z] [INFO] ✅ Processed factory events 0-1999
+[2025-10-08T06:10:43.297Z] [INFO] 🔍 Querying factory events 2000-3999
+[2025-10-08T06:10:43.971Z] [INFO] ✅ Processed factory events 2000-3999
+[2025-10-08T06:10:44.079Z] [INFO] 🔍 Querying factory events 4000-5999
+[2025-10-08T06:10:44.681Z] [INFO] ✅ Processed factory events 4000-5999
+[2025-10-08T06:10:44.791Z] [INFO] 🔍 Querying factory events 6000-7999
+[2025-10-08T06:10:45.455Z] [INFO] ✅ Processed factory events 6000-7999
+[2025-10-08T06:10:45.566Z] [INFO] 🔍 Querying factory events 8000-9999
+[2025-10-08T06:10:46.319Z] [INFO] ✅ Processed factory events 8000-9999
+[2025-10-08T06:10:46.429Z] [INFO] 🔍 Querying factory events 10000-11999
+[2025-10-08T06:10:46.857Z] [INFO] ✅ Processed factory events 10000-11999
+[2025-10-08T06:10:46.969Z] [INFO] 🔍 Querying factory events 12000-13999
+[2025-10-08T06:10:47.537Z] [INFO] ✅ Processed factory events 12000-13999
+[2025-10-08T06:10:47.644Z] [INFO] 🔍 Querying factory events 14000-15999
+[2025-10-08T06:10:48.391Z] [INFO] ✅ Processed factory events 14000-15999
+[2025-10-08T06:10:48.499Z] [INFO] 🔍 Querying factory events 16000-17999
+[2025-10-08T06:10:49.259Z] [INFO] ✅ Processed factory events 16000-17999
+[2025-10-08T06:10:49.363Z] [INFO] 🔍 Querying factory events 18000-19999
+[2025-10-08T06:10:50.027Z] [INFO] ✅ Processed factory events 18000-19999
+[2025-10-08T06:10:50.132Z] [INFO] 🔍 Querying factory events 20000-21999
+[2025-10-08T06:10:50.731Z] [INFO] ✅ Processed factory events 20000-21999
+[2025-10-08T06:10:50.842Z] [INFO] 🔍 Querying factory events 22000-23999
+[2025-10-08T06:10:51.266Z] [INFO] ✅ Processed factory events 22000-23999
+[2025-10-08T06:10:51.369Z] [INFO] 🔍 Querying factory events 24000-25999
+[2025-10-08T06:10:52.126Z] [INFO] ✅ Processed factory events 24000-25999
+[2025-10-08T06:10:52.238Z] [INFO] 🔍 Querying factory events 26000-27999
+[2025-10-08T06:10:52.882Z] [INFO] ✅ Processed factory events 26000-27999
+[2025-10-08T06:10:52.993Z] [INFO] 🔍 Querying factory events 28000-29999
+[2025-10-08T06:10:53.786Z] [INFO] ✅ Processed factory events 28000-29999

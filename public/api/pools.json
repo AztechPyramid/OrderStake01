@@ -1,0 +1,585 @@
+{
+  "0x3e0e28BB59f823222F01702710eB600661ed0949": {
+    "address": "0x3e0e28BB59f823222F01702710eB600661ed0949",
+    "poolData": {
+      "stakingToken": "0xE383dA3f0B0074A258a90614149057A42F074860",
+      "rewardToken": "0xb2722d5f1b8F3E19bf026c62C47C1C7BC1CDB04E",
+      "totalStaked": "6000000000000000000000",
+      "rewardPerBlock": "7009666666666666",
+      "startBlock": "69862311",
+      "endBlock": "72862311",
+      "lastRewardBlock": "69962621",
+      "creator": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072"
+    },
+    "poolMetadata": {
+      "poolName": "TESTNET STAKE",
+      "poolDescription": "TESTNET STAKE",
+      "stakingSymbol": "AVINI",
+      "rewardSymbol": "MORE",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F0aaa431c-aed9-dd81-6169-5dc0578f385a1748872574773.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2Fc0f23888-14ac-e0a0-03e0-87bb3f7bafcd1748967871150.jpeg&w=1920&q=75"
+    },
+    "poolStats": {
+      "blocksRemaining": "0",
+      "isActive": false,
+      "hasStarted": true,
+      "hasEnded": true,
+      "remainingRewards": "0"
+    },
+    "tokenInfo": {
+      "stakingToken": {
+        "address": "0xE383dA3f0B0074A258a90614149057A42F074860",
+        "name": "Averini Cannelloni",
+        "symbol": "AVINI",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      },
+      "rewardToken": {
+        "address": "0xb2722d5f1b8F3E19bf026c62C47C1C7BC1CDB04E",
+        "name": "MORE",
+        "symbol": "MORE",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      }
+    },
+    "creatorProfile": {
+      "address": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+      "username": null,
+      "displayName": null,
+      "profileImage": null,
+      "arenaHandle": null
+    },
+    "lastUpdated": "2025-10-08T18:26:59.673Z",
+    "updatedAt": 1759948019673
+  },
+  "0xeEF4A271b2099078929584fb64560d31e196a85f": {
+    "address": "0xeEF4A271b2099078929584fb64560d31e196a85f",
+    "poolData": {
+      "stakingToken": "0x18aa3b7F5FAC5c6f4CbA24D9ba456711B484d873",
+      "rewardToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "totalStaked": "0",
+      "rewardPerBlock": "5181307692307692",
+      "startBlock": "69873255",
+      "endBlock": "82873255",
+      "lastRewardBlock": "69873255",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "Gallery Just Try Poolll TEST",
+      "poolDescription": "gallery",
+      "stakingSymbol": "Gallery",
+      "rewardSymbol": "ORDER",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2Ffd4c8558-5de1-8122-e4cc-cf251f928d1b1750371876242.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2Fa99c28dd-fd47-42da-b424-8e59a3f33aa11746667360123.jpeg&w=1920&q=75"
+    },
+    "poolStats": {
+      "blocksRemaining": "0",
+      "isActive": false,
+      "hasStarted": true,
+      "hasEnded": true,
+      "remainingRewards": "0"
+    },
+    "tokenInfo": {
+      "stakingToken": {
+        "address": "0x18aa3b7F5FAC5c6f4CbA24D9ba456711B484d873",
+        "name": "The Meme Dealership",
+        "symbol": "GALLERY",
+        "decimals": 18,
+        "totalSupply": "272190374000000000000000000"
+      },
+      "rewardToken": {
+        "address": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+        "name": "Pyramid LiquidityOrder",
+        "symbol": "ORDER",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      }
+    },
+    "creatorProfile": {
+      "address": "0x3fa6df8357DC58935360833827a9762433488C83",
+      "username": null,
+      "displayName": null,
+      "profileImage": null,
+      "arenaHandle": null
+    },
+    "lastUpdated": "2025-10-08T18:27:02.645Z",
+    "updatedAt": 1759948022645
+  },
+  "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6": {
+    "address": "0xF8143DF771920052151c2bbaA3cA2dE0955D46e6",
+    "poolData": {
+      "stakingToken": "0xeA325Ccc2b98DD04d947a9E68C27C8daE6ad0F7E",
+      "rewardToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "totalStaked": "34600000000000000000000",
+      "rewardPerBlock": "2308904666666666666",
+      "startBlock": "69873903",
+      "endBlock": "72873903",
+      "lastRewardBlock": "69962574",
+      "creator": "0x66cA70FE18c2ac9F8D0564667820d3294BAe9DeD"
+    },
+    "poolMetadata": {
+      "poolName": "sAYNE",
+      "poolDescription": "Stake your $AYNE tokens here, enjoy steak like a true gladiator that you are!",
+      "stakingSymbol": "AYNE",
+      "rewardSymbol": "ORDER",
+      "stakingLogo": "https://dexscreener.com/avalanche/0xfc77f0351a411e954d4fe9db4e85c077b15d6490",
+      "rewardLogo": "https://dexscreener.com/avalanche/0x3c5f68d2f72debba4900c60f32eb8629876401f2"
+    },
+    "poolStats": {
+      "blocksRemaining": "0",
+      "isActive": false,
+      "hasStarted": true,
+      "hasEnded": true,
+      "remainingRewards": "0"
+    },
+    "tokenInfo": {
+      "stakingToken": {
+        "address": "0xeA325Ccc2b98DD04d947a9E68C27C8daE6ad0F7E",
+        "name": "AreYouNotEntertained",
+        "symbol": "AYNE",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      },
+      "rewardToken": {
+        "address": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+        "name": "Pyramid LiquidityOrder",
+        "symbol": "ORDER",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      }
+    },
+    "creatorProfile": {
+      "address": "0x66cA70FE18c2ac9F8D0564667820d3294BAe9DeD",
+      "username": null,
+      "displayName": null,
+      "profileImage": null,
+      "arenaHandle": null
+    },
+    "lastUpdated": "2025-10-08T18:27:03.620Z",
+    "updatedAt": 1759948023620
+  },
+  "0x2b2962ef7853a0Be24155c4F4e3b75058071f94F": {
+    "address": "0x2b2962ef7853a0Be24155c4F4e3b75058071f94F",
+    "poolData": {
+      "stakingToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "rewardToken": "0xB8d7710f7d8349A506b75dD184F05777c82dAd0C",
+      "totalStaked": "321328370437561611496455",
+      "rewardPerBlock": "1473666666666666",
+      "startBlock": "69948555",
+      "endBlock": "72948555",
+      "lastRewardBlock": "69958961",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "ORDER/ARENA Staking Pool",
+      "poolDescription": "You can earn some ARENA by Staking Orders.",
+      "stakingSymbol": "ORDER",
+      "rewardSymbol": "ARENA",
+      "stakingLogo": "https://static.starsarena.com/uploads/a99c28dd-fd47-42da-b424-8e59a3f33aa11746667360123.jpeg",
+      "rewardLogo": "https://static.starsarena.com/uploads/95dc787e-19e4-3cc5-7a2b-1ec4c80f02531747905925081.png"
+    },
+    "poolStats": {
+      "blocksRemaining": "0",
+      "isActive": false,
+      "hasStarted": true,
+      "hasEnded": true,
+      "remainingRewards": "0"
+    },
+    "tokenInfo": {
+      "stakingToken": {
+        "address": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+        "name": "Pyramid LiquidityOrder",
+        "symbol": "ORDER",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      },
+      "rewardToken": {
+        "address": "0xB8d7710f7d8349A506b75dD184F05777c82dAd0C",
+        "name": "ArenaToken",
+        "symbol": "ARENA",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      }
+    },
+    "creatorProfile": {
+      "address": "0x3fa6df8357DC58935360833827a9762433488C83",
+      "username": null,
+      "displayName": null,
+      "profileImage": null,
+      "arenaHandle": null
+    },
+    "lastUpdated": "2025-10-08T18:27:21.308Z",
+    "updatedAt": 1759948041308
+  },
+  "0xf0cd69105d475e92A2A9De7233449AaA5d05978c": {
+    "address": "0xf0cd69105d475e92A2A9De7233449AaA5d05978c",
+    "poolData": {
+      "stakingToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "rewardToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "totalStaked": "403000000000000000000000",
+      "rewardPerBlock": "366666666666666666",
+      "startBlock": "69962126",
+      "endBlock": "72962126",
+      "lastRewardBlock": "69978457",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "ORDER/ORDER Staking pool",
+      "poolDescription": "order",
+      "stakingSymbol": "ORDER",
+      "rewardSymbol": "ORDER",
+      "stakingLogo": "https://static.starsarena.com/uploads/f60f9c85-5cb5-3da3-9172-2880210f46681746359811581.png",
+      "rewardLogo": "https://static.starsarena.com/uploads/f60f9c85-5cb5-3da3-9172-2880210f46681746359811581.png"
+    },
+    "poolStats": {
+      "blocksRemaining": "0",
+      "isActive": false,
+      "hasStarted": true,
+      "hasEnded": true,
+      "remainingRewards": "0"
+    },
+    "tokenInfo": {
+      "stakingToken": {
+        "address": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+        "name": "Pyramid LiquidityOrder",
+        "symbol": "ORDER",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      },
+      "rewardToken": {
+        "address": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+        "name": "Pyramid LiquidityOrder",
+        "symbol": "ORDER",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      }
+    },
+    "creatorProfile": {
+      "address": "0x3fa6df8357DC58935360833827a9762433488C83",
+      "username": null,
+      "displayName": null,
+      "profileImage": null,
+      "arenaHandle": null
+    },
+    "lastUpdated": "2025-10-08T18:27:25.139Z",
+    "updatedAt": 1759948045139
+  },
+  "0x8CAE9D2Dc3a4586C9EDC9788414079198191C144": {
+    "address": "0x8CAE9D2Dc3a4586C9EDC9788414079198191C144",
+    "poolData": {
+      "stakingToken": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+      "rewardToken": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+      "totalStaked": "0",
+      "rewardPerBlock": "366666666666666666",
+      "startBlock": "69989624",
+      "endBlock": "72989624",
+      "lastRewardBlock": "69989624",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "XO",
+      "poolDescription": "XO",
+      "stakingSymbol": "XO",
+      "rewardSymbol": "XO",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F259fc7af-b7ed-e89c-d30b-48618a71d0321759948156257.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F259fc7af-b7ed-e89c-d30b-48618a71d0321759948156257.jpeg&w=1920&q=75"
+    },
+    "poolStats": {
+      "blocksRemaining": "0",
+      "isActive": false,
+      "hasStarted": true,
+      "hasEnded": true,
+      "remainingRewards": "0"
+    },
+    "tokenInfo": {
+      "stakingToken": {
+        "address": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+        "name": "Trader XO",
+        "symbol": "XO",
+        "decimals": 18,
+        "totalSupply": "376677728000000000000000000"
+      },
+      "rewardToken": {
+        "address": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+        "name": "Trader XO",
+        "symbol": "XO",
+        "decimals": 18,
+        "totalSupply": "376677728000000000000000000"
+      }
+    },
+    "creatorProfile": {
+      "address": "0x3fa6df8357DC58935360833827a9762433488C83",
+      "username": null,
+      "displayName": null,
+      "profileImage": null,
+      "arenaHandle": null
+    },
+    "lastUpdated": "2025-10-08T20:24:06.855Z",
+    "updatedAt": 1759955046855
+  },
+  "0x5114a2077307ddd3341c5208f2be8a793d711CE7": {
+    "address": "0x5114a2077307ddd3341c5208f2be8a793d711CE7",
+    "poolData": {
+      "stakingToken": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+      "rewardToken": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+      "totalStaked": "0",
+      "rewardPerBlock": "336666666666666666",
+      "startBlock": "69994469",
+      "endBlock": "72994469",
+      "lastRewardBlock": "69994469",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "OXOXOX",
+      "poolDescription": "OXOXOX",
+      "stakingSymbol": "oxox",
+      "rewardSymbol": "oxox",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F259fc7af-b7ed-e89c-d30b-48618a71d0321759948156257.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F259fc7af-b7ed-e89c-d30b-48618a71d0321759948156257.jpeg&w=1920&q=75"
+    },
+    "poolStats": {
+      "blocksRemaining": "0",
+      "isActive": false,
+      "hasStarted": true,
+      "hasEnded": true,
+      "remainingRewards": "0"
+    },
+    "tokenInfo": {
+      "stakingToken": {
+        "address": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+        "name": "Trader XO",
+        "symbol": "XO",
+        "decimals": 18,
+        "totalSupply": "376677728000000000000000000"
+      },
+      "rewardToken": {
+        "address": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+        "name": "Trader XO",
+        "symbol": "XO",
+        "decimals": 18,
+        "totalSupply": "376677728000000000000000000"
+      }
+    },
+    "creatorProfile": {
+      "address": "0x3fa6df8357DC58935360833827a9762433488C83",
+      "username": null,
+      "displayName": null,
+      "profileImage": null,
+      "arenaHandle": null
+    },
+    "lastUpdated": "2025-10-08T22:07:56.402Z",
+    "updatedAt": 1759961276402
+  },
+  "0xd5f5dc36E3C12FAce773f51D4cC2Df81b66c2B83": {
+    "address": "0xd5f5dc36E3C12FAce773f51D4cC2Df81b66c2B83",
+    "poolData": {
+      "stakingToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "rewardToken": "0x34a1D2105dd1b658A48EAD516A9CE3032082799C",
+      "totalStaked": "0",
+      "rewardPerBlock": "36333333333333",
+      "startBlock": "69997111",
+      "endBlock": "72997111",
+      "lastRewardBlock": "69997111",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "GLADIUS STAKING",
+      "poolDescription": "GG",
+      "stakingSymbol": "ORDER",
+      "rewardSymbol": "GLADIUS",
+      "stakingLogo": "https://static.starsarena.com/uploads/a99c28dd-fd47-42da-b424-8e59a3f33aa11746667360123.jpeg",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F2747327d-cc5b-5cb0-02f7-662caf7ae2a51758005626844.jpeg&w=1920&q=75"
+    },
+    "poolStats": {
+      "blocksRemaining": "0",
+      "isActive": false,
+      "hasStarted": true,
+      "hasEnded": true,
+      "remainingRewards": "0"
+    },
+    "tokenInfo": {
+      "stakingToken": {
+        "address": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+        "name": "Pyramid LiquidityOrder",
+        "symbol": "ORDER",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      },
+      "rewardToken": {
+        "address": "0x34a1D2105dd1b658A48EAD516A9CE3032082799C",
+        "name": "GLADIUS",
+        "symbol": "GLADIUS",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      }
+    },
+    "creatorProfile": {
+      "address": "0x3fa6df8357DC58935360833827a9762433488C83",
+      "username": null,
+      "displayName": null,
+      "profileImage": null,
+      "arenaHandle": null
+    },
+    "lastUpdated": "2025-10-09T08:41:35.242Z",
+    "updatedAt": 1759999295242
+  },
+  "0x598E649d8E0f1fdfD9a16d3578638e94C5b26a7F": {
+    "address": "0x598E649d8E0f1fdfD9a16d3578638e94C5b26a7F",
+    "poolData": {
+      "stakingToken": "0x34a1D2105dd1b658A48EAD516A9CE3032082799C",
+      "rewardToken": "0xaF59422E22F8F0AD263A48b437785386F7083105",
+      "totalStaked": "0",
+      "rewardPerBlock": "50764000000000000",
+      "startBlock": "69998509",
+      "endBlock": "72998509",
+      "lastRewardBlock": "69998509",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "GLADIUS STAKING",
+      "poolDescription": "GG",
+      "stakingSymbol": "GLADIUS",
+      "rewardSymbol": "KEK",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F2747327d-cc5b-5cb0-02f7-662caf7ae2a51758005626844.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F643a5363-1a68-19b5-b2e0-4114eaf55f211749744902800.jpeg&w=1920&q=75"
+    },
+    "poolStats": {
+      "blocksRemaining": "0",
+      "isActive": false,
+      "hasStarted": true,
+      "hasEnded": true,
+      "remainingRewards": "0"
+    },
+    "tokenInfo": {
+      "stakingToken": {
+        "address": "0x34a1D2105dd1b658A48EAD516A9CE3032082799C",
+        "name": "GLADIUS",
+        "symbol": "GLADIUS",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      },
+      "rewardToken": {
+        "address": "0xaF59422E22F8F0AD263A48b437785386F7083105",
+        "name": "KEK ON AVAX",
+        "symbol": "KEK",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      }
+    },
+    "creatorProfile": {
+      "address": "0x3fa6df8357DC58935360833827a9762433488C83",
+      "username": null,
+      "displayName": null,
+      "profileImage": null,
+      "arenaHandle": null
+    },
+    "lastUpdated": "2025-10-09T08:41:36.103Z",
+    "updatedAt": 1759999296103
+  },
+  "0xE6025B0f4193A82e40a1C623e49e4885BE473F40": {
+    "address": "0xE6025B0f4193A82e40a1C623e49e4885BE473F40",
+    "poolData": {
+      "stakingToken": "0xbe11b494B6D7AB83906b67c3Dd727D9D10E446f8",
+      "rewardToken": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+      "totalStaked": "0",
+      "rewardPerBlock": "2259091333333333333",
+      "startBlock": "70000277",
+      "endBlock": "73000277",
+      "lastRewardBlock": "70000277",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "SLOP-XO",
+      "poolDescription": "SLOP-XO",
+      "stakingSymbol": "SLOP",
+      "rewardSymbol": "XO",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F297496e9-881f-3f93-2ff4-7f48cdb69d7c1759249692039.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F259fc7af-b7ed-e89c-d30b-48618a71d0321759948156257.jpeg&w=1920&q=75"
+    },
+    "poolStats": {
+      "blocksRemaining": "0",
+      "isActive": false,
+      "hasStarted": true,
+      "hasEnded": true,
+      "remainingRewards": "0"
+    },
+    "tokenInfo": {
+      "stakingToken": {
+        "address": "0xbe11b494B6D7AB83906b67c3Dd727D9D10E446f8",
+        "name": "SLOP",
+        "symbol": "SLOP",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      },
+      "rewardToken": {
+        "address": "0xf76e22d79A2a8588d78dd4E76f0393EcCE9B33C3",
+        "name": "Trader XO",
+        "symbol": "XO",
+        "decimals": 18,
+        "totalSupply": "24700915000000000000000000"
+      }
+    },
+    "creatorProfile": {
+      "address": "0x3fa6df8357DC58935360833827a9762433488C83",
+      "username": null,
+      "displayName": null,
+      "profileImage": null,
+      "arenaHandle": null
+    },
+    "lastUpdated": "2025-10-09T08:41:37.765Z",
+    "updatedAt": 1759999297765
+  },
+  "0x9ba949F6a1F8C0B36271D472123EbdA83CBcd39d": {
+    "address": "0x9ba949F6a1F8C0B36271D472123EbdA83CBcd39d",
+    "poolData": {
+      "stakingToken": "0x36A8e1B497dF7AF69D4cF6c970bf87085B826c0f",
+      "rewardToken": "0x18bdD50c0027050FdEAC1Dbb6Db017A6F89B486a",
+      "totalStaked": "1700000000000000000000",
+      "rewardPerBlock": "16723000000000000",
+      "startBlock": "70002995",
+      "endBlock": "73002995",
+      "lastRewardBlock": "70015274",
+      "creator": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072"
+    },
+    "poolMetadata": {
+      "poolName": "DILDO/SHIT STAKING POOL",
+      "poolDescription": "LOL",
+      "stakingSymbol": "DILDO",
+      "rewardSymbol": "SHIT",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2Fefd039de-00cd-f29a-77d3-02edfbf7833c1747123759808.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F817ee7fc-474d-57ce-6950-9f56ffdf793b1747409110815.jpeg&w=1920&q=75"
+    },
+    "poolStats": {
+      "blocksRemaining": "0",
+      "isActive": false,
+      "hasStarted": true,
+      "hasEnded": true,
+      "remainingRewards": "0"
+    },
+    "tokenInfo": {
+      "stakingToken": {
+        "address": "0x36A8e1B497dF7AF69D4cF6c970bf87085B826c0f",
+        "name": "Big Green Dildo",
+        "symbol": "DILDO",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      },
+      "rewardToken": {
+        "address": "0x18bdD50c0027050FdEAC1Dbb6Db017A6F89B486a",
+        "name": "Shitcoin on Avax",
+        "symbol": "SHIT",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      }
+    },
+    "creatorProfile": {
+      "address": "0xec0aCa6986a974847Caa13ebe50A00b3F5c4F072",
+      "username": null,
+      "displayName": null,
+      "profileImage": null,
+      "arenaHandle": null
+    },
+    "lastUpdated": "2025-10-09T08:41:40.164Z",
+    "updatedAt": 1759999300164
+  }
+}

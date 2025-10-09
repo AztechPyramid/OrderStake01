@@ -1,0 +1,74 @@
+name: OrderStake Indexer
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'  # Every 15 minutes
+  workflow_dispatch:  # Manual trigger
+  push:
+    branches: [ main ]
+    paths: [ 'indexer/**' ]
+
+jobs:
+  indexer:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 🛠️ Checkout
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: 📦 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: indexer/package-lock.json
+
+    - name: 🔧 Install Dependencies
+      working-directory: ./indexer
+      run: npm ci
+
+    - name: 🚀 Run Indexer
+      working-directory: ./indexer
+      run: node indexer.js --once
+
+    - name: 📋 Copy Data to API
+      run: |
+        # Create both API directories
+        mkdir -p public/api
+        mkdir -p out/api
+        
+        # Copy to both locations
+        cp indexer/data/*.json public/api/ 2>/dev/null || echo "No JSON files to copy"
+        cp indexer/data/*.json out/api/ 2>/dev/null || echo "No JSON files to copy"
+        
+        # Create stats.json
+        EVENTS=$(wc -l < public/api/staking.json || echo "0")
+        POOLS=$(jq '. | length' public/api/pools.json 2>/dev/null || echo "0")
+        
+        STATS_CONTENT="{\"totalEvents\":$EVENTS,\"totalPools\":$POOLS,\"lastUpdated\":\"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\",\"buildNumber\":${{ github.run_number }}}"
+        echo "$STATS_CONTENT" > public/api/stats.json
+        echo "$STATS_CONTENT" > out/api/stats.json
+        
+        # Create index.json
+        INDEX_CONTENT="{\"name\":\"OrderStake API\",\"version\":\"${{ github.run_number }}\",\"updated\":\"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\",\"endpoints\":{\"pools\":\"./pools.json\",\"events\":\"./staking.json\",\"stats\":\"./stats.json\"}}"
+        echo "$INDEX_CONTENT" > public/api/index.json
+        echo "$INDEX_CONTENT" > out/api/index.json
+
+    - name: 💾 Commit & Push
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # Add both API directories
+        git add public/api/
+        git add out/api/
+        
+        if git diff --staged --quiet; then
+          echo "📝 No changes to commit"
+        else
+          git commit -m "🤖 Update API data - Build ${{ github.run_number }}"
+          git push
+          echo "✅ API data updated and deployed"
+        fi
