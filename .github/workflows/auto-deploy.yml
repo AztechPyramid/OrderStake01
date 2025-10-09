@@ -13,13 +13,7 @@ on:
         required: false
         default: 'true'
 
-  # Push ile de tetiklenebilir (opsiyonel)
-  push:
-    branches: [ main ]
-    paths: 
-      - 'indexer/**'
-      - 'contracts/**'
-      - '.github/workflows/**'
+  # Push trigger'ını kaldırdık - sadece scheduled ve manual çalışacak
 
 env:
   NODE_VERSION: '18'

@@ -91,7 +91,22 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
     }
   }, [isOpen, isLoading]);
 
-  // Refresh user data when modal opens
+  // Get user-friendly error message
+  const getUserFriendlyError = (errorMessage: string) => {
+    if (errorMessage.includes('missing revert data') || errorMessage.includes('CALL_EXCEPTION')) {
+      return 'This pool may contain invalid token contracts. Please contact the pool creator.';
+    }
+    if (errorMessage.includes('not a contract')) {
+      return 'One or more token addresses are invalid. Please verify the pool configuration.';
+    }
+    if (errorMessage.includes('timeout')) {
+      return 'Request timeout. Please check your network connection and try again.';
+    }
+    if (errorMessage.includes('network') || errorMessage.includes('connection')) {
+      return 'Network connection issue. Please check your internet and try again.';
+    }
+    return errorMessage;
+  };
   useEffect(() => {
     if (isOpen && isConnected && address && poolData) {
       fetchUserInfo();
@@ -199,13 +214,31 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
           {error ? (
             <div className="flex flex-col items-center justify-center py-8">
               <div className="text-red-400 mb-4">❌</div>
-              <p className="text-sm text-text-secondary mb-4 text-center">{error}</p>
-              <button
-                onClick={retryLoad}
-                className="px-4 py-2 bg-accent-primary hover:bg-accent-primary/80 text-white rounded-lg transition-colors"
-              >
-                Retry
-              </button>
+              <p className="text-sm text-text-secondary mb-4 text-center max-w-md">
+                {getUserFriendlyError(error)}
+              </p>
+              <div className="flex gap-2">
+                <button
+                  onClick={retryLoad}
+                  className="px-4 py-2 bg-accent-primary hover:bg-accent-primary/80 text-white rounded-lg transition-colors"
+                >
+                  Retry
+                </button>
+                <button
+                  onClick={onClose}
+                  className="px-4 py-2 bg-surface-secondary hover:bg-surface-tertiary text-text-primary rounded-lg transition-colors"
+                >
+                  Close
+                </button>
+              </div>
+              {error.includes('missing revert data') && (
+                <div className="mt-4 p-3 bg-yellow-500/10 border border-yellow-500/30 rounded-lg max-w-md">
+                  <p className="text-xs text-yellow-400 text-center">
+                    💡 This error usually occurs when the pool uses non-standard token contracts. 
+                    The pool may still work, but some features might be limited.
+                  </p>
+                </div>
+              )}
             </div>
           ) : (!poolData || !isDataLoaded) && !loadingTimeout ? (
             <div className="flex flex-col items-center justify-center py-8">
@@ -214,14 +247,24 @@ export const EcosystemPoolModal: React.FC<EcosystemPoolModalProps> = ({
             </div>
           ) : loadingTimeout ? (
             <div className="flex flex-col items-center justify-center py-8">
-              <div className="text-red-400 mb-4">⚠️</div>
-              <p className="text-sm text-text-secondary mb-4">Loading timeout. Please try again.</p>
-              <button
-                onClick={retryLoad}
-                className="px-4 py-2 bg-accent-primary hover:bg-accent-primary/80 text-white rounded-lg transition-colors"
-              >
-                Retry
-              </button>
+              <div className="text-yellow-400 mb-4">⚠️</div>
+              <p className="text-sm text-text-secondary mb-4 text-center max-w-md">
+                Loading is taking longer than expected. This might be due to network issues or problematic token contracts.
+              </p>
+              <div className="flex gap-2">
+                <button
+                  onClick={retryLoad}
+                  className="px-4 py-2 bg-accent-primary hover:bg-accent-primary/80 text-white rounded-lg transition-colors"
+                >
+                  Retry
+                </button>
+                <button
+                  onClick={onClose}
+                  className="px-4 py-2 bg-surface-secondary hover:bg-surface-tertiary text-text-primary rounded-lg transition-colors"
+                >
+                  Close
+                </button>
+              </div>
             </div>
           ) : error ? (
             <div className="flex flex-col items-center justify-center py-8">

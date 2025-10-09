@@ -3012,5 +3012,66 @@
     },
     "timestamp": "2025-10-09T09:28:21.504Z",
     "indexedAt": 1760002101504
+  },
+  {
+    "eventName": "PoolCreated",
+    "contractName": "EcosystemStakingFactory",
+    "contractAddress": "0x3E3d8a430fF70E89C035301943375377CC7343A7",
+    "blockNumber": 70020178,
+    "txHash": "0x623ba622765a1d1456c7d3203503ce5c095386d8b2f955cb3dc3ecce2cea2c3f",
+    "poolAddress": "0xBf8F93D6dc84133d2fC01a561b7fE1930A2aaCb8",
+    "creator": "0x3fa6df8357DC58935360833827a9762433488C83",
+    "stakingToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+    "rewardToken": "0xeA325Ccc2b98DD04d947a9E68C27C8daE6ad0F7E",
+    "rewardPerBlock": "39183666666666666",
+    "startBlock": "70021159",
+    "endBlock": "73021159",
+    "poolInfo": {
+      "stakingToken": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "rewardToken": "0xeA325Ccc2b98DD04d947a9E68C27C8daE6ad0F7E",
+      "totalStaked": "0",
+      "rewardPerBlock": "39183666666666666",
+      "startBlock": "70021159",
+      "endBlock": "73021159",
+      "lastRewardBlock": "70021159",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "ORDER>SLOP [TEST]",
+      "poolDescription": "mm",
+      "stakingSymbol": "GLADIUS",
+      "rewardSymbol": "AYNE",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2Fcf2495b4-ca19-def0-31a8-78ea746af86a1749209670944.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F2747327d-cc5b-5cb0-02f7-662caf7ae2a51758005626844.jpeg&w=1920&q=75"
+    },
+    "stakingTokenInfo": {
+      "address": "0x1BEd077195307229FcCBC719C5f2ce6416A58180",
+      "name": "Pyramid LiquidityOrder",
+      "symbol": "ORDER",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "rewardTokenInfo": {
+      "address": "0xeA325Ccc2b98DD04d947a9E68C27C8daE6ad0F7E",
+      "name": "AreYouNotEntertained",
+      "symbol": "AYNE",
+      "decimals": 18,
+      "totalSupply": "10000000000000000000000000000"
+    },
+    "formatted": {
+      "poolAddress": "0xBf8F...aCb8",
+      "creator": "0x3fa6...8C83",
+      "stakingToken": "0x1BEd...8180",
+      "rewardToken": "0xeA32...0F7E",
+      "rewardPerBlock": "0.039183666666666666",
+      "startBlock": "70021159",
+      "endBlock": "73021159",
+      "poolName": "ORDER>SLOP [TEST]",
+      "stakingSymbol": "ORDER",
+      "rewardSymbol": "AYNE",
+      "totalStaked": "0.0"
+    },
+    "timestamp": "2025-10-09T10:00:43.662Z",
+    "indexedAt": 1760004043662
   }
 ]

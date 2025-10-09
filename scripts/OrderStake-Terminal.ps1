@@ -2,7 +2,8 @@ param(
     [switch]$Start,
     [switch]$Stop,
     [switch]$Status,
-    [int]$Interval = 60
+    [switch]$Once,
+    [int]$Interval = 3600  # Default 1 hour instead of 1 minute
 )
 
 # Renkli output fonksiyonları
@@ -288,11 +289,17 @@ if ($Start) {
     Write-Log "Status check - Runtime: $((Get-Date) - $script:startTime)" "INFO"
     Write-Log "Cycles completed: $script:cycleCount" "INFO"
     Write-Log "Is running: $script:isRunning" "INFO"
+} elseif ($Once) {
+    Write-Header "Single Deploy"
+    Write-ColorText "Running single deployment..." "Cyan"
+    Start-Deploy -IsManual $true
+    Write-ColorText "Single deployment completed!" "Green"
+    exit 0
 } else {
     # Interaktif mod
     Write-Host ""
     Write-ColorText "Available commands:" "Yellow"
-    Write-Host "  1. Start Auto Deploy (Every $Interval seconds)"
+    Write-Host "  1. Start Auto Deploy (Every $Interval seconds = $([math]::Round($Interval/60, 1)) minutes)"
     Write-Host "  2. Manual Deploy (One time)"
     Write-Host "  3. Exit"
     Write-Host ""
