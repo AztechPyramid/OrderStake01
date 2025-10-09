@@ -3,7 +3,7 @@ param(
     [switch]$Stop,
     [switch]$Status,
     [switch]$Once,
-    [int]$Interval = 3600  # Default 1 hour instead of 1 minute
+    [int]$Interval = 900  # Default 15 minutes (900 seconds)
 )
 
 # Renkli output fonksiyonları
