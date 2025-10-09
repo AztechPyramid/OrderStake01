@@ -62,6 +62,18 @@ export const useUserPoolsInfo = (poolAddresses: string[]) => {
       );
 
       setUserPoolsInfo(infoMap);
+      
+      console.log('🎯 [USER_POOLS_INFO] Updated user pools info:', {
+        address,
+        poolsChecked: poolAddresses.length,
+        userInfoCount: infoMap.size,
+        stakesFound: Array.from(infoMap.values()).filter(info => info.hasStake).length,
+        stakeDetails: Array.from(infoMap.entries()).map(([addr, info]) => ({
+          address: addr.slice(0, 10) + '...',
+          hasStake: info.hasStake,
+          stakedAmount: info.stakedAmount
+        }))
+      });
     } catch (err) {
       console.error('Error fetching user pools info:', err);
     } finally {

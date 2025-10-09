@@ -120,11 +120,33 @@ const EcosystemStakingPageContent: React.FC = () => {
   const getLocalUserStakedPools = useCallback(() => {
     if (!address || !pools.length) return [];
     
-    // Filter pools based on userPoolsInfo data
-    return pools.filter(pool => {
-      const userInfo = userPoolsInfo.get(pool.address);
-      return userInfo?.hasStake || false;
+    console.log('🔍 [YOUR_STAKE] Getting user staked pools:', {
+      address,
+      poolsCount: pools.length,
+      userPoolsInfoSize: userPoolsInfo.size,
+      userPoolsInfoData: Array.from(userPoolsInfo.entries()).map(([addr, info]) => ({
+        address: addr,
+        hasStake: info.hasStake,
+        stakedAmount: info.stakedAmount
+      }))
     });
+    
+    // Filter pools based on userPoolsInfo data
+    const stakedPools = pools.filter(pool => {
+      const userInfo = userPoolsInfo.get(pool.address);
+      const hasStake = userInfo?.hasStake || false;
+      
+      console.log(`🎯 [POOL_CHECK] ${pool.address}: hasStake=${hasStake}, stakedAmount=${userInfo?.stakedAmount || '0'}`);
+      
+      return hasStake;
+    });
+    
+    console.log('✅ [YOUR_STAKE] Filtered result:', {
+      stakedPoolsCount: stakedPools.length,
+      stakedPoolAddresses: stakedPools.map(p => p.address)
+    });
+    
+    return stakedPools;
   }, [address, pools, userPoolsInfo]);
 
   // Handle tab switching and data fetching
@@ -135,6 +157,12 @@ const EcosystemStakingPageContent: React.FC = () => {
       case 'staked':
         // Use local filtering based on userPoolsInfo instead of broken getUserStakedPools
         const stakedPools = getLocalUserStakedPools();
+        console.log('🎯 [YOUR_STAKE] Filtering staked pools:', {
+          totalPools: pools.length,
+          userPoolsInfoSize: userPoolsInfo.size,
+          stakedPools: stakedPools.length,
+          userAddress: address
+        });
         setFilteredPools(stakedPools);
         break;
       case 'created':
@@ -149,7 +177,7 @@ const EcosystemStakingPageContent: React.FC = () => {
         break;
       // 'verified' tab is handled separately in the component
     }
-  }, [activeTab, isConnected, address, getLocalUserStakedPools, getUserCreatedPools, getAllPools, searchTerm]);
+  }, [activeTab, isConnected, address, getLocalUserStakedPools, getUserCreatedPools, getAllPools, searchTerm, userPoolsInfo]);
 
   // Search effect with debounced search term
   useEffect(() => {
@@ -173,7 +201,7 @@ const EcosystemStakingPageContent: React.FC = () => {
           break;
       }
     }
-  }, [debouncedSearchTerm, searchPools, getAllPools, getLocalUserStakedPools, getUserCreatedPools, activeTab]);
+  }, [debouncedSearchTerm, searchPools, getAllPools, getLocalUserStakedPools, getUserCreatedPools, activeTab, userPoolsInfo]);
 
   // Initial data load
   useEffect(() => {
