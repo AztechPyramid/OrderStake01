@@ -846,5 +846,58 @@
     },
     "lastUpdated": "2025-10-09T20:41:19.777Z",
     "updatedAt": 1760042479777
+  },
+  "0xedE7E8Ba201D284eC73eb92777b0d0b4721B431D": {
+    "address": "0xedE7E8Ba201D284eC73eb92777b0d0b4721B431D",
+    "poolData": {
+      "stakingToken": "0x878bb56E81D0C181C5f5201C5Efd534E8336c34f",
+      "rewardToken": "0xC83A25e44D61193dAE5328219646127A9977D49c",
+      "totalStaked": "0",
+      "rewardPerBlock": "51486666666666666",
+      "startBlock": "70058636",
+      "endBlock": "73058636",
+      "lastRewardBlock": "70058636",
+      "creator": "0x3fa6df8357DC58935360833827a9762433488C83"
+    },
+    "poolMetadata": {
+      "poolName": "AVAX9000/OVAX Stake Pool",
+      "poolDescription": "create fam",
+      "stakingSymbol": "OVAX",
+      "rewardSymbol": "AVAX9000",
+      "stakingLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F289b3876-080b-e920-fac5-3beea6e0f3ea1749630549327.jpeg&w=1920&q=75",
+      "rewardLogo": "https://arena.social/_next/image?url=https%3A%2F%2Fstatic.starsarena.com%2Fuploads%2F6ebdf74a-58fa-7fe6-bf86-2f8c324413b21749664442894.jpeg&w=1920&q=75"
+    },
+    "poolStats": {
+      "blocksRemaining": "0",
+      "isActive": false,
+      "hasStarted": true,
+      "hasEnded": true,
+      "remainingRewards": "0"
+    },
+    "tokenInfo": {
+      "stakingToken": {
+        "address": "0x878bb56E81D0C181C5f5201C5Efd534E8336c34f",
+        "name": "OVAX",
+        "symbol": "OVAX",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      },
+      "rewardToken": {
+        "address": "0xC83A25e44D61193dAE5328219646127A9977D49c",
+        "name": "Avalanche 9000",
+        "symbol": "AVAX9000",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000"
+      }
+    },
+    "creatorProfile": {
+      "address": "0x3fa6df8357DC58935360833827a9762433488C83",
+      "username": null,
+      "displayName": null,
+      "profileImage": null,
+      "arenaHandle": null
+    },
+    "lastUpdated": "2025-10-10T02:26:01.396Z",
+    "updatedAt": 1760063161396
   }
 }

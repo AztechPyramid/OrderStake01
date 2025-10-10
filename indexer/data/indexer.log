@@ -16880,3 +16880,257 @@
 [2025-10-09T21:31:29.049Z] [INFO] 🔍 Step 1.3: Indexing pool events...
 [2025-10-09T21:31:29.050Z] [INFO] ✅ Step 1.3 completed
 [2025-10-09T21:31:29.050Z] [INFO] 📭 No pools discovered, skipping pool events indexing
+[2025-10-09T23:20:21.604Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-09T23:20:21.608Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-09T23:20:21.905Z] [INFO] ✅ Connected to network: avalanche (43114)
+[2025-10-09T23:20:21.909Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-09T23:20:21.909Z] [WARN] ⚠️  Skipping OrderToken: ABI file not found at D:\OrderStake01\indexer\abi\OrderToken.json
+[2025-10-09T23:20:21.909Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-09T23:20:21.910Z] [INFO] 📚 Loaded 1 contracts
+[2025-10-09T23:20:21.993Z] [INFO] 🎯 Event listeners initialized
+[2025-10-09T23:20:21.993Z] [INFO] 🚀 Blockchain manager initialized
+[2025-10-09T23:20:21.999Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-09T23:20:21.999Z] [INFO] 🤖 Running in one-time mode (GitHub Actions)
+[2025-10-09T23:20:21.992Z] [INFO] ✅ Network verified: avalanche (43114)
+[2025-10-09T23:20:22.150Z] [INFO] 🔍 Step 1.0: Loading known pools from storage...
+[2025-10-09T23:20:22.150Z] [WARN] ⚠️ Could not load known pools from storage: this.storage.getPoolsData is not a function
+[2025-10-09T23:20:22.150Z] [INFO] 📚 Incremental indexing from block 70047021 to 70051048 (last processed: 70047020)
+[2025-10-09T23:20:22.150Z] [INFO] 🔍 Step 1.2: Indexing factory events...
+[2025-10-09T23:20:22.151Z] [INFO] 🔍 Querying factory events 70047021-70049020
+[2025-10-09T23:20:22.150Z] [INFO] ✅ Step 1.0 completed
+[2025-10-09T23:20:22.787Z] [INFO] ✅ Processed factory events 70047021-70049020
+[2025-10-09T23:20:22.892Z] [INFO] 🔍 Querying factory events 70049021-70051020
+[2025-10-09T23:20:23.442Z] [INFO] ✅ Processed factory events 70049021-70051020
+[2025-10-09T23:20:23.547Z] [INFO] 🔍 Querying factory events 70051021-70051048
+[2025-10-09T23:20:24.190Z] [INFO] ✅ Step 1.2 completed
+[2025-10-09T23:20:24.190Z] [INFO] ✅ Processed factory events 70051021-70051048
+[2025-10-09T23:20:24.190Z] [INFO] 📭 No pools discovered, skipping pool events indexing
+[2025-10-09T23:20:24.190Z] [INFO] 🔍 Step 1.3: Indexing pool events...
+[2025-10-09T23:20:24.190Z] [INFO] ✅ Step 1.3 completed
+[2025-10-09T23:36:49.573Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-09T23:36:49.576Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-09T23:36:49.870Z] [INFO] ✅ Connected to network: avalanche (43114)
+[2025-10-09T23:36:49.873Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-09T23:36:49.874Z] [INFO] 📚 Loaded 1 contracts
+[2025-10-09T23:36:49.874Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-09T23:36:49.874Z] [WARN] ⚠️  Skipping OrderToken: ABI file not found at D:\OrderStake01\indexer\abi\OrderToken.json
+[2025-10-09T23:36:49.954Z] [INFO] 🚀 Blockchain manager initialized
+[2025-10-09T23:36:49.953Z] [INFO] ✅ Network verified: avalanche (43114)
+[2025-10-09T23:36:49.957Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-09T23:36:49.954Z] [INFO] 🎯 Event listeners initialized
+[2025-10-09T23:36:49.957Z] [INFO] 🤖 Running in one-time mode (GitHub Actions)
+[2025-10-09T23:36:50.252Z] [WARN] ⚠️ Could not load known pools from storage: this.storage.getPoolsData is not a function
+[2025-10-09T23:36:50.251Z] [INFO] 📚 Incremental indexing from block 70051049 to 70051635 (last processed: 70051048)
+[2025-10-09T23:36:50.252Z] [INFO] ✅ Step 1.0 completed
+[2025-10-09T23:36:50.252Z] [INFO] 🔍 Querying factory events 70051049-70051635
+[2025-10-09T23:36:50.252Z] [INFO] 🔍 Step 1.2: Indexing factory events...
+[2025-10-09T23:36:50.251Z] [INFO] 🔍 Step 1.0: Loading known pools from storage...
+[2025-10-09T23:36:50.822Z] [INFO] ✅ Processed factory events 70051049-70051635
+[2025-10-09T23:36:50.822Z] [INFO] ✅ Step 1.2 completed
+[2025-10-09T23:36:50.822Z] [INFO] 🔍 Step 1.3: Indexing pool events...
+[2025-10-09T23:36:50.823Z] [INFO] ✅ Step 1.3 completed
+[2025-10-09T23:36:50.823Z] [INFO] 📭 No pools discovered, skipping pool events indexing
+[2025-10-09T23:53:32.672Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-09T23:53:32.675Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-09T23:53:33.205Z] [INFO] ✅ Connected to network: avalanche (43114)
+[2025-10-09T23:53:33.208Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-09T23:53:33.208Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-09T23:53:33.209Z] [WARN] ⚠️  Skipping OrderToken: ABI file not found at D:\OrderStake01\indexer\abi\OrderToken.json
+[2025-10-09T23:53:33.209Z] [INFO] 📚 Loaded 1 contracts
+[2025-10-09T23:53:33.287Z] [INFO] ✅ Network verified: avalanche (43114)
+[2025-10-09T23:53:33.290Z] [INFO] 🤖 Running in one-time mode (GitHub Actions)
+[2025-10-09T23:53:33.288Z] [INFO] 🚀 Blockchain manager initialized
+[2025-10-09T23:53:33.288Z] [INFO] 🎯 Event listeners initialized
+[2025-10-09T23:53:33.290Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-09T23:53:33.563Z] [INFO] 🔍 Step 1.0: Loading known pools from storage...
+[2025-10-09T23:53:33.563Z] [INFO] 📚 Incremental indexing from block 70051636 to 70052222 (last processed: 70051635)
+[2025-10-09T23:53:33.563Z] [WARN] ⚠️ Could not load known pools from storage: this.storage.getPoolsData is not a function
+[2025-10-09T23:53:33.563Z] [INFO] ✅ Step 1.0 completed
+[2025-10-09T23:53:33.563Z] [INFO] 🔍 Querying factory events 70051636-70052222
+[2025-10-09T23:53:33.563Z] [INFO] 🔍 Step 1.2: Indexing factory events...
+[2025-10-09T23:53:34.314Z] [INFO] ✅ Processed factory events 70051636-70052222
+[2025-10-09T23:53:34.314Z] [INFO] 🔍 Step 1.3: Indexing pool events...
+[2025-10-09T23:53:34.314Z] [INFO] ✅ Step 1.2 completed
+[2025-10-09T23:53:34.314Z] [INFO] ✅ Step 1.3 completed
+[2025-10-09T23:53:34.314Z] [INFO] 📭 No pools discovered, skipping pool events indexing
+[2025-10-10T00:10:08.856Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-10T00:10:08.859Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-10T00:10:09.142Z] [INFO] ✅ Connected to network: avalanche (43114)
+[2025-10-10T00:10:09.146Z] [INFO] 📚 Loaded 1 contracts
+[2025-10-10T00:10:09.145Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-10T00:10:09.145Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-10T00:10:09.145Z] [WARN] ⚠️  Skipping OrderToken: ABI file not found at D:\OrderStake01\indexer\abi\OrderToken.json
+[2025-10-10T00:10:09.222Z] [INFO] ✅ Network verified: avalanche (43114)
+[2025-10-10T00:10:09.223Z] [INFO] 🎯 Event listeners initialized
+[2025-10-10T00:10:09.225Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-10T00:10:09.225Z] [INFO] 🤖 Running in one-time mode (GitHub Actions)
+[2025-10-10T00:10:09.222Z] [INFO] 🚀 Blockchain manager initialized
+[2025-10-10T00:10:09.486Z] [INFO] ✅ Step 1.0 completed
+[2025-10-10T00:10:09.486Z] [INFO] 📚 Incremental indexing from block 70052223 to 70052797 (last processed: 70052222)
+[2025-10-10T00:10:09.486Z] [INFO] 🔍 Step 1.0: Loading known pools from storage...
+[2025-10-10T00:10:09.486Z] [WARN] ⚠️ Could not load known pools from storage: this.storage.getPoolsData is not a function
+[2025-10-10T00:10:09.486Z] [INFO] 🔍 Querying factory events 70052223-70052797
+[2025-10-10T00:10:09.486Z] [INFO] 🔍 Step 1.2: Indexing factory events...
+[2025-10-10T00:10:10.258Z] [INFO] ✅ Step 1.2 completed
+[2025-10-10T00:10:10.258Z] [INFO] ✅ Processed factory events 70052223-70052797
+[2025-10-10T00:10:10.258Z] [INFO] 🔍 Step 1.3: Indexing pool events...
+[2025-10-10T00:10:10.258Z] [INFO] ✅ Step 1.3 completed
+[2025-10-10T00:10:10.258Z] [INFO] 📭 No pools discovered, skipping pool events indexing
+[2025-10-10T00:26:41.337Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-10T00:26:41.340Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-10T00:26:41.760Z] [INFO] ✅ Connected to network: avalanche (43114)
+[2025-10-10T00:26:41.763Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-10T00:26:41.763Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-10T00:26:41.763Z] [WARN] ⚠️  Skipping OrderToken: ABI file not found at D:\OrderStake01\indexer\abi\OrderToken.json
+[2025-10-10T00:26:41.763Z] [INFO] 📚 Loaded 1 contracts
+[2025-10-10T00:26:41.841Z] [INFO] ✅ Network verified: avalanche (43114)
+[2025-10-10T00:26:41.841Z] [INFO] 🚀 Blockchain manager initialized
+[2025-10-10T00:26:41.842Z] [INFO] 🎯 Event listeners initialized
+[2025-10-10T00:26:41.844Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-10T00:26:41.844Z] [INFO] 🤖 Running in one-time mode (GitHub Actions)
+[2025-10-10T00:26:42.111Z] [WARN] ⚠️ Could not load known pools from storage: this.storage.getPoolsData is not a function
+[2025-10-10T00:26:42.111Z] [INFO] 📚 Incremental indexing from block 70052798 to 70053414 (last processed: 70052797)
+[2025-10-10T00:26:42.111Z] [INFO] 🔍 Step 1.0: Loading known pools from storage...
+[2025-10-10T00:26:42.111Z] [INFO] ✅ Step 1.0 completed
+[2025-10-10T00:26:42.111Z] [INFO] 🔍 Querying factory events 70052798-70053414
+[2025-10-10T00:26:42.111Z] [INFO] 🔍 Step 1.2: Indexing factory events...
+[2025-10-10T00:26:42.793Z] [INFO] ✅ Step 1.2 completed
+[2025-10-10T00:26:42.793Z] [INFO] ✅ Processed factory events 70052798-70053414
+[2025-10-10T00:26:42.794Z] [INFO] 📭 No pools discovered, skipping pool events indexing
+[2025-10-10T00:26:42.793Z] [INFO] 🔍 Step 1.3: Indexing pool events...
+[2025-10-10T00:26:42.794Z] [INFO] ✅ Step 1.3 completed
+[2025-10-10T00:43:13.330Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-10T00:43:13.334Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-10T00:43:13.698Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-10T00:43:13.695Z] [INFO] ✅ Connected to network: avalanche (43114)
+[2025-10-10T00:43:13.699Z] [WARN] ⚠️  Skipping OrderToken: ABI file not found at D:\OrderStake01\indexer\abi\OrderToken.json
+[2025-10-10T00:43:13.699Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-10T00:43:13.699Z] [INFO] 📚 Loaded 1 contracts
+[2025-10-10T00:43:13.775Z] [INFO] ✅ Network verified: avalanche (43114)
+[2025-10-10T00:43:13.775Z] [INFO] 🎯 Event listeners initialized
+[2025-10-10T00:43:13.775Z] [INFO] 🚀 Blockchain manager initialized
+[2025-10-10T00:43:13.778Z] [INFO] 🤖 Running in one-time mode (GitHub Actions)
+[2025-10-10T00:43:13.778Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-10T00:43:14.031Z] [INFO] 📚 Incremental indexing from block 70053415 to 70054041 (last processed: 70053414)
+[2025-10-10T00:43:14.032Z] [WARN] ⚠️ Could not load known pools from storage: this.storage.getPoolsData is not a function
+[2025-10-10T00:43:14.032Z] [INFO] 🔍 Step 1.0: Loading known pools from storage...
+[2025-10-10T00:43:14.032Z] [INFO] ✅ Step 1.0 completed
+[2025-10-10T00:43:14.032Z] [INFO] 🔍 Querying factory events 70053415-70054041
+[2025-10-10T00:43:14.032Z] [INFO] 🔍 Step 1.2: Indexing factory events...
+[2025-10-10T00:43:14.555Z] [INFO] ✅ Processed factory events 70053415-70054041
+[2025-10-10T00:43:14.555Z] [INFO] ✅ Step 1.2 completed
+[2025-10-10T00:43:14.555Z] [INFO] 🔍 Step 1.3: Indexing pool events...
+[2025-10-10T00:43:14.556Z] [INFO] 📭 No pools discovered, skipping pool events indexing
+[2025-10-10T00:43:14.556Z] [INFO] ✅ Step 1.3 completed
+[2025-10-10T01:50:34.176Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-10T01:50:34.178Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-10T01:50:34.473Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-10T01:50:34.474Z] [WARN] ⚠️  Skipping OrderToken: ABI file not found at D:\OrderStake01\indexer\abi\OrderToken.json
+[2025-10-10T01:50:34.469Z] [INFO] ✅ Connected to network: avalanche (43114)
+[2025-10-10T01:50:34.473Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-10T01:50:34.474Z] [INFO] 📚 Loaded 1 contracts
+[2025-10-10T01:50:34.550Z] [INFO] ✅ Network verified: avalanche (43114)
+[2025-10-10T01:50:34.550Z] [INFO] 🚀 Blockchain manager initialized
+[2025-10-10T01:50:34.551Z] [INFO] 🎯 Event listeners initialized
+[2025-10-10T01:50:34.553Z] [INFO] 🤖 Running in one-time mode (GitHub Actions)
+[2025-10-10T01:50:34.553Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-10T01:50:34.695Z] [INFO] 🔍 Step 1.0: Loading known pools from storage...
+[2025-10-10T01:50:34.696Z] [WARN] ⚠️ Could not load known pools from storage: this.storage.getPoolsData is not a function
+[2025-10-10T01:50:34.695Z] [INFO] 📚 Incremental indexing from block 70054042 to 70056490 (last processed: 70054041)
+[2025-10-10T01:50:34.696Z] [INFO] 🔍 Step 1.2: Indexing factory events...
+[2025-10-10T01:50:34.696Z] [INFO] 🔍 Querying factory events 70054042-70056041
+[2025-10-10T01:50:34.696Z] [INFO] ✅ Step 1.0 completed
+[2025-10-10T01:50:35.454Z] [INFO] ✅ Processed factory events 70054042-70056041
+[2025-10-10T01:50:35.564Z] [INFO] 🔍 Querying factory events 70056042-70056490
+[2025-10-10T01:50:36.226Z] [INFO] ✅ Processed factory events 70056042-70056490
+[2025-10-10T01:50:36.226Z] [INFO] 🔍 Step 1.3: Indexing pool events...
+[2025-10-10T01:50:36.226Z] [INFO] ✅ Step 1.2 completed
+[2025-10-10T01:50:36.226Z] [INFO] 📭 No pools discovered, skipping pool events indexing
+[2025-10-10T01:50:36.226Z] [INFO] ✅ Step 1.3 completed
+[2025-10-10T02:10:20.353Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-10T02:10:20.356Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-10T02:10:20.637Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-10T02:10:20.633Z] [INFO] ✅ Connected to network: avalanche (43114)
+[2025-10-10T02:10:20.637Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-10T02:10:20.638Z] [WARN] ⚠️  Skipping OrderToken: ABI file not found at D:\OrderStake02\indexer\abi\OrderToken.json
+[2025-10-10T02:10:20.638Z] [INFO] 📚 Loaded 1 contracts
+[2025-10-10T02:10:20.715Z] [INFO] ✅ Network verified: avalanche (43114)
+[2025-10-10T02:10:20.717Z] [INFO] 🚀 Blockchain manager initialized
+[2025-10-10T02:10:20.718Z] [INFO] 🎯 Event listeners initialized
+[2025-10-10T02:10:20.720Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-10T02:10:20.720Z] [INFO] 🤖 Running in one-time mode (GitHub Actions)
+[2025-10-10T02:10:20.869Z] [INFO] 🔍 Step 1.0: Loading known pools from storage...
+[2025-10-10T02:10:20.869Z] [INFO] 📚 Incremental indexing from block 70056491 to 70057301 (last processed: 70056490)
+[2025-10-10T02:10:20.870Z] [INFO] ✅ Step 1.0 completed
+[2025-10-10T02:10:20.869Z] [WARN] ⚠️ Could not load known pools from storage: this.storage.getPoolsData is not a function
+[2025-10-10T02:10:20.870Z] [INFO] 🔍 Step 1.2: Indexing factory events...
+[2025-10-10T02:10:20.870Z] [INFO] 🔍 Querying factory events 70056491-70057301
+[2025-10-10T02:10:21.628Z] [INFO] 🔍 Step 1.3: Indexing pool events...
+[2025-10-10T02:10:21.627Z] [INFO] ✅ Processed factory events 70056491-70057301
+[2025-10-10T02:10:21.628Z] [INFO] ✅ Step 1.2 completed
+[2025-10-10T02:10:21.628Z] [INFO] 📭 No pools discovered, skipping pool events indexing
+[2025-10-10T02:10:21.628Z] [INFO] ✅ Step 1.3 completed
+[2025-10-10T02:10:34.921Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-10T02:10:34.927Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-10T02:10:35.228Z] [INFO] ✅ Connected to network: avalanche (43114)
+[2025-10-10T02:10:35.233Z] [WARN] ⚠️  Skipping OrderToken: ABI file not found at D:\OrderStake02\indexer\abi\OrderToken.json
+[2025-10-10T02:10:35.232Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-10T02:10:35.232Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-10T02:10:35.233Z] [INFO] 📚 Loaded 1 contracts
+[2025-10-10T02:10:35.322Z] [INFO] 🚀 Blockchain manager initialized
+[2025-10-10T02:10:35.320Z] [INFO] ✅ Network verified: avalanche (43114)
+[2025-10-10T02:10:35.322Z] [INFO] 🎯 Event listeners initialized
+[2025-10-10T02:10:35.326Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-10T02:10:35.326Z] [INFO] 🤖 Running in one-time mode (GitHub Actions)
+[2025-10-10T02:10:35.581Z] [INFO] 🔍 Step 1.0: Loading known pools from storage...
+[2025-10-10T02:10:35.580Z] [INFO] 📚 Incremental indexing from block 70057302 to 70057313 (last processed: 70057301)
+[2025-10-10T02:10:35.581Z] [WARN] ⚠️ Could not load known pools from storage: this.storage.getPoolsData is not a function
+[2025-10-10T02:10:35.582Z] [INFO] 🔍 Querying factory events 70057302-70057313
+[2025-10-10T02:10:35.581Z] [INFO] 🔍 Step 1.2: Indexing factory events...
+[2025-10-10T02:10:35.581Z] [INFO] ✅ Step 1.0 completed
+[2025-10-10T02:10:36.389Z] [INFO] 🔍 Step 1.3: Indexing pool events...
+[2025-10-10T02:10:36.388Z] [INFO] ✅ Processed factory events 70057302-70057313
+[2025-10-10T02:10:36.389Z] [INFO] ✅ Step 1.2 completed
+[2025-10-10T02:10:36.389Z] [INFO] 📭 No pools discovered, skipping pool events indexing
+[2025-10-10T02:10:36.390Z] [INFO] ✅ Step 1.3 completed
+[2025-10-10T02:25:59.890Z] [INFO] 📋 Configuration loaded successfully
+[2025-10-10T02:25:59.894Z] [INFO] 🔗 Connecting to RPC: https://api.avax.network/ext/bc/C/rpc
+[2025-10-10T02:26:00.184Z] [WARN] ⚠️  Skipping OrderNFTLaunch: No address configured
+[2025-10-10T02:26:00.180Z] [INFO] ✅ Connected to network: avalanche (43114)
+[2025-10-10T02:26:00.183Z] [INFO] 📝 Loaded contract: EcosystemStakingFactory at 0x3E3d8a430fF70E89C035301943375377CC7343A7
+[2025-10-10T02:26:00.185Z] [INFO] 📚 Loaded 1 contracts
+[2025-10-10T02:26:00.184Z] [WARN] ⚠️  Skipping OrderToken: ABI file not found at D:\OrderStake02\indexer\abi\OrderToken.json
+[2025-10-10T02:26:00.265Z] [INFO] 🚀 Blockchain manager initialized
+[2025-10-10T02:26:00.262Z] [INFO] ✅ Network verified: avalanche (43114)
+[2025-10-10T02:26:00.266Z] [INFO] 🎯 Event listeners initialized
+[2025-10-10T02:26:00.269Z] [INFO] 🤖 Running in one-time mode (GitHub Actions)
+[2025-10-10T02:26:00.268Z] [INFO] 🚀 OrderStake Indexer initialized successfully
+[2025-10-10T02:26:00.423Z] [INFO] 📚 Incremental indexing from block 70057314 to 70057926 (last processed: 70057313)
+[2025-10-10T02:26:00.424Z] [INFO] 🔍 Step 1.0: Loading known pools from storage...
+[2025-10-10T02:26:00.424Z] [INFO] ✅ Step 1.0 completed
+[2025-10-10T02:26:00.424Z] [WARN] ⚠️ Could not load known pools from storage: this.storage.getPoolsData is not a function
+[2025-10-10T02:26:00.425Z] [INFO] 🔍 Step 1.2: Indexing factory events...
+[2025-10-10T02:26:00.425Z] [INFO] 🔍 Querying factory events 70057314-70057926
+[2025-10-10T02:26:01.388Z] [INFO] 📊 Retrieved comprehensive pool data for 0xedE7...431D
+[2025-10-10T02:26:01.395Z] [INFO] 📡 Event: PoolCreated
+{
+  "poolAddress": "0xedE7...431D",
+  "creator": "0x3fa6...8C83",
+  "stakingToken": "0x878b...c34f",
+  "rewardToken": "0xC83A...D49c",
+  "rewardPerBlock": "0.051486666666666666",
+  "startBlock": "70058636",
+  "endBlock": "73058636",
+  "poolName": "AVAX9000/OVAX Stake Pool",
+  "stakingSymbol": "OVAX",
+  "rewardSymbol": "AVAX9000",
+  "totalStaked": "0.0"
+}
+[2025-10-10T02:26:01.398Z] [INFO] 💾 Saved frontend pool data for 0xedE7...431D
+[2025-10-10T02:26:01.815Z] [INFO] ✅ Processed factory events 70057314-70057926
+[2025-10-10T02:26:01.816Z] [INFO] ✅ Step 1.2 completed
+[2025-10-10T02:26:01.816Z] [INFO] 🏊 Indexing events for 1 discovered pools
+[2025-10-10T02:26:01.817Z] [INFO] 🔍 Indexing events for pool 0xedE7E8Ba201D284eC73eb92777b0d0b4721B431D
+[2025-10-10T02:26:01.816Z] [INFO] 🔍 Step 1.3: Indexing pool events...
+[2025-10-10T02:26:02.662Z] [INFO] ✅ Completed indexing for pool 0xedE7E8Ba201D284eC73eb92777b0d0b4721B431D
+[2025-10-10T02:26:02.663Z] [INFO] ✅ Step 1.3 completed

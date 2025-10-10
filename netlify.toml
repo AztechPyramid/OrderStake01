@@ -7,6 +7,18 @@
   NODE_VERSION = "18"
   NEXT_TELEMETRY_DISABLED = "1"
 
+# Netlify Functions configuration
+[functions]
+  node_bundler = "esbuild"
+  directory = "netlify/functions"
+
+# Environment variables for cron
+[context.production.environment]
+  # Bu değerleri Netlify dashboard'da set edin
+  RPC_URL = "https://api.avax.network/ext/bc/C/rpc"
+  ECOSYSTEM_STAKING_FACTORY_ADDRESS = "0x3E3d8a430fF70E89C035301943375377CC7343A7"
+  START_BLOCK = "69858246"
+
 # Headers for API endpoints
 [[headers]]
   for = "/api/*"
